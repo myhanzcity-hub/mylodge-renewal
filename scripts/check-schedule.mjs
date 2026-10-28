@@ -1,0 +1,55 @@
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {buildYear, calendarMonths, selectionFor, toggleSelection} from '../schedule-data.js';
+
+const domestic = buildYear({year: 2027});
+assert.equal(domestic.length, 365);
+assert.equal(new Set(domestic.map(day => day.iso)).size, 365);
+assert.equal(domestic[0].iso, '2027-01-01'); assert.equal(domestic.at(-1).iso, '2027-12-31');
+assert.equal(domestic[0].weekday, 5);
+assert.equal(calendarMonths(domestic).length, 12);
+assert.deepEqual(calendarMonths(domestic).map(month => month.length), [31,28,31,30,31,30,31,31,30,31,30,31]);
+const leap = buildYear({year: 2028});
+assert.equal(leap.length, 366); assert.ok(leap.some(day => day.iso === '2028-02-29'));
+assert.ok(selectionFor(leap, '2028-12-31', 'three').ok);
+assert.throws(() => buildYear({year: '2027'})); assert.throws(() => buildYear({product: 'unknown'}));
+
+const holdDays = domestic.filter(day => day.status === 'operator-hold-example');
+assert.equal(holdDays.length, 12);
+assert.ok(holdDays.every(day => [5,6].includes(day.weekday) && day.iso >= '2027-07-15' && day.iso <= '2027-08-23'));
+assert.equal(domestic.find(day => day.iso === '2027-07-15').status, 'practice-available');
+assert.equal(domestic.find(day => day.iso === '2027-07-16').status, 'operator-hold-example');
+assert.ok(!selectionFor(domestic, '2027-07-16', 'single').ok);
+const mixedGroup = domestic.filter(day => day.group === domestic.find(day => day.iso === '2027-07-16').group);
+const clearDayInHeldGroup = mixedGroup.find(day => day.status === 'practice-available');
+assert.ok(clearDayInHeldGroup); assert.ok(!selectionFor(domestic, clearDayInHeldGroup.iso, 'three').ok);
+assert.ok(selectionFor(domestic, clearDayInHeldGroup.iso, 'single').ok);
+assert.ok(!selectionFor(domestic, '2027-12-31', 'three').ok);
+assert.ok(selectionFor(domestic, '2027-12-31', 'single').ok);
+assert.ok(!selectionFor(domestic, '2026-12-31', 'three').ok);
+const noHold = buildYear({year: 2027, domesticHold: false});
+assert.equal(noHold.filter(day => day.status === 'operator-hold-example').length, 0);
+assert.ok(selectionFor(noHold, '2027-07-16', 'three').ok);
+
+const thailand = buildYear({year: 2027, product: 'thailand', domesticHold: true});
+assert.equal(thailand.filter(day => day.status === 'operator-hold-example').length, 0, '27 shares must never become guessed hold dates');
+assert.ok(!selectionFor(thailand, '2027-01-01', 'single').ok);
+assert.deepEqual(selectionFor(domestic, '2027-01-02', 'three').dates, ['2027-01-01','2027-01-02','2027-01-03']);
+const acrossMonth = selectionFor(domestic, '2027-01-31', 'three');
+assert.deepEqual(acrossMonth.dates, ['2027-01-31','2027-02-01','2027-02-02']);
+const first = toggleSelection(domestic, '2027-01-02', 'three');
+assert.equal(first.selected.length, 3);
+assert.deepEqual(toggleSelection(domestic, '2027-01-03', 'three', first.selected).selected, []);
+assert.deepEqual(toggleSelection(domestic, '2027-07-16', 'three', first.selected).selected, first.selected);
+const sparse = toggleSelection(domestic, '2027-05-05', 'single', ['2027-01-01']);
+assert.deepEqual(sparse.selected, ['2027-01-01','2027-05-05']);
+assert.equal(first.selected.length, 3, 'Selection changes do not mutate previous state');
+
+const html = await readFile(new URL('../schedule.html', import.meta.url), 'utf8');
+const js = await readFile(new URL('../schedule.js', import.meta.url), 'utf8');
+assert.ok(html.includes('운영안 미리보기 · 실제 예약이 아닙니다'));
+assert.ok(html.includes('표시된 실제 배정</dt><dd>0건'));
+assert.ok(html.includes('assets/brand/mylodge-logo.png'));
+assert.ok(html.includes('index.html#page=16'));
+assert.ok(!/localStorage|sessionStorage|fetch\(|XMLHttpRequest|sendBeacon/.test(js), 'Selection stays in memory without storing or submitting user data');
+console.log('PASS: 365/366-day calendars; 12 months; 3-day groups across months; domestic hold examples; blocked mixed groups; year-end remainder; single-day practice; no invented Thai holds; reversible in-memory selection; explicit preview and zero real allocations.');

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0c1e2d">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="마이롯지 별장 안으로 들어가 거실, 주방, 침실과 욕실을 눈높이에서 둘러보세요">
+  <title>별장 공간 체험 · MYLODGE</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="villa.css">
+  <script type="importmap">{"imports":{"three":"./assets/vendor/three/three.module.js","three/addons/":"./assets/vendor/three/addons/"}}</script>
+  <script type="module" src="villa-viewer.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#view-controls">공간 선택으로 바로가기</a>
+  <main class="viewer-layout">
+    <section class="model-stage" aria-labelledby="stage-title">
+      <h1 class="sr-only" id="stage-title">마이롯지 별장 공간 체험</h1>
+      <div id="model-canvas" class="model-canvas" aria-label="눈높이에서 둘러보는 마이롯지 별장">
+        <img class="model-poster" src="assets/model/xr-living.png" alt="실제 눈높이에서 바라본 마이롯지 거실 3D 모델" data-poster>
+      </div>
+      <div class="scene-shade" aria-hidden="true"></div>
+      <div class="tour-hotspots" data-hotspots aria-label="공간 안 이동 지점"></div>
+      <div class="view-reticle" aria-hidden="true"><span></span></div>
+      <div class="scene-transition" data-transition aria-hidden="true"></div>
+
+      <header class="viewer-header">
+        <a class="brand-chip glass" href="index.html#page=1" aria-label="마이롯지 소개로 돌아가기"><span class="back-arrow" aria-hidden="true">←</span><img class="brand-logo" src="assets/brand/mylodge-logo.png" width="181" height="63" alt="MyLodge 마이롯지"></a>
+        <div class="experience-label"><span class="experience-dot" aria-hidden="true"></span><span>SPATIAL VIEW</span><i aria-hidden="true"></i><span data-mode-label>실내 체험</span></div>
+        <div class="utility-controls glass" role="group" aria-label="화면 설정">
+          <button class="utility-button" type="button" data-reset disabled aria-label="현재 공간 시점 초기화" title="시점 초기화"><span aria-hidden="true">↺</span><b>시점 초기화</b></button>
+          <button class="utility-button" type="button" data-fullscreen aria-label="전체 화면으로 보기" aria-pressed="false" title="전체 화면"><span aria-hidden="true">⛶</span><b>전체 화면</b></button>
+          <button class="utility-button xr-button" type="button" data-xr disabled hidden><span aria-hidden="true">◉</span><b>VR로 보기</b></button>
+        </div>
+      </header>
+
+      <div class="space-meta glass"><span>1층 <b>17평</b></span><i aria-hidden="true"></i><span>2층 <b>10평</b></span><span class="total-area">총 27평</span></div>
+      <div class="loading-panel glass" role="status" aria-live="polite" data-loading>
+        <span class="loading-mark" aria-hidden="true"></span>
+        <p class="eyebrow">STEP INSIDE</p><strong data-load-title>나의 별장 안으로</strong>
+        <p data-load-detail>공간을 불러오고 있습니다</p>
+      </div>
+
+      <div class="location-card" aria-live="polite" aria-atomic="true">
+        <p class="eyebrow" data-view-label>01 / GROUND FLOOR</p>
+        <h2 data-space-heading>거실 · 함께 쉬는 자리</h2>
+        <p class="location-description" data-space-description>따뜻한 오크와 부드러운 크림이 만나는 공간을 눈높이에서 둘러보세요</p>
+      </div>
+
+      <div class="tour-dock" id="view-controls" tabindex="-1">
+        <p class="tour-hint" data-tour-hint><span aria-hidden="true">↔</span> 드래그해서 둘러보기 <i aria-hidden="true">·</i> 이동 지점을 눌러 공간 이동</p>
+        <div class="dock-shell glass">
+          <div class="floor-selector" role="group" aria-label="층별 보기">
+            <button type="button" data-view="ground" aria-pressed="true" disabled>1층</button>
+            <button type="button" data-view="upper" aria-pressed="false" disabled>2층</button>
+            <button type="button" data-view="upper-plan" aria-pressed="false" disabled>2층 구조 보기</button>
+            <button type="button" data-view="overview" aria-pressed="false" disabled>조감도</button>
+          </div>
+          <span class="dock-divider" data-room-divider aria-hidden="true"></span>
+          <div class="room-selector" role="group" aria-label="공간으로 이동">
+            <button type="button" data-room="living" aria-pressed="true" disabled><span class="room-number" aria-hidden="true">01</span><span>거실</span></button>
+            <button type="button" data-room="kitchen" aria-pressed="false" disabled><span class="room-number" aria-hidden="true">02</span><span>주방</span></button>
+            <button type="button" data-room="dining" aria-pressed="false" disabled><span class="room-number" aria-hidden="true">03</span><span>다이닝</span></button>
+            <button type="button" data-room="bathroom" aria-pressed="false" disabled><span class="room-number" aria-hidden="true">04</span><span>욕실</span></button>
+            <button type="button" data-room="bedroom" aria-pressed="false" disabled hidden><span class="room-number" aria-hidden="true">01</span><span>침실</span></button>
+            <button type="button" data-room="landing" aria-pressed="false" disabled hidden><span class="room-number" aria-hidden="true">02</span><span>계단홀</span></button>
+            <button type="button" data-room="study" aria-pressed="false" disabled hidden><span class="room-number" aria-hidden="true">03</span><span>서재</span></button>
+            <button type="button" data-room="dressing" aria-pressed="false" disabled hidden><span class="room-number" aria-hidden="true">04</span><span>드레스존</span></button>
+            <button type="button" data-room="terrace" aria-pressed="false" disabled hidden><span class="room-number" aria-hidden="true">05</span><span>테라스</span></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="model-details glass"><details><summary aria-label="모델 안내와 다운로드">모델 안내 <span aria-hidden="true">＋</span></summary><div class="details-content"><p>인테리어와 공간 구성 제안입니다 실제 시공 도면·구조·제공 사양은 별도로 확정합니다</p><a href="assets/model/mylodge-villa.glb" download>3D 모델 내려받기 <span aria-hidden="true">↓</span></a></div></details></div>
+      <p class="sr-only" id="canvas-key-help">실내에서는 드래그하거나 방향키로 둘러보세요 2층 구조 보기와 조감도에서는 드래그로 회전하고 휠로 확대할 수 있습니다 아래 공간 이름을 누르면 해당 위치로 이동합니다 Home 키로 현재 시점을 초기화합니다</p>
+    </section>
+  </main>
+  <noscript><div class="no-script">공간 체험은 자바스크립트가 필요합니다 모델 안내에서 3D 파일을 내려받을 수 있습니다</div><style>.loading-panel{display:none}.model-poster{opacity:1}</style></noscript>
+</body>
+</html>

@@ -1,0 +1,301 @@
+/* Adapted from MyLodge reference ownership-pricing.css; original illustration rules retained */
+/* Original module comments and artwork geometry are retained in the companion files */
+:root { --ui-charcoal:#03224a; --ui-ivory:#f6f3ed; --ui-taupe:#cbd3ce; --ui-gold:#015d77; --font-body:Arial,"Noto Sans KR","Malgun Gothic",sans-serif; --font-heading:var(--font-body); --font-display:var(--font-body); }
+* { box-sizing:border-box; }
+html { background:var(--ui-ivory); color:var(--ui-charcoal); font-family:var(--font-body); -webkit-text-size-adjust:100%; }
+body { margin:0; }
+button { font:inherit; touch-action:manipulation; -webkit-tap-highlight-color:transparent; }
+[hidden] { display:none !important; }
+#luxury-preview { padding:18px; max-width:900px; margin:0 auto; }
+#luxury-preview h1 { margin:0; font-size:18px; line-height:1.6; letter-spacing:-.035em; }
+#luxury-preview .luxury-standard-state[hidden],
+#luxury-preview .luxury-anatomy-host[hidden] {  display: none;  }
+#luxury-preview .luxury-state-kicker,
+#luxury-preview .luxury-anatomy-kicker {  margin: 0 0 8px; color: #716e68; font: 500 10px/1.5 var(--font-body); letter-spacing: .11em;  }
+#luxury-preview .luxury-anatomy-host {  min-width: 0; padding: 18px 0 0;  }
+#luxury-preview .luxury-anatomy-head {  display: flex; align-items: end; justify-content: space-between; gap: 18px;  }
+#luxury-preview .luxury-anatomy-head h3 {  margin: 0; font: 400 clamp(23px, 2.4vw, 32px)/1.2 var(--font-heading); letter-spacing: -.03em;  }
+.english-page #luxury-preview .luxury-anatomy-head h3 {  font-family: var(--font-display);  }
+#luxury-preview .luxury-anatomy-replay {  min-height: 40px; padding: 7px 12px; border: 1px solid var(--ui-taupe, #b7ada0); background: transparent; color: var(--ui-charcoal, #171717); font: 400 11px/1.4 var(--font-body); cursor: pointer;  }
+#luxury-preview .luxury-anatomy-replay:hover {  border-color: var(--ui-charcoal, #171717);  }
+#luxury-preview .luxury-anatomy-replay:focus-visible,
+#luxury-preview .luxury-anatomy-tabs button:focus-visible {  outline: 2px solid var(--ui-gold, #a88d5e); outline-offset: 3px;  }
+#luxury-preview .luxury-anatomy-tabs {  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 18px; border-block: 1px solid var(--ui-taupe, #b7ada0);  }
+#luxury-preview .luxury-anatomy-tabs button {  display: flex; align-items: center; gap: 9px; min-width: 0; min-height: 42px; padding: 7px 8px; border: 0; background: transparent; color: #716e68; text-align: left; font: 400 12px/1.45 var(--font-body); cursor: pointer;  }
+#luxury-preview .luxury-anatomy-tabs button + button {  border-left: 1px solid var(--ui-taupe, #b7ada0);  }
+#luxury-preview .luxury-anatomy-tabs button span {  color: #8d7651; font: 500 10px/1 var(--font-display);  }
+#luxury-preview .luxury-anatomy-tabs button[aria-pressed="true"] {  color: var(--ui-charcoal, #171717); background: #f0ede4;  }
+#luxury-preview .luxury-anatomy-stage {  overflow: hidden; border-bottom: 1px solid var(--ui-taupe, #b7ada0); background: #f5f2e9;  }
+#luxury-preview .luxury-anatomy-svg {  display: block; width: 100%; height: auto; min-height: 180px; color: #46443e;  }
+#luxury-preview .luxury-anatomy-svg path,
+#luxury-preview .luxury-anatomy-svg circle {  vector-effect: non-scaling-stroke; stroke-linecap: round; stroke-linejoin: round;  }
+#luxury-preview .an-wall-back {  fill: #e9e4d8; stroke: #8d877c; stroke-width: 1.1;  }
+#luxury-preview .an-wall-side {  fill: #ddd7ca; stroke: #8d877c; stroke-width: 1.1;  }
+#luxury-preview .an-floor {  fill: #eee9de; stroke: #8d877c; stroke-width: 1.1;  }
+#luxury-preview .an-room-edge {  fill: none; stroke: #6c675e; stroke-width: 1.4;  }
+#luxury-preview .an-floor-seam,
+#luxury-preview .an-room-seam {  fill: none; stroke: #c4bbaa; stroke-width: .7;  }
+#luxury-preview .an-panel-side {  fill: #a88f69; stroke: #685b45; stroke-width: 1;  }
+#luxury-preview .an-panel-face {  fill: #c2ad88; stroke: #685b45; stroke-width: 1;  }
+#luxury-preview .an-panel-edge,
+#luxury-preview .an-panel-trim {  fill: none; stroke: #6e604b; stroke-width: 1.1;  }
+#luxury-preview .an-panel-slat {  fill: none; stroke: #dfceb0; stroke-width: 1.4;  }
+#luxury-preview .an-panel-inlay {  fill: none; stroke: #927e5b; stroke-width: .8;  }
+#luxury-preview .an-mount-rail {  fill: #75746e; stroke: #42413d; stroke-width: 1;  }
+#luxury-preview .an-mount-crossbar,
+#luxury-preview .an-mount-arm {  fill: #99978f; stroke: #4c4a45; stroke-width: .9;  }
+#luxury-preview .an-mount-fastener {  fill: #c7b47f; stroke: #5d523d; stroke-width: .7;  }
+#luxury-preview .an-mount-detail {  fill: none; stroke: #d9d2c5; stroke-width: .9;  }
+#luxury-preview .an-console-top {  fill: #c4b18e; stroke: #665b49; stroke-width: 1;  }
+#luxury-preview .an-console-front {  fill: #9c8764; stroke: #655741; stroke-width: 1;  }
+#luxury-preview .an-console-side {  fill: #79684d; stroke: #574a37; stroke-width: 1;  }
+#luxury-preview .an-console-edge,
+#luxury-preview .an-console-seam,
+#luxury-preview .an-console-pull {  fill: none; stroke: #eee5d2; stroke-width: .9;  }
+#luxury-preview .an-console-support {  fill: #74634a; stroke: #514633; stroke-width: .8;  }
+#luxury-preview .an-console-shadow {  fill: none; stroke: #c4bbaa; stroke-width: 1.6;  }
+#luxury-preview .an-tv-depth {  fill: #353735; stroke: #20211f; stroke-width: 1;  }
+#luxury-preview .an-tv-bezel {  fill: #454744; stroke: #222421; stroke-width: 1.2;  }
+#luxury-preview .an-tv-glass {  fill: #656963; stroke: #b0afa5; stroke-width: .8;  }
+#luxury-preview .an-tv-sheen {  fill: #8b8e85; stroke: none; opacity: .48;  }
+#luxury-preview .an-tv-bezel-line,
+#luxury-preview .an-tv-foot {  fill: none; stroke: #c9c5b9; stroke-width: .8;  }
+#luxury-preview .an-tv-camera {  fill: none; stroke: #dfd8c7; stroke-width: 1.3;  }
+#luxury-preview .an-screen-detail {  fill: none; stroke: #a9a998; stroke-width: .7; opacity: .65;  }
+#luxury-preview .an-tv-display path {  fill: none; stroke: #d7d0be; stroke-width: 1.1;  }
+#luxury-preview .an-tv-display circle {  fill: #c6b078; stroke: none;  }
+#luxury-preview .an-light-halo {  fill: none; stroke: #c9a86c; stroke-width: 13; opacity: .13;  }
+#luxury-preview .an-light-strip {  fill: none; stroke: #b99a61; stroke-width: 2;  }
+#luxury-preview .an-light-point {  fill: none; stroke: #fff1c7; stroke-width: 1.8;  }
+#luxury-preview .an-hearth-side {  fill: #958d7d; stroke: #5c564b; stroke-width: 1;  }
+#luxury-preview .an-hearth-top {  fill: #d2c9b8; stroke: #5c564b; stroke-width: 1;  }
+#luxury-preview .an-hearth-front {  fill: #aaa08e; stroke: #5c564b; stroke-width: 1;  }
+#luxury-preview .an-hearth-edge,
+#luxury-preview .an-hearth-seam {  fill: none; stroke: #756d5e; stroke-width: .9;  }
+#luxury-preview .an-hearth-foot {  fill: #665e51; stroke: #4a443a; stroke-width: .8;  }
+#luxury-preview .an-surround-side {  fill: #8f887a; stroke: #575146; stroke-width: 1;  }
+#luxury-preview .an-surround-face {  fill: #c8c0b0; stroke: #5e584d; stroke-width: 1;  }
+#luxury-preview .an-surround-top {  fill: #e0d9cb; stroke: #5e584d; stroke-width: 1;  }
+#luxury-preview .an-surround-edge,
+#luxury-preview .an-surround-inlay,
+#luxury-preview .an-surround-corner {  fill: none; stroke: #777061; stroke-width: .9;  }
+#luxury-preview .an-surround-rib {  fill: none; stroke: #e8e1d4; stroke-width: 1;  }
+#luxury-preview .an-box-depth {  fill: #49443d; stroke: #292722; stroke-width: 1;  }
+#luxury-preview .an-box-cavity {  fill: #393632; stroke: #272522; stroke-width: 1;  }
+#luxury-preview .an-box-liner {  fill: #62594a; stroke: #c5b995; stroke-width: .8;  }
+#luxury-preview .an-box-floor {  fill: #92836a; stroke: #50483c; stroke-width: .7;  }
+#luxury-preview .an-box-grate,
+#luxury-preview .an-box-vent {  fill: none; stroke: #ded3bb; stroke-width: .8;  }
+#luxury-preview .an-box-edge {  fill: none; stroke: #24221f; stroke-width: 1.2;  }
+#luxury-preview .an-glass-pane {  fill: #b8c0b9; fill-opacity: .24; stroke: #aab0a9; stroke-width: 1.1;  }
+#luxury-preview .an-glass-edge,
+#luxury-preview .an-glass-reflection {  fill: none; stroke: #eee9dd; stroke-width: .9;  }
+#luxury-preview .an-glass-hinge {  fill: #9b8d72; stroke: #4e483d; stroke-width: .8;  }
+#luxury-preview .an-glass-fastener {  fill: #d4c7aa; stroke: #625944; stroke-width: .7;  }
+#luxury-preview .an-panel-strip {  fill: #aaa18f; stroke: #625c50; stroke-width: .8;  }
+#luxury-preview .an-panel-joint,
+#luxury-preview .an-panel-cap,
+#luxury-preview .an-panel-reveal {  fill: none; stroke: #6a6356; stroke-width: .85;  }
+#luxury-preview .an-panel-fastener {  fill: #d3c6a8; stroke: #645b49; stroke-width: .7;  }
+#luxury-preview .an-fire-ember {  fill: none; stroke: #bc8b4e; stroke-width: 2;  }
+#luxury-preview .an-flame-back {  fill: #b98648; stroke: #765431; stroke-width: .8;  }
+#luxury-preview .an-flame-front {  fill: #e0b866; stroke: #a8793b; stroke-width: .7;  }
+#luxury-preview .an-flame-core {  fill: #fff0c3; stroke: #e3bd71; stroke-width: .55;  }
+#luxury-preview .an-fire-reflection {  fill: none; stroke: #b58c4b; stroke-width: 1; opacity: .65;  }
+#luxury-preview .luxury-anatomy-sequence {  display: flex; flex-wrap: wrap; gap: 8px 15px; padding: 13px 0 0;  }
+#luxury-preview .luxury-sequence-step {  display: inline-flex; align-items: center; gap: 6px; color: #777168; font: 400 10px/1.5 var(--font-body); transition: color .2s ease;  }
+#luxury-preview .luxury-sequence-step i {  display: block; width: 6px; height: 6px; border: 1px solid #a89c86; border-radius: 50%;  }
+#luxury-preview .luxury-sequence-step.is-complete {  color: var(--ui-charcoal, #171717);  }
+#luxury-preview .luxury-sequence-step.is-complete i {  border-color: #9b8052; background: #b49a6d;  }
+#luxury-preview .luxury-anatomy-disclaimer {  margin: 13px 0 0; color: #625f59; font: 400 11px/1.6 var(--font-body);  }
+.luxury-anatomy-live {  position: absolute !important; width: 1px !important; height: 1px !important; padding: 0 !important; margin: -1px !important; overflow: hidden !important; clip: rect(0,0,0,0) !important; white-space: nowrap !important; border: 0 !important;  }
+@media (max-width: 800px) {
+#luxury-preview .luxury-anatomy-head {  align-items: start; flex-direction: column; gap: 12px;  }
+#luxury-preview .luxury-anatomy-stage {  margin-inline: -4px;  }
+#luxury-preview .luxury-anatomy-svg {  min-height: 0;  }
+#luxury-preview .luxury-anatomy-tabs button {  gap: 6px; padding-inline: 5px; font-size: 11px;  }
+#luxury-preview .luxury-anatomy-sequence {  gap: 7px 11px;  }
+}
+@media (max-width: 420px) {
+#luxury-preview .luxury-anatomy-tabs button {  font-size: 10px;  }
+#luxury-preview .luxury-anatomy-replay {  min-height: 38px;  }
+}
+@media (prefers-reduced-motion: reduce) {
+#luxury-preview .luxury-sequence-step {  transition: none;  }
+}
+#luxury-preview .anatomy-fireplace-figure.iso[data-theme="light"] { 
+  --anatomy-paper: #c8b99e;
+  --anatomy-face: #d3c5ad;
+  --anatomy-top: #e8decb;
+  --anatomy-shade-0: #98876d;
+  --anatomy-shade-1: #ad9a7e;
+  --anatomy-shade-2: #c3b194;
+  --anatomy-shade-3: #d2c3a9;
+  --anatomy-hi: #514c43;
+  --anatomy-mid: #837866;
+  --anatomy-lo: #655c4e;
+  --anatomy-faint: #b6a990;
+  --anatomy-lit: #62574a;
+  --anatomy-halo: #665944;
+  --anatomy-halo-opacity: .14;
+  width: 100%;
+  color: var(--ui-charcoal, #27251f);
+  font-family: var(--font-body);
+ }
+#luxury-preview .fp-stage { 
+  position: relative;
+  width: min(100%, 920px);
+  aspect-ratio: 900 / 520;
+  margin-inline: auto;
+  overflow: hidden;
+  background: #f5f2e9;
+  isolation: isolate;
+ }
+#luxury-preview .fp-svg,
+#luxury-preview .fp-fire-gl { 
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+ }
+#luxury-preview .fp-back {  z-index: 0;  }
+#luxury-preview .fp-fire-gl {  z-index: 1; pointer-events: none;  }
+#luxury-preview .fp-front {  z-index: 2; pointer-events: none;  }
+#luxury-preview .fp-part .iso-edge {  stroke-width: .7px;  }
+#luxury-preview .fp-part .iso-crease {  stroke-width: .5px;  }
+#luxury-preview .fp-part.wall .iso-fill {  fill: #cabcaa;  }
+#luxury-preview .fp-part.wall .iso-top {  fill: #ded3c1;  }
+#luxury-preview .fp-part.wall .iso-shade[data-shade="0"] {  fill: #9c8e7a;  }
+#luxury-preview .fp-part.wall .iso-shade[data-shade="1"] {  fill: #b0a18c;  }
+#luxury-preview .fp-part.wall .iso-shade[data-shade="2"] {  fill: #c5b8a5;  }
+#luxury-preview .fp-part.wall .iso-shade[data-shade="3"] {  fill: #d3c7b4;  }
+#luxury-preview .fp-part.wall-side .iso-fill,
+#luxury-preview .fp-part.wall-side .iso-top {  fill: #b1a38e;  }
+#luxury-preview .fp-part.floor .iso-fill {  fill: #d4c8b4;  }
+#luxury-preview .fp-part.floor .iso-top {  fill: #e5dac6;  }
+#luxury-preview .fp-part.floor .iso-shade {  fill: #b8aa94;  }
+#luxury-preview .fp-part.timber-panel .iso-fill {  fill: #92785d;  }
+#luxury-preview .fp-part.timber-panel .iso-top {  fill: #b49a77;  }
+#luxury-preview .fp-part.timber-panel .iso-shade {  fill: #755d46;  }
+#luxury-preview .fp-part.timber-flute .iso-fill,
+#luxury-preview .fp-part.timber-flute .iso-top {  fill: #c3a982;  }
+#luxury-preview .fp-part.stone-trim .iso-fill,
+#luxury-preview .fp-part.stone-trim .iso-top {  fill: #e6ddce;  }
+#luxury-preview .fp-part.cavity .iso-fill,
+#luxury-preview .fp-part.cavity .iso-top {  fill: #292a29;  }
+#luxury-preview .fp-part.cavity .iso-shade {  fill: #171918;  }
+#luxury-preview .fp-part.cavity-metal .iso-fill,
+#luxury-preview .fp-part.cavity-metal .iso-top {  fill: #514d45;  }
+#luxury-preview .fp-part.firebox .iso-fill,
+#luxury-preview .fp-part.firebox .iso-top,
+#luxury-preview .fp-part.metal-edge .iso-fill,
+#luxury-preview .fp-part.metal-edge .iso-top {  fill: #464744;  }
+#luxury-preview .fp-part.firebox .iso-shade,
+#luxury-preview .fp-part.metal-edge .iso-shade {  fill: #292b2a;  }
+#luxury-preview .fp-part.refractory .iso-fill {  fill: #37312b;  }
+#luxury-preview .fp-part.refractory .iso-top {  fill: #55483a;  }
+#luxury-preview .fp-part.refractory .iso-shade {  fill: #272421;  }
+#luxury-preview .fp-part.refractory-side .iso-fill,
+#luxury-preview .fp-part.refractory-side .iso-top {  fill: #62503d;  }
+#luxury-preview .fp-part.burner .iso-fill,
+#luxury-preview .fp-part.burner .iso-top,
+#luxury-preview .fp-part.burner-lip .iso-fill,
+#luxury-preview .fp-part.burner-lip .iso-top {  fill: #686052;  }
+#luxury-preview .fp-part.burner-hole .iso-fill,
+#luxury-preview .fp-part.burner-hole .iso-top {  fill: #181817;  }
+#luxury-preview .fp-part.ember-bed .iso-fill,
+#luxury-preview .fp-part.ember-bed .iso-top {  fill: #b8682d;  }
+#luxury-preview .fp-part.limestone .iso-fill {  fill: #d5c7ad;  }
+#luxury-preview .fp-part.limestone .iso-top,
+#luxury-preview .fp-part.limestone-top .iso-fill,
+#luxury-preview .fp-part.limestone-top .iso-top {  fill: #eee5d3;  }
+#luxury-preview .fp-part.limestone .iso-shade,
+#luxury-preview .fp-part.limestone-top .iso-shade {  fill: #b8a98f;  }
+#luxury-preview .fp-part.stone-highlight .iso-fill,
+#luxury-preview .fp-part.stone-highlight .iso-top {  fill: #e5d8c2;  }
+#luxury-preview .fp-part.shadow .iso-fill,
+#luxury-preview .fp-part.shadow .iso-top {  fill: #7b6d58; opacity: .16;  }
+#luxury-preview .fp-part.hearth-side .iso-fill {  fill: #b5a589;  }
+#luxury-preview .fp-part.hearth-side .iso-top,
+#luxury-preview .fp-part.hearth .iso-fill,
+#luxury-preview .fp-part.hearth .iso-top {  fill: #e4dac7;  }
+#luxury-preview .fp-part.hearth-lip .iso-fill,
+#luxury-preview .fp-part.hearth-lip .iso-top {  fill: #d0c1a7;  }
+#luxury-preview .fp-glass-pane {  fill: #c6d4d5; fill-opacity: .07; stroke: none;  }
+#luxury-preview .fp-glass-outline {  fill: none; stroke: #d6dedb; stroke-opacity: .7; stroke-width: .75;  }
+#luxury-preview .fp-glass-reflection,
+#luxury-preview .fp-glass-edge-glint {  fill: none; stroke: #fffdf6; stroke-opacity: .54; stroke-width: 1.2; stroke-linecap: round;  }
+#luxury-preview .fp-reflection-short {  stroke-opacity: .36;  }
+#luxury-preview .fp-stone-finish path {  fill: none; stroke: #897a63; stroke-width: .65; stroke-opacity: .56;  }
+#luxury-preview .fp-stone-finish circle {  fill: #776b59; fill-opacity: .65;  }
+#luxury-preview .fp-fallback-tongue { 
+  fill: #c05b20;
+  stroke: #df8b42;
+  stroke-width: .35;
+  opacity: var(--fp-fire-level, 0);
+  transform-box: fill-box;
+  transform-origin: center bottom;
+  animation: fp-flame-drift 1.15s ease-in-out infinite alternate;
+ }
+#luxury-preview .fp-fallback-tongue[data-flame="2"],
+#luxury-preview .fp-fallback-tongue[data-flame="5"] {  fill: #e7832a;  }
+@keyframes fp-flame-drift {  from { transform: scaleY(.91) skewX(-1deg); } to { transform: scaleY(1.07) skewX(1deg); }  }
+#luxury-preview .fp-controls {  display: flex; align-items: center; flex-wrap: wrap; gap: 8px; padding: 12px 0 0;  }
+#luxury-preview .fp-controls button { 
+  min-height: 38px;
+  padding: 8px 13px;
+  border: 1px solid var(--ui-taupe, #b7ada0);
+  background: transparent;
+  color: var(--ui-charcoal, #27251f);
+  font: 500 10px/1.3 var(--font-body);
+  letter-spacing: .08em;
+  cursor: pointer;
+  transition: background-color .2s ease, color .2s ease, border-color .2s ease;
+ }
+#luxury-preview .fp-controls button:hover,
+#luxury-preview .fp-controls button[aria-pressed="true"] {  border-color: #8d7651; background: #eee7d8;  }
+#luxury-preview .fp-controls button:focus-visible {  outline: 2px solid #a88d5e; outline-offset: 3px;  }
+#luxury-preview .fp-status {  margin-inline-start: auto; color: #716e68; font: 400 11px/1.5 var(--font-body);  }
+#luxury-preview .fp-figure-note {  margin: 10px 0 0; color: #716e68; font: 400 10px/1.65 var(--font-body);  }
+@media (max-width: 800px) {
+#luxury-preview .fp-stage {  width: calc(100% + 8px); margin-inline: -4px;  }
+#luxury-preview .fp-controls {  gap: 6px;  }
+#luxury-preview .fp-controls button {  min-height: 42px; padding-inline: 9px; font-size: 9px;  }
+#luxury-preview .fp-status {  flex-basis: 100%; margin: 3px 0 0;  }
+}
+@media (prefers-reduced-motion: reduce) {
+#luxury-preview .fp-controls button {  transition: none;  }
+#luxury-preview .fp-fallback-tongue {  animation: none;  }
+}
+
+/* Compact, touch-friendly framing for the presentation's embedded preview */
+#luxury-preview .luxury-anatomy-host { padding-top:12px; }
+#luxury-preview .luxury-anatomy-head { align-items:center; flex-direction:row; gap:12px; }
+#luxury-preview .luxury-anatomy-kicker { font-size:10px; color:#577078; margin-bottom:4px; letter-spacing:.08em; }
+#luxury-preview .luxury-anatomy-head h3 { font-size:23px; line-height:1.4; font-weight:600; }
+#luxury-preview .luxury-anatomy-replay { min-height:44px; padding:9px 13px; border-radius:7px; font-size:12px; white-space:nowrap; }
+#luxury-preview .luxury-anatomy-tabs { margin-top:14px; gap:8px; border:0; }
+#luxury-preview .luxury-anatomy-tabs button { justify-content:center; min-height:44px; padding:10px 12px; border:1px solid #b7c8c7; border-radius:7px; font-size:14px; }
+#luxury-preview .luxury-anatomy-tabs button + button { border-left:1px solid #b7c8c7; }
+#luxury-preview .luxury-anatomy-tabs button[aria-pressed="true"] { background:#015d77; border-color:#015d77; color:#fff; }
+#luxury-preview .luxury-anatomy-tabs button[aria-pressed="true"] span { color:#ead6a5; }
+#luxury-preview .luxury-anatomy-stage { margin:12px 0 0; background:#f6f3ed; }
+#luxury-preview .luxury-anatomy-svg { min-height:0; max-height:330px; }
+#luxury-preview .fp-stage { width:100%; margin:0; background:#f6f3ed; }
+#luxury-preview .fp-controls { gap:8px; padding:10px 0; }
+#luxury-preview .fp-controls button { min-height:44px; padding:9px 13px; border-radius:7px; font-size:12px; letter-spacing:0; }
+#luxury-preview .fp-controls button:hover,#luxury-preview .fp-controls button[aria-pressed="true"] { background:#e1eeea; border-color:#015d77; }
+#luxury-preview .fp-status { font-size:11px; }
+#luxury-preview .fp-figure-note { display:none; }
+#luxury-preview .luxury-anatomy-sequence { gap:7px 12px; padding-top:12px; }
+#luxury-preview .luxury-sequence-step { font-size:11px; color:#577078; }
+#luxury-preview .luxury-sequence-step.is-complete i { border-color:#015d77; background:#015d77; }
+#luxury-preview .luxury-anatomy-disclaimer { margin-top:12px; font-size:12px; color:#577078; line-height:1.7; }
+[data-motion-paused="true"] .fp-fallback-tongue { animation-play-state:paused !important; }
+@media(max-width:360px) {
+  #luxury-preview { padding:14px; }
+  #luxury-preview .luxury-anatomy-head h3 { font-size:21px; }
+  #luxury-preview .luxury-anatomy-replay { padding-inline:10px; }
+}
+@media(prefers-reduced-motion:reduce) { *,*::before,*::after { animation:none !important; transition:none !important; } }

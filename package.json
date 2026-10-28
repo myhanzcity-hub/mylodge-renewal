@@ -1,0 +1,19 @@
+{
+  "name": "mylodge-20-page-preview",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "prepare": "node scripts/prepare.mjs",
+    "start": "node server.mjs",
+    "check": "node --check presentation.js && node --check presentation-extras.js && node --check deck-data.js && node --check server.mjs && node --check villa-viewer.js && node --check schedule.js && node --check schedule-data.js && node scripts/check-presentation.mjs && node --test scripts/navigation.test.mjs scripts/experiences.test.mjs scripts/motion.test.mjs scripts/schedule-ui.test.mjs scripts/intro.test.mjs && node scripts/check-villa.mjs && node scripts/check-villa-tour.mjs && node scripts/check-schedule.mjs",
+    "check:3d": "node scripts/check-villa.mjs && node scripts/check-villa-tour.mjs",
+    "build": "node scripts/build.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "three": "0.183.2"
+  }
+}

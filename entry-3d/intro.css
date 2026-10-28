@@ -1,0 +1,60 @@
+html.intro-pending {background:#090b0e;scroll-behavior:auto}
+.intro-pending #site-shell {display:none}
+#entry-intro[hidden]{display:none}
+#entry-intro{height:400svh;background:#090b0e;color:#f4f1e9;position:relative;z-index:100;font-family:Arial,'Malgun Gothic',sans-serif}
+.intro-stage{height:100svh;min-height:540px;position:sticky;top:0;overflow:hidden;background:radial-gradient(ellipse at 70% 60%,#202226 0, #090b0e 65%)}
+#intro-canvas{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:pan-y}
+.intro-top{position:absolute;top:32px;left:4vw;right:4vw;display:flex;justify-content:space-between;align-items:center;z-index:2;gap:16px}
+.intro-brand{font-size:20px;letter-spacing:.18em;font-weight:700}.intro-brand small{display:block;font-size:8px;letter-spacing:.26em;margin-top:8px;color:#9da3ac}
+#entry-intro button{font:inherit;cursor:pointer;color:inherit}
+.intro-skip{background:transparent;border:1px solid #545960;border-radius:30px;padding:12px 18px;font-size:12px!important;min-height:44px}
+.intro-copy{position:absolute;left:6vw;top:34%;width:34%;pointer-events:none}
+.intro-eyebrow{font-size:10px;letter-spacing:.25em;color:#d0b47c;margin:0 0 22px}.intro-copy h1{font-size:clamp(36px,4vw,66px);line-height:1.16;letter-spacing:-.055em;font-weight:500;margin:0 0 24px;white-space:pre-line}
+.intro-copy .intro-description{font-size:14px;line-height:1.85;color:#aeb3bc;max-width:320px;white-space:pre-line}
+.intro-step{position:absolute;right:4vw;top:150px;font-size:11px;color:#8d929a;letter-spacing:.13em;writing-mode:vertical-rl}
+.intro-bottom{position:absolute;bottom:26px;left:4vw;right:4vw;display:grid;grid-template-columns:1fr auto;gap:18px;align-items:end;z-index:2}
+.intro-progress{max-width:310px}.intro-progress-label{display:flex;justify-content:space-between;font-size:10px;letter-spacing:.14em;margin-bottom:12px;color:#b2b6be}.intro-track{height:2px;background:#34383c}.intro-track i{display:block;height:100%;background:#d3b87d;transform-origin:left;transform:scaleX(0)}
+.intro-controls{display:flex;gap:8px;align-items:center}.intro-controls button{background:#15191ed9;border:1px solid #43484f;border-radius:50%;width:44px;height:44px;font-size:20px!important}.intro-controls span{font-size:11px;letter-spacing:.1em;margin-right:12px;color:#c4c8cf}
+.intro-note{position:absolute;bottom:92px;right:4vw;color:#737b87;font-size:9px;letter-spacing:.06em}
+#intro-enter{position:absolute;left:67%;top:58%;transform:translate(-50%,-50%);border:0;border-radius:50%;background:transparent;width:clamp(180px,26vw,340px);height:clamp(180px,26vw,340px);z-index:3;opacity:0;pointer-events:none}
+#intro-enter.ready{opacity:1;pointer-events:auto}#intro-enter span{position:absolute;top:calc(100% + 12px);left:50%;transform:translateX(-50%);white-space:nowrap;font-size:11px;letter-spacing:.18em;color:#e3cb96;border-bottom:1px solid #766748;padding-bottom:10px}
+#intro-enter:focus-visible,.intro-skip:focus-visible,.intro-controls button:focus-visible{outline:2px solid #e5c581;outline-offset:6px}
+.intro-fallback{display:none;position:absolute;top:44%;right:16%;width:200px;height:200px;border-radius:50%;align-items:center;justify-content:center;border:7px double #e4c583;background:radial-gradient(circle at 32% 28%,#b49c68,#4f3d1d);font-size:52px;font-weight:bold;color:#f1ddaa;box-shadow:0 0 80px #b3955333}
+.no-webgl .intro-fallback{display:flex}.no-webgl #intro-canvas{display:none}
+.intro-exit{opacity:0;transition:opacity .45s ease;pointer-events:none}
+.intro-replay{background:none;color:inherit;border:1px solid #555;padding:12px 16px;min-height:44px;cursor:pointer}
+@media(max-width:760px){
+ .intro-stage{min-height:500px}.intro-top{top:22px;left:22px;right:22px}.intro-brand{font-size:16px}.intro-brand small{font-size:6px}.intro-skip{padding:10px 12px;font-size:10px!important}
+ .intro-copy{left:24px;top:17%;width:calc(100% - 48px)}.intro-copy h1{font-size:34px;line-height:1.2;margin-bottom:12px}.intro-eyebrow{font-size:8px;margin-bottom:12px}.intro-copy .intro-description{font-size:12px;line-height:1.7;max-width:290px}
+ .intro-step{top:41%;right:18px;font-size:8px}.intro-bottom{left:24px;right:24px;bottom:24px;grid-template-columns:1fr}.intro-controls{justify-content:flex-end}.intro-controls span{margin-right:auto;font-size:9px}.intro-progress{max-width:none}.intro-note{bottom:130px;font-size:8px;right:24px}
+ #intro-enter{left:50%;top:59%;width:210px;height:210px}#intro-enter span{font-size:9px;top:calc(100% + 2px)}.intro-fallback{top:46%;left:50%;transform:translateX(-50%);width:160px;height:160px}
+}
+@media(max-height:600px) and (min-width:761px){.intro-copy{top:25%}.intro-copy h1{font-size:36px}.intro-note{bottom:86px}.intro-stage{min-height:400px}}
+@media(prefers-reduced-motion:reduce){.intro-exit{transition:none}}
+
+@media(max-width:360px){.intro-brand{max-width:138px}.intro-brand small{font-size:5.5px;line-height:1.5}.intro-skip{white-space:nowrap;font-size:9px!important;padding:10px}.intro-top{gap:10px}}
+.intro-controls button:disabled{opacity:.3;cursor:default}
+
+.intro-copy h1{word-break:keep-all;overflow-wrap:normal}
+@media(max-width:360px){.intro-copy h1{font-size:30px}}
+
+/* Tap-only entry: one viewport, no scrolling or scroll controls. */
+html.intro-pending,html.intro-pending body{height:100%;overflow:hidden;overscroll-behavior:none}
+#entry-intro,.intro-stage{height:100svh;min-height:0}
+.intro-stage{position:relative}#intro-canvas{touch-action:manipulation;cursor:pointer}
+#intro-enter{left:auto;top:24px;right:4vw;transform:none;width:60px;height:60px;border:1px solid #bca374;border-radius:50%;background:#11161ce0;opacity:1;pointer-events:auto;display:grid;place-items:center;color:#e3cb96}
+#intro-enter svg{width:34px;height:34px}#intro-enter:disabled{opacity:.35;cursor:wait}
+.intro-skip{position:fixed;bottom:25px;left:4vw;z-index:5;font-size:10px!important;pointer-events:auto}
+.intro-bottom{display:block;left:auto;right:4vw;bottom:40px;font-size:12px;color:#d4bf97}
+.intro-note{bottom:76px}.intro-top{pointer-events:none}.intro-brand{pointer-events:auto}
+@media(max-width:760px){#intro-enter{top:18px;right:22px;width:52px;height:52px}.intro-skip{left:22px;bottom:24px}.intro-bottom{right:22px;bottom:40px;font-size:10px}.intro-note{bottom:80px}.intro-stage{min-height:0}}
+@media(max-height:500px){.intro-copy{top:23%;width:42%}.intro-copy h1{font-size:26px}.intro-copy .intro-description{font-size:11px}.intro-note{bottom:65px}}
+
+/* Object-attached touch hint, with no separate button chrome. */
+#intro-enter{right:auto;left:70%;top:46%;width:68px;height:88px;border:0;border-radius:0;background:transparent;box-shadow:none;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:9px;transform:none;overflow:visible}
+#intro-enter .touch-bubble{position:relative;top:auto;left:auto;transform:none;border:0;border-radius:15px;padding:7px 12px;background:#f4ebd8;color:#26221a;font-size:13px;font-weight:700;letter-spacing:.02em;white-space:nowrap;line-height:1.2}
+#intro-enter .touch-bubble:after{content:"";position:absolute;bottom:-5px;left:28px;border-left:5px solid transparent;border-right:5px solid transparent;border-top:6px solid #f4ebd8}
+#intro-enter svg{width:37px;height:37px;filter:drop-shadow(0 2px 4px #000);color:#fff4db}
+#entry-intro[data-state="transforming"] #intro-enter{visibility:hidden;pointer-events:none}
+.no-webgl #intro-enter{left:calc(50% + 55px);top:46%}
+@media(max-width:760px){#intro-enter{width:68px;height:88px;right:auto}}

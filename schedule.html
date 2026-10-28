@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f3f4f6">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="국내와 태국 상품의 연간 일정 운영안을 살펴보는 MyLodge 캘린더 미리보기입니다 실제 예약을 접수하지 않습니다">
+  <title>연간 일정 운영안 미리보기 · MyLodge</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="schedule.css">
+  <script type="module" src="schedule.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#calendar">일정표로 바로가기</a>
+  <header class="site-header">
+    <a class="brand" href="index.html#page=16" aria-label="마이롯지 소개로 돌아가기"><img src="assets/brand/mylodge-logo.png" width="181" height="63" alt="MyLodge 마이롯지"></a>
+    <a class="back-link" href="index.html#page=16"><span aria-hidden="true">←</span> 소개로 돌아가기</a>
+  </header>
+  <main>
+    <section class="intro" aria-labelledby="page-title">
+      <div><p class="eyebrow">MYLODGE · 연간 캘린더</p><h1 id="page-title">나의 휴식 일정</h1><p class="intro-copy">가족 휴가 · 나만의 여유 · 연간 일정</p></div>
+      <div class="intro-art" aria-hidden="true"><span class="art-orbit"></span><div class="art-calendar"><span class="art-caption">MY TIME</span><span class="art-date">365</span><span class="art-days"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></div><span class="art-spark">✦</span></div>
+    </section>
+    <div class="preview-banner"><span class="status-dot" aria-hidden="true"></span><div><strong>운영안 미리보기 · 실제 예약이 아닙니다</strong><p>선택한 날짜는 이 화면에서만 확인할 수 있으며 전송·저장되지 않습니다</p></div><span class="preview-badge">미리보기</span></div>
+    <section class="planner-controls" aria-label="미리보기 설정">
+      <div class="controls-heading"><h2>어떤 휴식을 계획하시나요?</h2><span>상품과 날짜 선택 방식</span></div>
+      <div class="control-grid">
+        <fieldset class="product-switch"><legend>머물 곳</legend><div class="segmented"><label><input type="radio" name="product" value="domestic" checked><span>국내 MyLodge</span></label><label><input type="radio" name="product" value="thailand"><span>태국 프라이빗 별장</span></label></div></fieldset>
+        <label class="year-field">살펴볼 연도<select id="year"><option value="2027" selected>2027년</option><option value="2028">2028년</option></select></label>
+        <fieldset class="mode-switch"><legend>날짜 선택 방식</legend><div class="segmented"><label><input type="radio" name="mode" value="single" checked><span>하루씩 선택</span></label><label><input type="radio" name="mode" value="three"><span>3일씩 선택</span></label></div></fieldset>
+      </div>
+      <label class="hold-switch" id="hold-control"><span><strong>여름 보유 일정 예시 보기</strong><small>운영사가 보유하는 금·토요일 예시를 달력에 표시합니다</small></span><input id="hold-example" type="checkbox" role="switch" checked><i class="switch-track" aria-hidden="true"></i></label>
+    </section>
+    <details class="policy-note"><summary><span class="info-icon" aria-hidden="true">i</span><strong id="policy-title">국내 일정 구성 예시</strong><span class="expand-label">자세히</span></summary><p id="policy-copy">7월 15일~8월 23일의 금·토요일을 운영사 홀드 예시로 표시합니다 실제 성수기 시작·종료일은 미정입니다</p></details>
+    <div class="calendar-heading"><div><p class="eyebrow">나의 다음 휴가</p><h2 id="calendar-title">2027년 연간 일정표</h2><p id="calendar-description">3일씩 묶은 색상은 일정 구분용입니다 상품이나 소유 구좌를 뜻하지 않습니다</p></div><label class="month-jump">원하는 달로 이동<select id="month-jump"><option value="1">1월</option><option value="2">2월</option><option value="3">3월</option><option value="4">4월</option><option value="5">5월</option><option value="6">6월</option><option value="7">7월</option><option value="8">8월</option><option value="9">9월</option><option value="10">10월</option><option value="11">11월</option><option value="12">12월</option></select></label></div>
+    <div class="legend" aria-label="일정 상태 설명"><span><i class="swatch group-swatch" aria-hidden="true"></i>선택 연습 가능</span><span><i class="swatch hold-swatch" aria-hidden="true"></i>운영사 보유 예시</span><span><i class="swatch blocked-swatch" aria-hidden="true">−</i>구간 선택 불가</span><span><i class="swatch selected-swatch" aria-hidden="true">✓</i>내 선택</span></div>
+    <p class="keyboard-hint">방향키로 날짜를 이동하고 Enter 또는 스페이스로 선택할 수 있습니다</p>
+    <div class="selection-feedback" id="selection-feedback" hidden><div class="feedback-copy"><strong>내 선택 <span id="selection-live-count">0일</span></strong><p id="selection-message" class="selection-message" role="status" aria-live="polite" aria-atomic="true">날짜를 선택해 보세요 실제 예약이나 일정 선점은 이루어지지 않습니다</p></div><a class="selection-view" href="#selected-dates">선택 보기</a><button id="hide-feedback" type="button" aria-label="선택 안내 닫기" aria-controls="selection-feedback"><span aria-hidden="true">×</span></button></div>
+    <div id="calendar" class="calendar-grid" tabindex="-1" aria-labelledby="calendar-title" aria-describedby="calendar-description"></div>
+    <section class="selection-panel" id="selected-dates" tabindex="-1" aria-labelledby="selection-title">
+      <div class="selection-heading"><div><p class="eyebrow">마음에 담은 날짜</p><h2 id="selection-title">내 선택 메모 <span id="selection-count">0일</span></h2></div><button id="clear-selection" type="button" disabled>모두 지우기</button></div>
+      <p id="selection-list">날짜를 선택하면 여기에 표시됩니다</p>
+      <dl class="calendar-stats"><div><dt>연간 일수</dt><dd id="year-days">365일</dd></div><div><dt>운영사 홀드 예시</dt><dd id="hold-days">—</dd></div><div><dt>표시된 실제 배정</dt><dd>0건</dd></div></dl>
+      <p class="fine-print">실제 예약 정보는 연결되지 않았습니다 ‘선택 연습 가능’은 예약 가능 여부를 보장하지 않습니다 화면을 새로고침하거나 연도·상품·선택 방식을 바꾸면 선택 메모가 초기화됩니다</p>
+    </section>
+    <section class="operation-guide" aria-labelledby="guide-title">
+      <p class="eyebrow">미리 알아두세요</p><h2 id="guide-title">이용 전 핵심 안내</h2>
+      <div class="guide-grid">
+        <article><span aria-hidden="true">01</span><h3 aria-label="가입과 계약은 별도">가입 ≠ 계약</h3><ul><li>회원가입 후 <strong>별도 계약</strong></li><li>가입만으로 이용 권한 확정 불가</li></ul></article>
+        <article><span aria-hidden="true">02</span><h3>우선 배정 미정</h3><ul><li>가입 순서에 따른 <strong>우선권 미확정</strong></li><li>배정 기준·신청 시점 추후 안내</li></ul></article>
+        <article><span aria-hidden="true">03</span><h3>고객·회사 일정 구분</h3><ul><li><strong>고객 배정</strong>과 <strong>회사 보유</strong> 별도 표시</li><li>회사 보유량·활용 기준 확인 중</li></ul></article>
+      </div>
+      <div class="pending-note">
+        <div class="pending-heading"><strong>확정 후 안내</strong><span>6개 항목</span></div>
+        <ul class="pending-items"><li>이용일 수</li><li>이용 기간</li><li>성수기 날짜</li><li>회사 보유분</li><li>연말 잔여일</li><li>예약 절차</li></ul>
+        <details class="guide-details"><summary>세부 운영 기준 보기</summary><div>
+          <p><strong>진행 순서</strong> 회원가입 → 상품·구좌 신청 → 계약 확인 → 이용 권한 확인 → 일정 배정</p>
+          <p><strong>우선 배정</strong> 초기 가입자의 우선 선택은 검토 중이며, 가입 순번·계약 상태·배정 순서·신청 가능 시점은 최종 정책에 따릅니다</p>
+          <p><strong>회사 보유</strong> 일부 피크데이를 보유하고 관리비 재원으로 활용하는 운영안을 검토 중입니다 보유량과 비용 충당 조건은 확인이 필요합니다</p>
+          <p><strong>미확정 기준</strong> 국내 ‘8일’과 ‘4개월당 1일’의 관계, 약 1년이라는 기간의 의미, 국내·태국 성수기 날짜, 태국 약 27구좌 홀드 기준, 연말 잔여일 처리와 실제 예약 절차는 확정 자료가 필요합니다</p>
+          <p>현재 화면에는 실제 고객 배정이나 가상의 선점 내역이 없습니다 예약 현황은 실제 접수·확정 내역에 따라 안내합니다</p>
+        </div></details>
+      </div>
+    </section>
+  </main>
+  <footer><span>MYLODGE · 연간 일정 운영안</span><span>2026.10.28 운영안 기준 · 실제 예약 접수 전</span></footer>
+  <noscript><div class="noscript-note">일정표 미리보기에는 자바스크립트가 필요합니다 이 화면에서는 실제 예약을 받지 않습니다</div></noscript>
+</body>
+</html>

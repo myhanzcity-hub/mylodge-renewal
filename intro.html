@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko" class="intro-pending">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#090b0e">
+  <meta name="robots" content="noindex,nofollow">
+  <title>MyLodge · 새로운 시작</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <style>*{box-sizing:border-box}html,body{margin:0;padding:0}body{background:#090b0e}button{font:inherit}button:disabled{cursor:default}.intro-skip{color:inherit;text-decoration:none}</style>
+  <link rel="stylesheet" href="entry-3d/intro.css">
+  <script type="module" src="entry-3d/intro.js"></script>
+</head>
+<body>
+  <section id="entry-intro" aria-label="마이롯지 3D 인트로">
+    <div class="intro-stage">
+      <canvas id="intro-canvas" aria-hidden="true"></canvas>
+      <div class="intro-fallback" aria-hidden="true">M</div>
+      <div class="intro-top">
+        <div class="intro-brand">MY LODGE<small>AN EXTRAORDINARY LIFE, TAKING SHAPE</small></div>
+        <a class="intro-skip" id="intro-skip" href="index.html#page=1">인트로 건너뛰기 ↗</a>
+      </div>
+      <div class="intro-copy">
+        <p class="intro-eyebrow" id="intro-eyebrow">01 / THE PLACE</p>
+        <h1 id="intro-title">꿈꾸던 공간
+나의 새로운 시작</h1>
+        <p class="intro-description" id="intro-description">별장을 터치하면,
+그 안의 가치가 새로운 모습으로 펼쳐집니다</p>
+      </div>
+      <div class="intro-step" id="intro-phase">VILLA / POOL / POSSIBILITY</div>
+      <button type="button" id="intro-enter" aria-label="별장을 터치하여 변환 시작">
+        <span class="touch-bubble">Touch!</span>
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 25V11a4 4 0 0 1 8 0v12l2-3a3 3 0 0 1 5 1l1 2a3 3 0 0 1 5 2v9c0 6-4 10-10 10h-3c-4 0-6-2-9-6l-7-9a3 3 0 0 1 4-4l4 4"/><path d="M12 12l-4-2m5 9H7M32 7l3-4M17 4l-2-3"/></svg>
+      </button>
+      <p class="intro-note">3D 공간·가치의 상징을 표현한 콘셉트</p>
+      <div class="intro-bottom"><span id="intro-hint" role="status">별장을 터치하세요</span></div>
+    </div>
+  </section>
+  <noscript><style>#intro-enter{display:none}.intro-fallback{display:flex}</style></noscript>
+</body>
+</html>
