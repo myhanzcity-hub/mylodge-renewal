@@ -284,3 +284,6 @@
 !/villa.css
 !/villa.html
 !/yangyang.html
+
+.vercel
+.env*
