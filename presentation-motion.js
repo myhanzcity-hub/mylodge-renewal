@@ -66,6 +66,8 @@ export function mountPhotoBranding(root=document){
     const card=frame.matches('.expanding-gallery button');
     const compact=Boolean(frame.closest('.gallery-item,.concept-album'));
     const top=card||Boolean(frame.querySelector('[data-hero-play]'));
+    const [ratioWidth,ratioHeight=1]=getComputedStyle(brand).aspectRatio.split('/').map(Number);
+    const ratio=ratioWidth/ratioHeight;
     const update=()=>{
       const boxWidth=image.clientWidth,boxHeight=image.clientHeight;
       const sourceWidth=Number(image.getAttribute('width'))||image.naturalWidth;
@@ -78,7 +80,7 @@ export function mountPhotoBranding(root=document){
       }
       const x=image.offsetLeft+(boxWidth-width)/2,y=image.offsetTop+(boxHeight-height)/2;
       const inset=Math.max(4,Math.min(16,Math.min(width,height)*.045));
-      const logoWidth=card?Math.min(76,width-inset*2,height*.38*181/63):Math.min(compact?64:96,width*(compact ? .28 : .18),height*.2*181/63);
+      const logoWidth=card?Math.min(38*ratio,width-inset*2,height*.38*ratio):Math.min((compact?30:54)*ratio,width*(compact ? .32 : .18),height*.24*ratio);
       brand.style.setProperty('--brand-width',`${Math.max(0,logoWidth)}px`);
       brand.style.setProperty('--brand-right',`${Math.max(0,frame.clientWidth-x-width)+inset}px`);
       brand.style.setProperty('--brand-top',top?`${y+inset}px`:'auto');

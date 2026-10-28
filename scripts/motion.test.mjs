@@ -15,7 +15,7 @@ test('photo marks stay inside contained photos through loading, resize and card 
   let resize;
   const restore=globals({
     ResizeObserver:class{constructor(callback){resize=callback;}observe(){}},
-    getComputedStyle:image=>({objectFit:image.fit})
+    getComputedStyle:element=>({objectFit:element.fit,aspectRatio:"1402 / 1122"})
   });
   try{
     const styles={},events={},image={clientWidth:600,clientHeight:600,offsetLeft:0,offsetTop:0,fit:'contain',source:[1500,1000],getAttribute(key){return this.source[key==='width'?0:1];},addEventListener(name,fn){events[name]=fn;}};
@@ -23,7 +23,7 @@ test('photo marks stay inside contained photos through loading, resize and card 
     const brand={parentElement:frame,style:{setProperty(key,value){styles[key]=value;}}};
     const mount=()=>mountPhotoBranding({querySelectorAll:()=>[brand]});
     const rectangle=()=>{
-      const width=parseFloat(styles['--brand-width']),height=width*63/181,right=parseFloat(styles['--brand-right']);
+      const width=parseFloat(styles['--brand-width']),height=width*1122/1402,right=parseFloat(styles['--brand-right']);
       const top=styles['--brand-top']==='auto'?frame.clientHeight-parseFloat(styles['--brand-bottom'])-height:parseFloat(styles['--brand-top']);
       return {left:frame.clientWidth-right-width,right:frame.clientWidth-right,top,bottom:top+height,width};
     };
