@@ -2,6 +2,13 @@
 
 검은 모션 인트로와 20페이지 소개, 3D 공간 체험, 연간 일정 미리보기로 구성된 정적 웹사이트
 
+## 운영 연결
+
+- 홈페이지: https://mylodge-pied.vercel.app
+- GitHub: https://github.com/myhanzcity-hub/mylodge-renewal
+- Vercel: https://vercel.com/myhanzcity-hub/mylodge-renewal
+- 소유 계정: myhanzcity-hub
+
 ## 실행
 
 Node.js 20 이상에서 `npm ci` 후 `npm start`
