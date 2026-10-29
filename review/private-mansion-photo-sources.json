@@ -1,0 +1,1469 @@
+{
+  "capturedDate": "2026-10-29",
+  "referenceOnly": true,
+  "affiliationConfirmed": false,
+  "sourcePages": [
+    "https://www.botanicaluxuryvilla.com/",
+    "https://www.lagunaphuket.com/",
+    "https://erawana.com/land-for-sale/#about_erawanagrand"
+  ],
+  "images": [
+    {
+      "key": "botanica-hero",
+      "title": "Botanica luxury pool villa",
+      "sourcePage": "https://www.botanicaluxuryvilla.com/",
+      "imageUrl": "https://www.botanicaluxuryvilla.com/wp-content/uploads/2025/03/mainslide-botanicaluxuryvilla-1.webp",
+      "recommendedRoles": [
+        "villa",
+        "architecture",
+        "pool",
+        "hero"
+      ],
+      "sourceName": "BOTANICA Luxury Villas",
+      "image": "assets/private-mansion-reference/botanica-hero.webp",
+      "localImage": "assets/private-mansion-reference/botanica-hero.webp",
+      "width": 1600,
+      "height": 880,
+      "sourceBytes": 400484,
+      "sha256": "5652b31bb8f4e7eb35520d795aa76c9bcec551fa8cbb9ccaf4927690658d0126",
+      "sourceSha256": "5652b31bb8f4e7eb35520d795aa76c9bcec551fa8cbb9ccaf4927690658d0126",
+      "sourceType": "reference",
+      "capturedDate": "2026-10-29",
+      "retrievalUrl": "https://images.weserv.nl/?url=www.botanicaluxuryvilla.com/wp-content/uploads/2025/03/mainslide-botanicaluxuryvilla-1.webp",
+      "variants": [
+        {
+          "src": "assets/responsive/private-mansion-reference/botanica-hero-480.webp",
+          "width": 480,
+          "height": 264,
+          "bytes": 41804
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/botanica-hero-960.webp",
+          "width": 960,
+          "height": 528,
+          "bytes": 173292
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/botanica-hero-1440.webp",
+          "width": 1440,
+          "height": 792,
+          "bytes": 457586
+        }
+      ],
+      "attribution": "Official-site reference photography; not MyLodge inventory or partnership evidence.",
+      "visualDescription": "Forested hillside villa ensemble aerial view"
+    },
+    {
+      "key": "botanica-hero-evening",
+      "title": "Botanica luxury villa second perspective",
+      "sourcePage": "https://www.botanicaluxuryvilla.com/",
+      "imageUrl": "https://www.botanicaluxuryvilla.com/wp-content/uploads/2025/03/mainslide-botanicaluxuryvilla-2.webp",
+      "recommendedRoles": [
+        "villa",
+        "architecture",
+        "pool",
+        "hero"
+      ],
+      "sourceName": "BOTANICA Luxury Villas",
+      "image": "assets/private-mansion-reference/botanica-hero-evening.webp",
+      "localImage": "assets/private-mansion-reference/botanica-hero-evening.webp",
+      "width": 1600,
+      "height": 880,
+      "sourceBytes": 263102,
+      "sha256": "abe6fd38ece9af2ca8816f419aa7d04237fe865b2a2b09c9687585faf127a700",
+      "sourceSha256": "abe6fd38ece9af2ca8816f419aa7d04237fe865b2a2b09c9687585faf127a700",
+      "sourceType": "reference",
+      "capturedDate": "2026-10-29",
+      "retrievalUrl": "https://images.weserv.nl/?url=www.botanicaluxuryvilla.com/wp-content/uploads/2025/03/mainslide-botanicaluxuryvilla-2.webp",
+      "variants": [
+        {
+          "src": "assets/responsive/private-mansion-reference/botanica-hero-evening-480.webp",
+          "width": 480,
+          "height": 264,
+          "bytes": 30164
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/botanica-hero-evening-960.webp",
+          "width": 960,
+          "height": 528,
+          "bytes": 111150
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/botanica-hero-evening-1440.webp",
+          "width": 1440,
+          "height": 792,
+          "bytes": 302528
+        }
+      ],
+      "attribution": "Official-site reference photography; not MyLodge inventory or partnership evidence.",
+      "visualDescription": "Sculptural curved pool-villa exterior in daylight"
+    },
+    {
+      "key": "botanica-grand-avenue-b",
+      "title": "Botanica Grand Avenue Zone B",
+      "sourcePage": "https://www.botanicaluxuryvilla.com/",
+      "imageUrl": "https://www.botanicaluxuryvilla.com/wp-content/uploads/2025/03/photo-botanica-grand-avenue-zone-b.webp",
+      "recommendedRoles": [
+        "villa",
+        "architecture",
+        "pool",
+        "hero"
+      ],
+      "sourceName": "BOTANICA Luxury Villas",
+      "image": "assets/private-mansion-reference/botanica-grand-avenue-b.webp",
+      "localImage": "assets/private-mansion-reference/botanica-grand-avenue-b.webp",
+      "width": 800,
+      "height": 450,
+      "sourceBytes": 62842,
+      "sha256": "dd75f48e2c7042a2e71c830d3dc34b2fe3ca84da38260ed96d04c48d9f759aad",
+      "sourceSha256": "dd75f48e2c7042a2e71c830d3dc34b2fe3ca84da38260ed96d04c48d9f759aad",
+      "sourceType": "reference",
+      "capturedDate": "2026-10-29",
+      "retrievalUrl": "https://images.weserv.nl/?url=www.botanicaluxuryvilla.com/wp-content/uploads/2025/03/photo-botanica-grand-avenue-zone-b.webp",
+      "variants": [
+        {
+          "src": "assets/responsive/private-mansion-reference/botanica-grand-avenue-b-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 28372
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/botanica-grand-avenue-b-800.webp",
+          "width": 800,
+          "height": 450,
+          "bytes": 65296
+        }
+      ],
+      "attribution": "Official-site reference photography; not MyLodge inventory or partnership evidence.",
+      "visualDescription": "Botanica Grand Avenue Zone B"
+    },
+    {
+      "key": "botanica-grand-avenue-a1",
+      "title": "Botanica Grand Avenue Zone A1",
+      "sourcePage": "https://www.botanicaluxuryvilla.com/",
+      "imageUrl": "https://www.botanicaluxuryvilla.com/wp-content/uploads/2025/03/photo-botanica-grand-avenue-zone-a1.webp",
+      "recommendedRoles": [
+        "villa",
+        "architecture",
+        "pool",
+        "hero"
+      ],
+      "sourceName": "BOTANICA Luxury Villas",
+      "image": "assets/private-mansion-reference/botanica-grand-avenue-a1.webp",
+      "localImage": "assets/private-mansion-reference/botanica-grand-avenue-a1.webp",
+      "width": 800,
+      "height": 450,
+      "sourceBytes": 42862,
+      "sha256": "3ce4aa41bf989df8bdebe375d5e92784a1637a713e4855bbcaa47225ed572b7d",
+      "sourceSha256": "3ce4aa41bf989df8bdebe375d5e92784a1637a713e4855bbcaa47225ed572b7d",
+      "sourceType": "reference",
+      "capturedDate": "2026-10-29",
+      "retrievalUrl": "https://images.weserv.nl/?url=www.botanicaluxuryvilla.com/wp-content/uploads/2025/03/photo-botanica-grand-avenue-zone-a1.webp",
+      "variants": [
+        {
+          "src": "assets/responsive/private-mansion-reference/botanica-grand-avenue-a1-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 20910
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/botanica-grand-avenue-a1-800.webp",
+          "width": 800,
+          "height": 450,
+          "bytes": 43774
+        }
+      ],
+      "attribution": "Official-site reference photography; not MyLodge inventory or partnership evidence.",
+      "visualDescription": "Botanica Grand Avenue Zone A1"
+    },
+    {
+      "key": "botanica-autumn",
+      "title": "Botanica Four Seasons Autumn",
+      "sourcePage": "https://www.botanicaluxuryvilla.com/",
+      "imageUrl": "https://www.botanicaluxuryvilla.com/wp-content/uploads/2025/03/photo-botanica-four-seasons-autumn.webp",
+      "recommendedRoles": [
+        "villa",
+        "architecture",
+        "pool",
+        "hero"
+      ],
+      "sourceName": "BOTANICA Luxury Villas",
+      "image": "assets/private-mansion-reference/botanica-autumn.webp",
+      "localImage": "assets/private-mansion-reference/botanica-autumn.webp",
+      "width": 800,
+      "height": 450,
+      "sourceBytes": 92568,
+      "sha256": "bae5c1ad1cb558104a517866ce311fe69ef0228fda4aee2b4255b54fb1133f95",
+      "sourceSha256": "bae5c1ad1cb558104a517866ce311fe69ef0228fda4aee2b4255b54fb1133f95",
+      "sourceType": "reference",
+      "capturedDate": "2026-10-29",
+      "retrievalUrl": "https://images.weserv.nl/?url=www.botanicaluxuryvilla.com/wp-content/uploads/2025/03/photo-botanica-four-seasons-autumn.webp",
+      "variants": [
+        {
+          "src": "assets/responsive/private-mansion-reference/botanica-autumn-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 39232
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/botanica-autumn-800.webp",
+          "width": 800,
+          "height": 450,
+          "bytes": 97508
+        }
+      ],
+      "attribution": "Official-site reference photography; not MyLodge inventory or partnership evidence.",
+      "visualDescription": "Botanica Four Seasons Autumn"
+    },
+    {
+      "key": "botanica-kamala",
+      "title": "Botanica Kamala Ocean Valley",
+      "sourcePage": "https://www.botanicaluxuryvilla.com/",
+      "imageUrl": "https://www.botanicaluxuryvilla.com/wp-content/uploads/2026/05/Kamala-Ocean-Valley_800x450.jpg",
+      "recommendedRoles": [
+        "villa",
+        "architecture",
+        "pool",
+        "hero"
+      ],
+      "sourceName": "BOTANICA Luxury Villas",
+      "image": "assets/private-mansion-reference/botanica-kamala.jpg",
+      "localImage": "assets/private-mansion-reference/botanica-kamala.jpg",
+      "width": 800,
+      "height": 450,
+      "sourceBytes": 65949,
+      "sha256": "101f0cb3c4c9b0b5efd508ada83db21755967d5b1f9821fd626e4422e1efbff7",
+      "sourceSha256": "101f0cb3c4c9b0b5efd508ada83db21755967d5b1f9821fd626e4422e1efbff7",
+      "sourceType": "reference",
+      "capturedDate": "2026-10-29",
+      "retrievalUrl": "https://images.weserv.nl/?url=www.botanicaluxuryvilla.com/wp-content/uploads/2026/05/Kamala-Ocean-Valley_800x450.jpg",
+      "variants": [
+        {
+          "src": "assets/responsive/private-mansion-reference/botanica-kamala-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 22310
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/botanica-kamala-800.webp",
+          "width": 800,
+          "height": 450,
+          "bytes": 50906
+        }
+      ],
+      "attribution": "Official-site reference photography; not MyLodge inventory or partnership evidence.",
+      "visualDescription": "Open living and dining room with sea view"
+    },
+    {
+      "key": "botanica-verdant",
+      "title": "The Verdant by Botanica",
+      "sourcePage": "https://www.botanicaluxuryvilla.com/",
+      "imageUrl": "https://www.botanicaluxuryvilla.com/wp-content/uploads/2026/05/the_verdant_800x450.png",
+      "recommendedRoles": [
+        "villa",
+        "architecture",
+        "pool",
+        "hero"
+      ],
+      "sourceName": "BOTANICA Luxury Villas",
+      "image": "assets/private-mansion-reference/botanica-verdant.png",
+      "localImage": "assets/private-mansion-reference/botanica-verdant.png",
+      "width": 800,
+      "height": 450,
+      "sourceBytes": 734977,
+      "sha256": "5b766ea720b9e9b8288cf8af31cb285b30a79f390aefde2eb0e4b7748098bf02",
+      "sourceSha256": "5b766ea720b9e9b8288cf8af31cb285b30a79f390aefde2eb0e4b7748098bf02",
+      "sourceType": "reference",
+      "capturedDate": "2026-10-29",
+      "retrievalUrl": "https://images.weserv.nl/?url=www.botanicaluxuryvilla.com/wp-content/uploads/2026/05/the_verdant_800x450.png",
+      "variants": [
+        {
+          "src": "assets/responsive/private-mansion-reference/botanica-verdant-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 19734
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/botanica-verdant-800.webp",
+          "width": 800,
+          "height": 450,
+          "bytes": 48336
+        }
+      ],
+      "attribution": "Official-site reference photography; not MyLodge inventory or partnership evidence.",
+      "visualDescription": "The Verdant by Botanica"
+    },
+    {
+      "key": "botanica-rawai-exterior-1",
+      "title": "Grand Sea Through view 1",
+      "sourcePage": "https://www.botanicaluxuryvilla.com/projects/grand-sea-through-luxury-villas/",
+      "imageUrl": "https://www.botanicaluxuryvilla.com/wp-content/uploads/2026/06/Grand-Sea-Through-1.jpg",
+      "recommendedRoles": [
+        "villa",
+        "architecture",
+        "pool"
+      ],
+      "sourceName": "BOTANICA Luxury Villas",
+      "image": "assets/private-mansion-reference/botanica-rawai-exterior-1.jpg",
+      "localImage": "assets/private-mansion-reference/botanica-rawai-exterior-1.jpg",
+      "width": 1600,
+      "height": 880,
+      "sourceBytes": 245049,
+      "sha256": "1d5c738f729ba47b06945d15751c78522f9e476a821f98ad340462ac4bace6d4",
+      "sourceSha256": "1d5c738f729ba47b06945d15751c78522f9e476a821f98ad340462ac4bace6d4",
+      "sourceType": "reference",
+      "capturedDate": "2026-10-29",
+      "retrievalUrl": "https://images.weserv.nl/?url=www.botanicaluxuryvilla.com/wp-content/uploads/2026/06/Grand-Sea-Through-1.jpg",
+      "variants": [
+        {
+          "src": "assets/responsive/private-mansion-reference/botanica-rawai-exterior-1-480.webp",
+          "width": 480,
+          "height": 264,
+          "bytes": 22530
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/botanica-rawai-exterior-1-960.webp",
+          "width": 960,
+          "height": 528,
+          "bytes": 78438
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/botanica-rawai-exterior-1-1440.webp",
+          "width": 1440,
+          "height": 792,
+          "bytes": 226054
+        }
+      ],
+      "attribution": "Official-site reference photography; not MyLodge inventory or partnership evidence.",
+      "visualDescription": "Two-storey contemporary villa exterior"
+    },
+    {
+      "key": "botanica-rawai-exterior-2",
+      "title": "Grand Sea Through view 2",
+      "sourcePage": "https://www.botanicaluxuryvilla.com/projects/grand-sea-through-luxury-villas/",
+      "imageUrl": "https://www.botanicaluxuryvilla.com/wp-content/uploads/2026/06/Grand-Sea-Through-2.jpg",
+      "recommendedRoles": [
+        "villa",
+        "architecture",
+        "pool"
+      ],
+      "sourceName": "BOTANICA Luxury Villas",
+      "image": "assets/private-mansion-reference/botanica-rawai-exterior-2.jpg",
+      "localImage": "assets/private-mansion-reference/botanica-rawai-exterior-2.jpg",
+      "width": 1600,
+      "height": 880,
+      "sourceBytes": 254416,
+      "sha256": "571539672830d2b6515f0e5bc37c0a295d3fdf046c36d139237698c7741ef3d2",
+      "sourceSha256": "571539672830d2b6515f0e5bc37c0a295d3fdf046c36d139237698c7741ef3d2",
+      "sourceType": "reference",
+      "capturedDate": "2026-10-29",
+      "retrievalUrl": "https://images.weserv.nl/?url=www.botanicaluxuryvilla.com/wp-content/uploads/2026/06/Grand-Sea-Through-2.jpg",
+      "variants": [
+        {
+          "src": "assets/responsive/private-mansion-reference/botanica-rawai-exterior-2-480.webp",
+          "width": 480,
+          "height": 264,
+          "bytes": 25958
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/botanica-rawai-exterior-2-960.webp",
+          "width": 960,
+          "height": 528,
+          "bytes": 81716
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/botanica-rawai-exterior-2-1440.webp",
+          "width": 1440,
+          "height": 792,
+          "bytes": 230292
+        }
+      ],
+      "attribution": "Official-site reference photography; not MyLodge inventory or partnership evidence.",
+      "visualDescription": "Dark double-height living and dining room"
+    },
+    {
+      "key": "botanica-rawai-exterior-3",
+      "title": "Grand Sea Through view 3",
+      "sourcePage": "https://www.botanicaluxuryvilla.com/projects/grand-sea-through-luxury-villas/",
+      "imageUrl": "https://www.botanicaluxuryvilla.com/wp-content/uploads/2026/06/Grand-Sea-Through-3.jpg",
+      "recommendedRoles": [
+        "villa",
+        "architecture",
+        "pool"
+      ],
+      "sourceName": "BOTANICA Luxury Villas",
+      "image": "assets/private-mansion-reference/botanica-rawai-exterior-3.jpg",
+      "localImage": "assets/private-mansion-reference/botanica-rawai-exterior-3.jpg",
+      "width": 1600,
+      "height": 880,
+      "sourceBytes": 223657,
+      "sha256": "db90bb792a9b807e0c05894e43d67f394492b1027b453d9b94c439e8e9aa5896",
+      "sourceSha256": "db90bb792a9b807e0c05894e43d67f394492b1027b453d9b94c439e8e9aa5896",
+      "sourceType": "reference",
+      "capturedDate": "2026-10-29",
+      "retrievalUrl": "https://images.weserv.nl/?url=www.botanicaluxuryvilla.com/wp-content/uploads/2026/06/Grand-Sea-Through-3.jpg",
+      "variants": [
+        {
+          "src": "assets/responsive/private-mansion-reference/botanica-rawai-exterior-3-480.webp",
+          "width": 480,
+          "height": 264,
+          "bytes": 23452
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/botanica-rawai-exterior-3-960.webp",
+          "width": 960,
+          "height": 528,
+          "bytes": 76256
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/botanica-rawai-exterior-3-1440.webp",
+          "width": 1440,
+          "height": 792,
+          "bytes": 205886
+        }
+      ],
+      "attribution": "Official-site reference photography; not MyLodge inventory or partnership evidence.",
+      "visualDescription": "Bedroom with balcony and distant green view"
+    },
+    {
+      "key": "botanica-rawai-exterior-4",
+      "title": "Grand Sea Through view 4",
+      "sourcePage": "https://www.botanicaluxuryvilla.com/projects/grand-sea-through-luxury-villas/",
+      "imageUrl": "https://www.botanicaluxuryvilla.com/wp-content/uploads/2026/06/Grand-Sea-Through-4.jpg",
+      "recommendedRoles": [
+        "villa",
+        "architecture",
+        "pool"
+      ],
+      "sourceName": "BOTANICA Luxury Villas",
+      "image": "assets/private-mansion-reference/botanica-rawai-exterior-4.jpg",
+      "localImage": "assets/private-mansion-reference/botanica-rawai-exterior-4.jpg",
+      "width": 1600,
+      "height": 880,
+      "sourceBytes": 255767,
+      "sha256": "6c0785aa34c25cdb956f5ba597a6b18a2f41f1b7be350e271775ec0a16561001",
+      "sourceSha256": "6c0785aa34c25cdb956f5ba597a6b18a2f41f1b7be350e271775ec0a16561001",
+      "sourceType": "reference",
+      "capturedDate": "2026-10-29",
+      "retrievalUrl": "https://images.weserv.nl/?url=www.botanicaluxuryvilla.com/wp-content/uploads/2026/06/Grand-Sea-Through-4.jpg",
+      "variants": [
+        {
+          "src": "assets/responsive/private-mansion-reference/botanica-rawai-exterior-4-480.webp",
+          "width": 480,
+          "height": 264,
+          "bytes": 24804
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/botanica-rawai-exterior-4-960.webp",
+          "width": 960,
+          "height": 528,
+          "bytes": 82988
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/botanica-rawai-exterior-4-1440.webp",
+          "width": 1440,
+          "height": 792,
+          "bytes": 243074
+        }
+      ],
+      "attribution": "Official-site reference photography; not MyLodge inventory or partnership evidence.",
+      "visualDescription": "Bedroom seen diagonally from terrace"
+    },
+    {
+      "key": "botanica-pru-jampa",
+      "title": "Botanica Pru Jampa villa",
+      "sourcePage": "https://www.botanicaluxuryvilla.com/",
+      "imageUrl": "https://www.botanicaluxuryvilla.com/wp-content/uploads/2025/03/photo-botanica-pru-jampa.webp",
+      "recommendedRoles": [
+        "villa",
+        "architecture",
+        "pool"
+      ],
+      "sourceName": "BOTANICA Luxury Villas",
+      "image": "assets/private-mansion-reference/botanica-pru-jampa.webp",
+      "localImage": "assets/private-mansion-reference/botanica-pru-jampa.webp",
+      "width": 800,
+      "height": 450,
+      "sourceBytes": 59460,
+      "sha256": "dfd2cd21749b13bd836d975a40108e4a8b91b6ec48d16b198ca7c67b4aba1a28",
+      "sourceSha256": "dfd2cd21749b13bd836d975a40108e4a8b91b6ec48d16b198ca7c67b4aba1a28",
+      "sourceType": "reference",
+      "capturedDate": "2026-10-29",
+      "retrievalUrl": "https://images.weserv.nl/?url=www.botanicaluxuryvilla.com/wp-content/uploads/2025/03/photo-botanica-pru-jampa.webp",
+      "variants": [
+        {
+          "src": "assets/responsive/private-mansion-reference/botanica-pru-jampa-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 24760
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/botanica-pru-jampa-800.webp",
+          "width": 800,
+          "height": 450,
+          "bytes": 61640
+        }
+      ],
+      "attribution": "Official-site reference photography; not MyLodge inventory or partnership evidence.",
+      "visualDescription": "Botanica Pru Jampa villa"
+    },
+    {
+      "key": "erawana-grand-01",
+      "title": "Erawana Grand villa view 1",
+      "sourcePage": "https://erawana.com/erawana-grand/",
+      "imageUrl": "https://erawana.com/wp-content/uploads/2026/04/Erawan-Grand-01.jpg",
+      "recommendedRoles": [
+        "villa",
+        "interior",
+        "architecture"
+      ],
+      "sourceName": "Erawana",
+      "image": "assets/private-mansion-reference/erawana-grand-01.jpg",
+      "localImage": "assets/private-mansion-reference/erawana-grand-01.jpg",
+      "width": 1400,
+      "height": 900,
+      "sourceBytes": 486437,
+      "sha256": "8a55fa74f8c4626683955b6b6bed84ad6e4aec4f658067cda95d7d155a50f544",
+      "sourceSha256": "8a55fa74f8c4626683955b6b6bed84ad6e4aec4f658067cda95d7d155a50f544",
+      "sourceType": "reference",
+      "capturedDate": "2026-10-29",
+      "retrievalUrl": "https://erawana.com/wp-content/uploads/2026/04/Erawan-Grand-01.jpg",
+      "variants": [
+        {
+          "src": "assets/responsive/private-mansion-reference/erawana-grand-01-480.webp",
+          "width": 480,
+          "height": 309,
+          "bytes": 34742
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/erawana-grand-01-960.webp",
+          "width": 960,
+          "height": 617,
+          "bytes": 103474
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/erawana-grand-01-1400.webp",
+          "width": 1400,
+          "height": 900,
+          "bytes": 257678
+        }
+      ],
+      "attribution": "Official-site reference photography; not MyLodge inventory or partnership evidence.",
+      "visualDescription": "Villa and pool frontal view"
+    },
+    {
+      "key": "erawana-grand-02",
+      "title": "Erawana Grand villa view 2",
+      "sourcePage": "https://erawana.com/erawana-grand/",
+      "imageUrl": "https://erawana.com/wp-content/uploads/2026/04/Erawan-Grand-02.jpg",
+      "recommendedRoles": [
+        "villa",
+        "interior",
+        "architecture"
+      ],
+      "sourceName": "Erawana",
+      "image": "assets/private-mansion-reference/erawana-grand-02.jpg",
+      "localImage": "assets/private-mansion-reference/erawana-grand-02.jpg",
+      "width": 1400,
+      "height": 900,
+      "sourceBytes": 555661,
+      "sha256": "9f1ecd32424249c8677c6d2bf704b41a333e1050b766044d3a935df92a1ce016",
+      "sourceSha256": "9f1ecd32424249c8677c6d2bf704b41a333e1050b766044d3a935df92a1ce016",
+      "sourceType": "reference",
+      "capturedDate": "2026-10-29",
+      "retrievalUrl": "https://erawana.com/wp-content/uploads/2026/04/Erawan-Grand-02.jpg",
+      "variants": [
+        {
+          "src": "assets/responsive/private-mansion-reference/erawana-grand-02-480.webp",
+          "width": 480,
+          "height": 309,
+          "bytes": 37100
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/erawana-grand-02-960.webp",
+          "width": 960,
+          "height": 617,
+          "bytes": 126982
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/erawana-grand-02-1400.webp",
+          "width": 1400,
+          "height": 900,
+          "bytes": 323902
+        }
+      ],
+      "attribution": "Official-site reference photography; not MyLodge inventory or partnership evidence.",
+      "visualDescription": "Overhead pool courtyard"
+    },
+    {
+      "key": "erawana-grand-03",
+      "title": "Erawana Grand villa view 3",
+      "sourcePage": "https://erawana.com/erawana-grand/",
+      "imageUrl": "https://erawana.com/wp-content/uploads/2026/04/Erawan-Grand-03.jpg",
+      "recommendedRoles": [
+        "villa",
+        "interior",
+        "architecture"
+      ],
+      "sourceName": "Erawana",
+      "image": "assets/private-mansion-reference/erawana-grand-03.jpg",
+      "localImage": "assets/private-mansion-reference/erawana-grand-03.jpg",
+      "width": 1400,
+      "height": 900,
+      "sourceBytes": 393659,
+      "sha256": "cba579417598084637168a17a706dadf58cc33d32ab89865cab7c97bf4a73041",
+      "sourceSha256": "cba579417598084637168a17a706dadf58cc33d32ab89865cab7c97bf4a73041",
+      "sourceType": "reference",
+      "capturedDate": "2026-10-29",
+      "retrievalUrl": "https://erawana.com/wp-content/uploads/2026/04/Erawan-Grand-03.jpg",
+      "variants": [
+        {
+          "src": "assets/responsive/private-mansion-reference/erawana-grand-03-480.webp",
+          "width": 480,
+          "height": 309,
+          "bytes": 20872
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/erawana-grand-03-960.webp",
+          "width": 960,
+          "height": 617,
+          "bytes": 77644
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/erawana-grand-03-1400.webp",
+          "width": 1400,
+          "height": 900,
+          "bytes": 231920
+        }
+      ],
+      "attribution": "Official-site reference photography; not MyLodge inventory or partnership evidence.",
+      "visualDescription": "Villa entrance drive and gate"
+    },
+    {
+      "key": "erawana-grand-04",
+      "title": "Erawana Grand villa view 4",
+      "sourcePage": "https://erawana.com/erawana-grand/",
+      "imageUrl": "https://erawana.com/wp-content/uploads/2026/04/Erawan-Grand-04.jpg",
+      "recommendedRoles": [
+        "villa",
+        "interior",
+        "architecture"
+      ],
+      "sourceName": "Erawana",
+      "image": "assets/private-mansion-reference/erawana-grand-04.jpg",
+      "localImage": "assets/private-mansion-reference/erawana-grand-04.jpg",
+      "width": 1400,
+      "height": 900,
+      "sourceBytes": 315583,
+      "sha256": "9e280e8355cb6b2385966c0f02d12a54af77fc43e94fcf5bfae43886b85482e6",
+      "sourceSha256": "9e280e8355cb6b2385966c0f02d12a54af77fc43e94fcf5bfae43886b85482e6",
+      "sourceType": "reference",
+      "capturedDate": "2026-10-29",
+      "retrievalUrl": "https://erawana.com/wp-content/uploads/2026/04/Erawan-Grand-04.jpg",
+      "variants": [
+        {
+          "src": "assets/responsive/private-mansion-reference/erawana-grand-04-480.webp",
+          "width": 480,
+          "height": 309,
+          "bytes": 15600
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/erawana-grand-04-960.webp",
+          "width": 960,
+          "height": 617,
+          "bytes": 47086
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/erawana-grand-04-1400.webp",
+          "width": 1400,
+          "height": 900,
+          "bytes": 131992
+        }
+      ],
+      "attribution": "Official-site reference photography; not MyLodge inventory or partnership evidence.",
+      "visualDescription": "Light indoor corridor and seating nook"
+    },
+    {
+      "key": "erawana-grand-05",
+      "title": "Erawana Grand villa view 5",
+      "sourcePage": "https://erawana.com/erawana-grand/",
+      "imageUrl": "https://erawana.com/wp-content/uploads/2026/04/Erawan-Grand-05.jpg",
+      "recommendedRoles": [
+        "villa",
+        "interior",
+        "architecture"
+      ],
+      "sourceName": "Erawana",
+      "image": "assets/private-mansion-reference/erawana-grand-05.jpg",
+      "localImage": "assets/private-mansion-reference/erawana-grand-05.jpg",
+      "width": 1400,
+      "height": 900,
+      "sourceBytes": 510954,
+      "sha256": "cc210892758504ef0f38e86d476220e4e29848be6db2fbd5f9642bb78f582429",
+      "sourceSha256": "cc210892758504ef0f38e86d476220e4e29848be6db2fbd5f9642bb78f582429",
+      "sourceType": "reference",
+      "capturedDate": "2026-10-29",
+      "retrievalUrl": "https://erawana.com/wp-content/uploads/2026/04/Erawan-Grand-05.jpg",
+      "variants": [
+        {
+          "src": "assets/responsive/private-mansion-reference/erawana-grand-05-480.webp",
+          "width": 480,
+          "height": 309,
+          "bytes": 39618
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/erawana-grand-05-960.webp",
+          "width": 960,
+          "height": 617,
+          "bytes": 117830
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/erawana-grand-05-1400.webp",
+          "width": 1400,
+          "height": 900,
+          "bytes": 283362
+        }
+      ],
+      "attribution": "Official-site reference photography; not MyLodge inventory or partnership evidence.",
+      "visualDescription": "Erawana Grand villa view 5"
+    },
+    {
+      "key": "erawana-grand-06",
+      "title": "Erawana Grand villa view 6",
+      "sourcePage": "https://erawana.com/erawana-grand/",
+      "imageUrl": "https://erawana.com/wp-content/uploads/2026/04/Erawan-Grand-06.jpg",
+      "recommendedRoles": [
+        "villa",
+        "interior",
+        "architecture"
+      ],
+      "sourceName": "Erawana",
+      "image": "assets/private-mansion-reference/erawana-grand-06.jpg",
+      "localImage": "assets/private-mansion-reference/erawana-grand-06.jpg",
+      "width": 1400,
+      "height": 900,
+      "sourceBytes": 565077,
+      "sha256": "60460a659b891215857edd367aefd12bb2585ca20244cc3e1459479dac65fcae",
+      "sourceSha256": "60460a659b891215857edd367aefd12bb2585ca20244cc3e1459479dac65fcae",
+      "sourceType": "reference",
+      "capturedDate": "2026-10-29",
+      "retrievalUrl": "https://erawana.com/wp-content/uploads/2026/04/Erawan-Grand-06.jpg",
+      "variants": [
+        {
+          "src": "assets/responsive/private-mansion-reference/erawana-grand-06-480.webp",
+          "width": 480,
+          "height": 309,
+          "bytes": 38084
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/erawana-grand-06-960.webp",
+          "width": 960,
+          "height": 617,
+          "bytes": 130054
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/erawana-grand-06-1400.webp",
+          "width": 1400,
+          "height": 900,
+          "bytes": 342054
+        }
+      ],
+      "attribution": "Official-site reference photography; not MyLodge inventory or partnership evidence.",
+      "visualDescription": "Erawana Grand villa view 6"
+    },
+    {
+      "key": "erawana-grand-07",
+      "title": "Erawana Grand villa view 7",
+      "sourcePage": "https://erawana.com/erawana-grand/",
+      "imageUrl": "https://erawana.com/wp-content/uploads/2026/04/Erawan-Grand-07.jpg",
+      "recommendedRoles": [
+        "villa",
+        "interior",
+        "architecture"
+      ],
+      "sourceName": "Erawana",
+      "image": "assets/private-mansion-reference/erawana-grand-07.jpg",
+      "localImage": "assets/private-mansion-reference/erawana-grand-07.jpg",
+      "width": 1400,
+      "height": 900,
+      "sourceBytes": 480761,
+      "sha256": "e24e4d63e24e2143d545dd3dd9537eac82ef305fc3099f4d53b29ceab8efd439",
+      "sourceSha256": "e24e4d63e24e2143d545dd3dd9537eac82ef305fc3099f4d53b29ceab8efd439",
+      "sourceType": "reference",
+      "capturedDate": "2026-10-29",
+      "retrievalUrl": "https://erawana.com/wp-content/uploads/2026/04/Erawan-Grand-07.jpg",
+      "variants": [
+        {
+          "src": "assets/responsive/private-mansion-reference/erawana-grand-07-480.webp",
+          "width": 480,
+          "height": 309,
+          "bytes": 35098
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/erawana-grand-07-960.webp",
+          "width": 960,
+          "height": 617,
+          "bytes": 109584
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/erawana-grand-07-1400.webp",
+          "width": 1400,
+          "height": 900,
+          "bytes": 270416
+        }
+      ],
+      "attribution": "Official-site reference photography; not MyLodge inventory or partnership evidence.",
+      "visualDescription": "Erawana Grand villa view 7"
+    },
+    {
+      "key": "erawana-grand-08",
+      "title": "Erawana Grand villa view 8",
+      "sourcePage": "https://erawana.com/erawana-grand/",
+      "imageUrl": "https://erawana.com/wp-content/uploads/2026/04/Erawan-Grand-08.jpg",
+      "recommendedRoles": [
+        "villa",
+        "interior",
+        "architecture"
+      ],
+      "sourceName": "Erawana",
+      "image": "assets/private-mansion-reference/erawana-grand-08.jpg",
+      "localImage": "assets/private-mansion-reference/erawana-grand-08.jpg",
+      "width": 1400,
+      "height": 900,
+      "sourceBytes": 507169,
+      "sha256": "b4e25a2b17cb2d00d79dc329368e77d967414f881d600ae4e1ce79b0585d1345",
+      "sourceSha256": "b4e25a2b17cb2d00d79dc329368e77d967414f881d600ae4e1ce79b0585d1345",
+      "sourceType": "reference",
+      "capturedDate": "2026-10-29",
+      "retrievalUrl": "https://erawana.com/wp-content/uploads/2026/04/Erawan-Grand-08.jpg",
+      "variants": [
+        {
+          "src": "assets/responsive/private-mansion-reference/erawana-grand-08-480.webp",
+          "width": 480,
+          "height": 309,
+          "bytes": 34010
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/erawana-grand-08-960.webp",
+          "width": 960,
+          "height": 617,
+          "bytes": 108714
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/erawana-grand-08-1400.webp",
+          "width": 1400,
+          "height": 900,
+          "bytes": 277312
+        }
+      ],
+      "attribution": "Official-site reference photography; not MyLodge inventory or partnership evidence.",
+      "visualDescription": "Erawana Grand villa view 8"
+    },
+    {
+      "key": "laguna-wedding-01",
+      "title": "Laguna Phuket wedding view 1",
+      "sourcePage": "https://www.lagunaphuket.com/weddings/",
+      "imageUrl": "https://www.lagunaphuket.com/wp-content/uploads/2022/05/Laguna-Wedding-Phuket-1.jpg",
+      "recommendedRoles": [
+        "wedding",
+        "romance",
+        "celebration"
+      ],
+      "sourceName": "Laguna Phuket",
+      "image": "assets/private-mansion-reference/laguna-wedding-01.jpg",
+      "localImage": "assets/private-mansion-reference/laguna-wedding-01.jpg",
+      "width": 1600,
+      "height": 1000,
+      "sourceBytes": 210301,
+      "sha256": "1a3fa66e09bd47ab543fc4768b00c5a6c3d4da21d7f3bb157b139ea52bbca988",
+      "sourceSha256": "1a3fa66e09bd47ab543fc4768b00c5a6c3d4da21d7f3bb157b139ea52bbca988",
+      "sourceType": "reference",
+      "capturedDate": "2026-10-29",
+      "retrievalUrl": "https://www.lagunaphuket.com/wp-content/uploads/2022/05/Laguna-Wedding-Phuket-1.jpg",
+      "variants": [
+        {
+          "src": "assets/responsive/private-mansion-reference/laguna-wedding-01-480.webp",
+          "width": 480,
+          "height": 300,
+          "bytes": 30942
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/laguna-wedding-01-960.webp",
+          "width": 960,
+          "height": 600,
+          "bytes": 108754
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/laguna-wedding-01-1440.webp",
+          "width": 1440,
+          "height": 900,
+          "bytes": 292130
+        }
+      ],
+      "attribution": "Official-site reference photography; not MyLodge inventory or partnership evidence.",
+      "visualDescription": "Laguna Phuket wedding view 1"
+    },
+    {
+      "key": "laguna-wedding-02",
+      "title": "Laguna Phuket wedding view 2",
+      "sourcePage": "https://www.lagunaphuket.com/weddings/",
+      "imageUrl": "https://www.lagunaphuket.com/wp-content/uploads/2022/05/Laguna-Wedding-Phuket-2.jpg",
+      "recommendedRoles": [
+        "wedding",
+        "romance",
+        "celebration"
+      ],
+      "sourceName": "Laguna Phuket",
+      "image": "assets/private-mansion-reference/laguna-wedding-02.jpg",
+      "localImage": "assets/private-mansion-reference/laguna-wedding-02.jpg",
+      "width": 1600,
+      "height": 1000,
+      "sourceBytes": 168122,
+      "sha256": "3432e85faa9c0c3bf6d4d4709ab40ac59f96897f2048204c91fc97299ee6c2b6",
+      "sourceSha256": "3432e85faa9c0c3bf6d4d4709ab40ac59f96897f2048204c91fc97299ee6c2b6",
+      "sourceType": "reference",
+      "capturedDate": "2026-10-29",
+      "retrievalUrl": "https://www.lagunaphuket.com/wp-content/uploads/2022/05/Laguna-Wedding-Phuket-2.jpg",
+      "variants": [
+        {
+          "src": "assets/responsive/private-mansion-reference/laguna-wedding-02-480.webp",
+          "width": 480,
+          "height": 300,
+          "bytes": 30546
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/laguna-wedding-02-960.webp",
+          "width": 960,
+          "height": 600,
+          "bytes": 95636
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/laguna-wedding-02-1440.webp",
+          "width": 1440,
+          "height": 900,
+          "bytes": 232928
+        }
+      ],
+      "attribution": "Official-site reference photography; not MyLodge inventory or partnership evidence.",
+      "visualDescription": "Laguna Phuket wedding view 2"
+    },
+    {
+      "key": "laguna-wedding-03",
+      "title": "Laguna Phuket wedding view 3",
+      "sourcePage": "https://www.lagunaphuket.com/weddings/",
+      "imageUrl": "https://www.lagunaphuket.com/wp-content/uploads/2022/05/Laguna-Wedding-Phuket-3.jpg",
+      "recommendedRoles": [
+        "wedding",
+        "romance",
+        "celebration"
+      ],
+      "sourceName": "Laguna Phuket",
+      "image": "assets/private-mansion-reference/laguna-wedding-03.jpg",
+      "localImage": "assets/private-mansion-reference/laguna-wedding-03.jpg",
+      "width": 1600,
+      "height": 1000,
+      "sourceBytes": 197493,
+      "sha256": "7009efc6fc64e6b5f7a25926df8a410677d618a052d6960f8386d250d53b2dbb",
+      "sourceSha256": "7009efc6fc64e6b5f7a25926df8a410677d618a052d6960f8386d250d53b2dbb",
+      "sourceType": "reference",
+      "capturedDate": "2026-10-29",
+      "retrievalUrl": "https://www.lagunaphuket.com/wp-content/uploads/2022/05/Laguna-Wedding-Phuket-3.jpg",
+      "variants": [
+        {
+          "src": "assets/responsive/private-mansion-reference/laguna-wedding-03-480.webp",
+          "width": 480,
+          "height": 300,
+          "bytes": 26518
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/laguna-wedding-03-960.webp",
+          "width": 960,
+          "height": 600,
+          "bytes": 101544
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/laguna-wedding-03-1440.webp",
+          "width": 1440,
+          "height": 900,
+          "bytes": 280492
+        }
+      ],
+      "attribution": "Official-site reference photography; not MyLodge inventory or partnership evidence.",
+      "visualDescription": "Laguna Phuket wedding view 3"
+    },
+    {
+      "key": "laguna-wedding-beach",
+      "title": "Laguna Phuket destination wedding",
+      "sourcePage": "https://www.lagunaphuket.com/weddings/",
+      "imageUrl": "https://www.lagunaphuket.com/wp-content/uploads/2022/05/Wedding-Phuket.jpg",
+      "recommendedRoles": [
+        "wedding",
+        "romance"
+      ],
+      "sourceName": "Laguna Phuket",
+      "image": "assets/private-mansion-reference/laguna-wedding-beach.jpg",
+      "localImage": "assets/private-mansion-reference/laguna-wedding-beach.jpg",
+      "width": 2200,
+      "height": 900,
+      "sourceBytes": 212805,
+      "sha256": "dd918d641bb041d07f8e616682e1040361dc859cf02d7d9526d0d2d3a22546e1",
+      "sourceSha256": "dd918d641bb041d07f8e616682e1040361dc859cf02d7d9526d0d2d3a22546e1",
+      "sourceType": "reference",
+      "capturedDate": "2026-10-29",
+      "retrievalUrl": "https://www.lagunaphuket.com/wp-content/uploads/2022/05/Wedding-Phuket.jpg",
+      "variants": [
+        {
+          "src": "assets/responsive/private-mansion-reference/laguna-wedding-beach-480.webp",
+          "width": 480,
+          "height": 196,
+          "bytes": 19044
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/laguna-wedding-beach-960.webp",
+          "width": 960,
+          "height": 393,
+          "bytes": 66186
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/laguna-wedding-beach-1440.webp",
+          "width": 1440,
+          "height": 589,
+          "bytes": 181358
+        }
+      ],
+      "attribution": "Official-site reference photography; not MyLodge inventory or partnership evidence.",
+      "visualDescription": "Laguna Phuket destination wedding"
+    },
+    {
+      "key": "laguna-event-angsana",
+      "title": "Angsana event venue at Laguna Phuket",
+      "sourcePage": "https://www.lagunaphuket.com/mice-venues/",
+      "imageUrl": "https://www.lagunaphuket.com/wp-content/uploads/2022/05/Angsana-Event-9.jpg",
+      "recommendedRoles": [
+        "business",
+        "events",
+        "hosting"
+      ],
+      "sourceName": "Laguna Phuket",
+      "image": "assets/private-mansion-reference/laguna-event-angsana.jpg",
+      "localImage": "assets/private-mansion-reference/laguna-event-angsana.jpg",
+      "width": 1600,
+      "height": 1000,
+      "sourceBytes": 290375,
+      "sha256": "0b658f1a41c6989243c0469eb96260c7425171229c1fff00660eeca1722f3180",
+      "sourceSha256": "0b658f1a41c6989243c0469eb96260c7425171229c1fff00660eeca1722f3180",
+      "sourceType": "reference",
+      "capturedDate": "2026-10-29",
+      "retrievalUrl": "https://www.lagunaphuket.com/wp-content/uploads/2022/05/Angsana-Event-9.jpg",
+      "variants": [
+        {
+          "src": "assets/responsive/private-mansion-reference/laguna-event-angsana-480.webp",
+          "width": 480,
+          "height": 300,
+          "bytes": 42134
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/laguna-event-angsana-960.webp",
+          "width": 960,
+          "height": 600,
+          "bytes": 159016
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/laguna-event-angsana-1440.webp",
+          "width": 1440,
+          "height": 900,
+          "bytes": 412926
+        }
+      ],
+      "attribution": "Official-site reference photography; not MyLodge inventory or partnership evidence.",
+      "visualDescription": "Outdoor evening banquet tables, no people"
+    },
+    {
+      "key": "laguna-event-banyan",
+      "title": "Banyan Tree event venue at Laguna Phuket",
+      "sourcePage": "https://www.lagunaphuket.com/mice-venues/",
+      "imageUrl": "https://www.lagunaphuket.com/wp-content/uploads/2022/05/Banyan-Tree-Phuket-Event-11.jpg",
+      "recommendedRoles": [
+        "business",
+        "events",
+        "hosting"
+      ],
+      "sourceName": "Laguna Phuket",
+      "image": "assets/private-mansion-reference/laguna-event-banyan.jpg",
+      "localImage": "assets/private-mansion-reference/laguna-event-banyan.jpg",
+      "width": 1600,
+      "height": 1000,
+      "sourceBytes": 305854,
+      "sha256": "25089935f0993ae0a99c609cb8304496beb895dfb352044b58a0193078e4e4ea",
+      "sourceSha256": "25089935f0993ae0a99c609cb8304496beb895dfb352044b58a0193078e4e4ea",
+      "sourceType": "reference",
+      "capturedDate": "2026-10-29",
+      "retrievalUrl": "https://www.lagunaphuket.com/wp-content/uploads/2022/05/Banyan-Tree-Phuket-Event-11.jpg",
+      "variants": [
+        {
+          "src": "assets/responsive/private-mansion-reference/laguna-event-banyan-480.webp",
+          "width": 480,
+          "height": 300,
+          "bytes": 48080
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/laguna-event-banyan-960.webp",
+          "width": 960,
+          "height": 600,
+          "bytes": 177506
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/laguna-event-banyan-1440.webp",
+          "width": 1440,
+          "height": 900,
+          "bytes": 479024
+        }
+      ],
+      "attribution": "Official-site reference photography; not MyLodge inventory or partnership evidence.",
+      "visualDescription": "Banyan Tree event venue at Laguna Phuket"
+    },
+    {
+      "key": "laguna-gala-dinner",
+      "title": "SAii Laguna Phuket gala dinner",
+      "sourcePage": "https://www.lagunaphuket.com/mice-venues/",
+      "imageUrl": "https://www.lagunaphuket.com/wp-content/uploads/2025/07/07-SAii-Laguna-phuket-Meetings-gala-dinner.jpg",
+      "recommendedRoles": [
+        "friends",
+        "dining",
+        "events"
+      ],
+      "sourceName": "Laguna Phuket",
+      "image": "assets/private-mansion-reference/laguna-gala-dinner.jpg",
+      "localImage": "assets/private-mansion-reference/laguna-gala-dinner.jpg",
+      "width": 1600,
+      "height": 1067,
+      "sourceBytes": 1558719,
+      "sha256": "ecb694ac15c15341613a4c69576bbfcfc015b596867e53311de3beedf27fef0c",
+      "sourceSha256": "ecb694ac15c15341613a4c69576bbfcfc015b596867e53311de3beedf27fef0c",
+      "sourceType": "reference",
+      "capturedDate": "2026-10-29",
+      "retrievalUrl": "https://www.lagunaphuket.com/wp-content/uploads/2025/07/07-SAii-Laguna-phuket-Meetings-gala-dinner.jpg",
+      "variants": [
+        {
+          "src": "assets/responsive/private-mansion-reference/laguna-gala-dinner-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 43222
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/laguna-gala-dinner-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 144896
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/laguna-gala-dinner-1440.webp",
+          "width": 1440,
+          "height": 960,
+          "bytes": 379788
+        }
+      ],
+      "attribution": "Official-site reference photography; not MyLodge inventory or partnership evidence.",
+      "visualDescription": "Indoor event tables and chairs, embedded SAii sign retained"
+    },
+    {
+      "key": "laguna-rava-aerial",
+      "title": "Rava Beach Club aerial view",
+      "sourcePage": "https://www.lagunaphuket.com/",
+      "imageUrl": "https://www.lagunaphuket.com/wp-content/uploads/2026/02/Rava_Aerial_Front_01_Retouch_Row-1.jpg",
+      "recommendedRoles": [
+        "destination",
+        "lifestyle",
+        "coast"
+      ],
+      "sourceName": "Laguna Phuket",
+      "image": "assets/private-mansion-reference/laguna-rava-aerial.jpg",
+      "localImage": "assets/private-mansion-reference/laguna-rava-aerial.jpg",
+      "width": 1276,
+      "height": 955,
+      "sourceBytes": 990807,
+      "sha256": "45c1846070a5615b447601b36c714e4754c6e7970c1febbf4420524280350016",
+      "sourceSha256": "45c1846070a5615b447601b36c714e4754c6e7970c1febbf4420524280350016",
+      "sourceType": "reference",
+      "capturedDate": "2026-10-29",
+      "retrievalUrl": "https://www.lagunaphuket.com/wp-content/uploads/2026/02/Rava_Aerial_Front_01_Retouch_Row-1.jpg",
+      "variants": [
+        {
+          "src": "assets/responsive/private-mansion-reference/laguna-rava-aerial-480.webp",
+          "width": 480,
+          "height": 359,
+          "bytes": 34398
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/laguna-rava-aerial-960.webp",
+          "width": 960,
+          "height": 718,
+          "bytes": 122610
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/laguna-rava-aerial-1276.webp",
+          "width": 1276,
+          "height": 955,
+          "bytes": 258110
+        }
+      ],
+      "attribution": "Official-site reference photography; not MyLodge inventory or partnership evidence.",
+      "visualDescription": "Beach club aerial and seafront view"
+    },
+    {
+      "key": "laguna-destination",
+      "title": "Laguna Phuket hotels and coast",
+      "sourcePage": "https://www.lagunaphuket.com/",
+      "imageUrl": "https://www.lagunaphuket.com/wp-content/uploads/2022/05/banner-hotels-1.jpg",
+      "recommendedRoles": [
+        "destination",
+        "coast"
+      ],
+      "sourceName": "Laguna Phuket",
+      "image": "assets/private-mansion-reference/laguna-destination.jpg",
+      "localImage": "assets/private-mansion-reference/laguna-destination.jpg",
+      "width": 1400,
+      "height": 470,
+      "sourceBytes": 168796,
+      "sha256": "6cb3a6d5ab96abf44ce1b15a772d3bc1cd32f50c408bd06900a88ef2ba587ef7",
+      "sourceSha256": "6cb3a6d5ab96abf44ce1b15a772d3bc1cd32f50c408bd06900a88ef2ba587ef7",
+      "sourceType": "reference",
+      "capturedDate": "2026-10-29",
+      "retrievalUrl": "https://www.lagunaphuket.com/wp-content/uploads/2022/05/banner-hotels-1.jpg",
+      "variants": [
+        {
+          "src": "assets/responsive/private-mansion-reference/laguna-destination-480.webp",
+          "width": 480,
+          "height": 161,
+          "bytes": 16106
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/laguna-destination-960.webp",
+          "width": 960,
+          "height": 322,
+          "bytes": 60200
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/laguna-destination-1400.webp",
+          "width": 1400,
+          "height": 470,
+          "bytes": 159530
+        }
+      ],
+      "attribution": "Official-site reference photography; not MyLodge inventory or partnership evidence.",
+      "visualDescription": "Laguna Phuket hotels and coast"
+    },
+    {
+      "key": "laguna-experience",
+      "title": "Laguna Phuket experience",
+      "sourcePage": "https://www.lagunaphuket.com/",
+      "imageUrl": "https://www.lagunaphuket.com/wp-content/uploads/2022/05/box-experience.jpg",
+      "recommendedRoles": [
+        "lifestyle",
+        "friends",
+        "family"
+      ],
+      "sourceName": "Laguna Phuket",
+      "image": "assets/private-mansion-reference/laguna-experience.jpg",
+      "localImage": "assets/private-mansion-reference/laguna-experience.jpg",
+      "width": 1080,
+      "height": 1080,
+      "sourceBytes": 138782,
+      "sha256": "f32e56c860e7ecaa6bfb9a6ff0ecb108ef263f02a24b5fed880664fe5a53e9eb",
+      "sourceSha256": "f32e56c860e7ecaa6bfb9a6ff0ecb108ef263f02a24b5fed880664fe5a53e9eb",
+      "sourceType": "reference",
+      "capturedDate": "2026-10-29",
+      "retrievalUrl": "https://www.lagunaphuket.com/wp-content/uploads/2022/05/box-experience.jpg",
+      "variants": [
+        {
+          "src": "assets/responsive/private-mansion-reference/laguna-experience-480.webp",
+          "width": 480,
+          "height": 480,
+          "bytes": 39534
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/laguna-experience-960.webp",
+          "width": 960,
+          "height": 960,
+          "bytes": 148080
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/laguna-experience-1080.webp",
+          "width": 1080,
+          "height": 1080,
+          "bytes": 233032
+        }
+      ],
+      "attribution": "Official-site reference photography; not MyLodge inventory or partnership evidence.",
+      "visualDescription": "Golf course and greens, no people"
+    },
+    {
+      "key": "lifestyle-recognition",
+      "title": "호화 별장의 테라스에서 손님들의 환대를 받는 오너를 표현한 AI 연출 이미지",
+      "sourcePage": "https://erawana.com/erawana-grand/",
+      "sourceName": "Erawana",
+      "imageUrl": "https://erawana.com/wp-content/uploads/2026/04/Erawan-Grand-03.jpg",
+      "image": "assets/private-mansion-reference/lifestyle-recognition.png",
+      "localImage": "assets/private-mansion-reference/lifestyle-recognition.png",
+      "width": 1536,
+      "height": 1024,
+      "sourceBytes": 2659476,
+      "sha256": "91f8ccdc138bf05470a9d4e5a066865507b1cdc9c474d1505aec62b98969b785",
+      "sourceSha256": "91f8ccdc138bf05470a9d4e5a066865507b1cdc9c474d1505aec62b98969b785",
+      "sourceType": "ai-staged",
+      "derivedFrom": "erawana-grand-03",
+      "capturedDate": "2026-10-29",
+      "generationTool": "built-in image_gen",
+      "variants": [
+        {
+          "src": "assets/responsive/private-mansion-reference/lifestyle-recognition-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 36772
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/lifestyle-recognition-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 120134
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/lifestyle-recognition-1440.webp",
+          "width": 1440,
+          "height": 960,
+          "bytes": 295160
+        }
+      ],
+      "recommendedRoles": [
+        "recognition"
+      ],
+      "attribution": "AI-staged illustrative scene derived from official-site venue reference; not an actual event, MyLodge inventory, ownership or affiliation evidence."
+    },
+    {
+      "key": "lifestyle-connections",
+      "title": "프라이빗한 야외 다이닝에서 친구들과 교류하는 장면 AI 연출 이미지",
+      "sourcePage": "https://www.lagunaphuket.com/mice-venues/",
+      "sourceName": "Laguna Phuket",
+      "imageUrl": "https://www.lagunaphuket.com/wp-content/uploads/2022/05/Angsana-Event-9.jpg",
+      "image": "assets/private-mansion-reference/lifestyle-connections.png",
+      "localImage": "assets/private-mansion-reference/lifestyle-connections.png",
+      "width": 1536,
+      "height": 1024,
+      "sourceBytes": 2419663,
+      "sha256": "31cff0a0e60288a470017dd2804e685dc297267b0f97b52fef37fae1bad25fa9",
+      "sourceSha256": "31cff0a0e60288a470017dd2804e685dc297267b0f97b52fef37fae1bad25fa9",
+      "sourceType": "ai-staged",
+      "derivedFrom": "laguna-event-angsana",
+      "capturedDate": "2026-10-29",
+      "generationTool": "built-in image_gen",
+      "variants": [
+        {
+          "src": "assets/responsive/private-mansion-reference/lifestyle-connections-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 40218
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/lifestyle-connections-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 107958
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/lifestyle-connections-1440.webp",
+          "width": 1440,
+          "height": 960,
+          "bytes": 253742
+        }
+      ],
+      "recommendedRoles": [
+        "connections"
+      ],
+      "attribution": "AI-staged illustrative scene derived from official-site venue reference; not an actual event, MyLodge inventory, ownership or affiliation evidence."
+    },
+    {
+      "key": "lifestyle-romance",
+      "title": "열대 휴양지에서 연인과 함께 특별한 저녁을 보내는 장면 AI 연출 이미지",
+      "sourcePage": "https://www.lagunaphuket.com/weddings/",
+      "sourceName": "Laguna Phuket",
+      "imageUrl": "https://www.lagunaphuket.com/wp-content/uploads/2022/05/Laguna-Wedding-Phuket-3.jpg",
+      "image": "assets/private-mansion-reference/lifestyle-romance.png",
+      "localImage": "assets/private-mansion-reference/lifestyle-romance.png",
+      "width": 1536,
+      "height": 1024,
+      "sourceBytes": 2137051,
+      "sha256": "98db36ac29c8c8b1194633df744624c68f4347a6b6a8f9354d53e7db4827872f",
+      "sourceSha256": "98db36ac29c8c8b1194633df744624c68f4347a6b6a8f9354d53e7db4827872f",
+      "sourceType": "ai-staged",
+      "derivedFrom": "laguna-wedding-03",
+      "capturedDate": "2026-10-29",
+      "generationTool": "built-in image_gen",
+      "variants": [
+        {
+          "src": "assets/responsive/private-mansion-reference/lifestyle-romance-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 29944
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/lifestyle-romance-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 77300
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/lifestyle-romance-1440.webp",
+          "width": 1440,
+          "height": 960,
+          "bytes": 177650
+        }
+      ],
+      "recommendedRoles": [
+        "romance"
+      ],
+      "attribution": "AI-staged illustrative scene derived from official-site venue reference; not an actual event, MyLodge inventory, ownership or affiliation evidence."
+    },
+    {
+      "key": "lifestyle-celebrations",
+      "title": "열대 정원의 웨딩 공간에서 결혼을 축하하는 신랑과 신부 AI 연출 이미지",
+      "sourcePage": "https://www.lagunaphuket.com/weddings/",
+      "sourceName": "Laguna Phuket",
+      "imageUrl": "https://www.lagunaphuket.com/wp-content/uploads/2022/05/Laguna-Wedding-Phuket-1.jpg",
+      "image": "assets/private-mansion-reference/lifestyle-celebrations.png",
+      "localImage": "assets/private-mansion-reference/lifestyle-celebrations.png",
+      "width": 1536,
+      "height": 1024,
+      "sourceBytes": 2607662,
+      "sha256": "1470114de80890a01675a5cf575344586dd40cd74b2e90580f2f9cba9c0f3174",
+      "sourceSha256": "1470114de80890a01675a5cf575344586dd40cd74b2e90580f2f9cba9c0f3174",
+      "sourceType": "ai-staged",
+      "derivedFrom": "laguna-wedding-01",
+      "capturedDate": "2026-10-29",
+      "generationTool": "built-in image_gen",
+      "variants": [
+        {
+          "src": "assets/responsive/private-mansion-reference/lifestyle-celebrations-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 42664
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/lifestyle-celebrations-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 133106
+        },
+        {
+          "src": "assets/responsive/private-mansion-reference/lifestyle-celebrations-1440.webp",
+          "width": 1440,
+          "height": 960,
+          "bytes": 317482
+        }
+      ],
+      "recommendedRoles": [
+        "celebrations"
+      ],
+      "attribution": "AI-staged illustrative scene derived from official-site venue reference; not an actual event, MyLodge inventory, ownership or affiliation evidence."
+    }
+  ]
+}

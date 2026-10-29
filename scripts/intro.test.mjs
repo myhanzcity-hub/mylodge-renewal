@@ -57,11 +57,11 @@ async function controller({reduced = false, failed = false} = {}) {
   };
 }
 
-test('fresh entry uses the intro while chapter links bypass it without a loop', () => {
+test('fresh visits and chapter links open the product directly while the standalone intro stays optional', () => {
   for (const path of ['/', '/index.html', '/index.html#home']) {
-    assert.deepEqual(entry('https://local.test' + path), ['https://local.test/intro.html']);
+    assert.deepEqual(entry('https://local.test' + path), []);
   }
-  assert.deepEqual(entry('https://local.test/demo/index.html?campaign=preview'), ['https://local.test/demo/intro.html?campaign=preview']);
+  assert.deepEqual(entry('https://local.test/demo/index.html?campaign=preview'), []);
   for (const page of [1, 16, 20]) assert.deepEqual(entry('https://local.test/index.html#page=' + page), []);
 });
 

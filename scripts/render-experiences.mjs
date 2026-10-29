@@ -2,7 +2,7 @@ import {pricePlans,destinations,communities,lifeScenes,spaces,selectionEstimate,
 
 const escape=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const photoBrand='<i class="photo-brand" aria-hidden="true">MyLodge</i>';
-export function renderExperience(slide,assets){
+export function renderExperience(slide,assets,{free=false}={}){
   const assetsByPath=new Map(assets.map(asset=>[asset.src,asset]));
   const imageObject=item=>{
     const src=item.image.startsWith('assets/')?item.image:'assets/reference-originals/'+item.image,asset=assetsByPath.get(src);
@@ -24,7 +24,7 @@ export function renderExperience(slide,assets){
     const tabs=kind==='regions'?`<div class="destination-groups">${[['태국',items.filter(item=>item.product==='thailand')],['국내',items.filter(item=>item.product==='original')]].map(([label,regions])=>`<div class="destination-group"><p>${label}</p><div class="choice-tabs" role="group" aria-label="${label} 관심 지역">${regions.map(item=>choiceButton(item,selected,kind)).join('')}</div></div>`).join('')}</div>`:`<div class="choice-tabs${kind==='communities'||kind==='life'?' expanding-gallery':''}" role="group" aria-label="${kind==='communities'?'관심 커뮤니티':'사진 주제'}">${items.map(item=>choiceButton(item,selected,kind)).join('')}</div>`;
     return `<div data-choices="${kind}">${tabs}${preview(items,selected)}${items.map(item=>`<div class="choice-panel" id="${slide.id}-${item.id}" data-choice-panel="${item.id}" data-choice-image="${imageData(item)}"${item.id!==selected?' hidden':''}><h4>${escape(item.title)}</h4><p>${escape(item.body)}</p>${item.mood?`<dl class="region-summary"><div><dt>이런 휴식에</dt><dd>${escape(item.mood)}</dd></div><div><dt>참여 금액</dt><dd>${item.product==='original'?`기존 기본형 1구좌 ${usd(pricePlans.basic.base)}부터`:'태국 상품별 확정 후 안내'}</dd></div></dl>`:''}</div>`).join('')}</div>`;
   };
-  const destinationOptions=[['국내','original'],['태국','thailand']].map(([label,product])=>`<optgroup label="${label}">${destinations.filter(item=>item.product===product).map(item=>`<option value="${item.id}"${item.id==='jumunjin'?' selected':''}>${escape(item.label)}</option>`).join('')}</optgroup>`).join('');
+  const destinationOptions=(free?[['국내','original']]:[['국내','original'],['태국','thailand']]).map(([label,product])=>`<optgroup label="${label}">${destinations.filter(item=>item.product===product).map(item=>`<option value="${item.id}"${item.id==='jumunjin'?' selected':''}>${escape(item.label)}</option>`).join('')}</optgroup>`).join('');
   switch(slide.id){
     case 'opening':return `<div class="hero-shortcuts" aria-label="관심 내용 바로가기"><a href="#page=3">머물 곳 둘러보기 <span aria-hidden="true">↗</span></a><a href="#page=12">참여 금액 알아보기 <span aria-hidden="true">↗</span></a></div>`;
     case 'destinations':return block('THREE PLACES IN THAILAND','태국의 세 가지 라이프',choices(destinations,'phuket','regions')+'<p class="experience-footnote">세 지역의 사진은 체류 분위기를 담은 AI 콘셉트입니다 실제 제공 시설과 일정은 상품별로 안내합니다</p>');

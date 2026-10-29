@@ -1,0 +1,113 @@
+/* Private Mansion editorial deck; legacy Free experiences share the shell. */
+:root { --deep:#13271f; --navy:#122d25; --cream:#f7f3eb; --accent:#7f663a; --accent-hover:#6d542b; --gold:#d7bf8d; }
+body { grid-template-rows:70px minmax(0,1fr) 72px; }
+.presentation-header { background:#f7f3eb; padding-inline:clamp(18px,4vw,64px); gap:20px; box-shadow:none; }
+.brand-home { display:block; height:66px; flex-shrink:0; }
+.brand-logo { height:66px; }
+.header-subtitle { font-size:10px; letter-spacing:.18em; }
+.product-switch { font-size:11px; color:#4b5b50; text-decoration:none; white-space:nowrap; }
+.signup-link { border-radius:2px; min-height:38px; font-size:11px; padding:0 15px; }
+.page-counter { font-size:11px; }
+.presentation-controls { padding:10px clamp(18px,4vw,64px); background:#10251e; gap:14px; }
+.page-button { min-width:100px; min-height:43px; gap:20px; border-radius:2px; }
+.current-title { color:#c6d1c6; }
+.slide { grid-template-columns:44% 56%; }
+.mansion .slide-copy { padding:clamp(28px,4.2vw,68px); }
+.mansion .slide h2 { font-size:clamp(32px,3.2vw,53px); font-weight:650; line-height:1.32; letter-spacing:-.055em; }
+.mansion .slide-body { font-size:clamp(14px,1.14vw,17px); line-height:1.9; margin-top:24px; }
+.mansion .kicker { letter-spacing:.16em; margin-bottom:18px; font-size:10px; }
+.mansion .value-points { gap:8px; margin-top:22px; }
+.mansion .value-points li { font-size:12px; line-height:1.85; }
+.mansion .slide-note { font-size:11px; margin-top:20px; }
+.slide-cta { display:inline-flex; align-items:center; justify-content:space-between; gap:34px; min-height:50px; max-width:100%; padding:13px 21px; margin-top:22px; color:#fff; background:#81663b; text-decoration:none; font-size:13px; font-weight:700; line-height:1.6; }
+.slide-cta:hover { background:#6c522d; }
+.secondary-cta { display:inline-flex; gap:14px; margin:18px 0 0 20px; color:inherit; font-size:12px; text-underline-offset:5px; line-height:1.8; }
+.mansion .slide:not(.layout-hero).is-reversed { grid-template-columns:56% 44%; }
+.mansion .slide:not(.layout-hero).is-reversed>.slide-copy { grid-column:2; grid-row:1; }
+.mansion .slide:not(.layout-hero).is-reversed>.slide-visual { grid-column:1; grid-row:1; padding-right:0; padding-left:30px; }
+.slide.image-contain .slide-visual { position:sticky; top:0; align-self:start; height:calc(100dvh - 142px); min-height:360px; padding:30px 30px 26px 0; display:flex; flex-direction:column; background:transparent; }
+.slide-visual::after { display:none; }
+.photo-stage { flex:1; min-height:0; width:100%; background:#0b1813; overflow:hidden; }
+.photo-frame { height:100%; width:100%; margin:0; display:flex; flex-direction:column; }
+.photo-frame .visual-main { flex:1; min-height:0; position:relative; height:auto; overflow:hidden; }
+.slide-visual .photo-frame img { width:100%; height:100%; object-fit:contain; object-position:center; background:#0b1813; border-radius:0; }
+.photo-frame .visual-caption { position:static; flex-shrink:0; display:flex; justify-content:space-between; gap:12px; width:100%; padding:11px 12px; margin:0; background:#f0ece3; color:#596356; font-size:10px; line-height:1.65; text-align:left; text-shadow:none; letter-spacing:0; }
+.visual-caption a { color:#344b3d; text-decoration:underline; text-underline-offset:3px; flex-shrink:0; }
+.mansion .photo-frame .visual-caption { color:#52604f; }
+.mansion .photo-frame .visual-caption span { color:#52604f; }
+.mansion .slide.image-contain .visual-main { flex:1; height:auto; min-height:0; }
+.mansion .slide.image-contain .visual-main img { border-radius:0; }
+.photo-controls { display:flex; align-items:center; justify-content:center; gap:16px; min-height:43px; padding-top:9px; font-size:11px; color:inherit; }
+.photo-controls button { min-width:36px; min-height:34px; border:1px solid #8d937b66; border-radius:0; color:inherit; background:transparent; font-size:12px; }
+.photo-controls [data-photo-pause] { padding:0 10px; font-size:10px; }
+.mansion .layout-hero { display:block; }
+.mansion .layout-hero .slide-copy { width:100%; max-width:1200px; margin:0 auto; padding:30px clamp(24px,4.5vw,72px) 25px; text-align:left; }
+.product-title { color:var(--gold); font:500 clamp(16px,1.6vw,24px)/1.5 Georgia,'Malgun Gothic',serif; letter-spacing:.02em; }
+.network-line { margin:4px 0 18px; color:#c0cebd; font-size:10px; letter-spacing:.24em; text-transform:uppercase; }
+.mansion .layout-hero .kicker { display:none; }
+.mansion .layout-hero h1 { font-size:clamp(30px,3.5vw,55px); font-weight:650; line-height:1.3; text-wrap:balance; letter-spacing:-.055em; }
+.mansion .layout-hero .slide-subtitle { margin-top:10px; font-size:clamp(14px,1.3vw,19px); line-height:1.65; }
+.mansion .layout-hero .slide-body { margin-top:12px; max-width:820px; font-size:14px; line-height:1.8; }
+.mansion .layout-hero .hero-terms { display:flex; flex-wrap:wrap; gap:12px 28px; margin-top:14px; padding-top:0; border:0; }
+.mansion .hero-terms>div { display:flex; align-items:baseline; gap:10px; }
+.mansion .hero-terms dt { margin:0; font-size:11px; }
+.mansion .hero-terms dd { font-size:14px; line-height:1.6; }
+.mansion .layout-hero .slide-cta { margin-top:16px; }
+.mansion .layout-hero .value-points { display:flex; flex-wrap:wrap; gap:5px 22px; margin-top:16px; }
+.mansion .layout-hero .slide-note { margin-top:12px; }
+.mansion .layout-hero .slide-visual { height:auto; min-height:0; position:relative; padding:0 clamp(24px,4.5vw,72px) 30px; }
+.mansion .layout-hero .photo-stage { flex:none; aspect-ratio:2/1; }
+.mansion .slide-facts:not(.hero-terms) { gap:16px; }
+.mansion .slide-facts:not(.hero-terms) dd { font-size:19px; }
+.free-film-button { margin-top:22px; min-height:44px; border:1px solid #b1a47d; padding:10px 14px; background:transparent; color:inherit; font-size:12px; }
+.free .slide-visual { padding-left:0; }
+.free .slide-copy { padding:36px clamp(24px,3.6vw,58px); }
+.free h1,.free h2 { font-size:clamp(30px,3vw,47px); }
+.free .concept-album img { aspect-ratio:3/2; height:auto; }
+@media(max-width:900px) {
+  body { grid-template-rows:60px minmax(0,1fr) 66px; }
+  .presentation-header { padding:0 16px; gap:12px; }
+  .brand-home,.brand-logo { height:57px; }
+  .header-subtitle { display:none; }
+  .product-switch { margin-left:auto; font-size:10px; }
+  .page-counter { display:none; }
+  .signup-link { padding:0 11px; font-size:10px; min-height:34px; }
+  .presentation-controls { padding:10px 16px; }
+  .page-button { min-width:78px; min-height:42px; gap:12px; font-size:12px; }
+  .current-title { max-width:42vw; font-size:10px; }
+  .slide,.mansion .slide:not(.layout-hero).is-reversed { display:flex; flex-direction:column; }
+  .mansion .slide-copy,.free .slide-copy { width:100%; align-self:stretch; padding:28px 24px 23px; }
+  .mansion .slide-copy,.free .slide-copy { order:0; }
+  .mansion .slide.image-contain .slide-visual,.free .slide.image-contain .slide-visual { order:1; }
+  .mansion .slide h2 { font-size:32px; }
+  .mansion .slide-body { font-size:14px; line-height:1.9; margin-top:18px; }
+  .mansion .value-points { margin-top:16px; }
+  .mansion .slide:not(.layout-hero).is-reversed>.slide-visual,.slide.image-contain .slide-visual { width:100%; position:relative; top:auto; height:auto; min-height:0; padding:0 18px 24px; flex-shrink:0; }
+  .photo-stage { flex:none; aspect-ratio:4/3; }
+  .photo-frame .visual-caption { padding:9px 10px; display:block; font-size:10px; }
+  .photo-controls button { min-width:44px; min-height:44px; }
+  .visual-caption a { margin-left:8px; white-space:nowrap; }
+  .mansion .layout-hero .slide-copy { padding:24px 24px 22px; }
+  .product-title { font-size:16px; }
+  .network-line { margin-bottom:15px; }
+  .mansion .layout-hero h1 { font-size:31px; line-height:1.36; }
+  .mansion .layout-hero .slide-subtitle { font-size:14px; }
+  .mansion .layout-hero .slide-body { font-size:13px; margin-top:12px; }
+  .mansion .layout-hero .hero-terms { gap:5px; flex-direction:column; margin-top:12px; }
+  .mansion .hero-terms dd { font-size:12px; }
+  .mansion .layout-hero .slide-cta { margin-top:15px; font-size:12px; min-height:46px; }
+  .mansion .layout-hero .value-points { display:none; }
+  .mansion .layout-hero .slide-note { display:none; }
+  .mansion .layout-hero .slide-visual { padding:0 18px 24px; }
+  .mansion .layout-hero .photo-stage { aspect-ratio:4/3; }
+  .secondary-cta { margin-left:14px; font-size:11px; }
+  .mansion .slide-facts:not(.hero-terms) { grid-template-columns:1fr 1fr; }
+  .mansion .slide-facts:not(.hero-terms) dd { font-size:15px; }
+}
+@media(max-width:360px) {
+  .mansion .layout-hero .slide-copy { padding:20px 19px; }
+  .mansion .layout-hero h1 { font-size:27px; }
+  .product-title { font-size:14px; }
+  .secondary-cta { margin-left:0; display:flex; }
+}
+@media(prefers-reduced-motion:reduce) { .slide.is-entering * { animation:none!important; } }
