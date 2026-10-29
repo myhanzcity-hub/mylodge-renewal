@@ -14,6 +14,38 @@
   let current = 0;
   let lastNavigation = 0;
 
+  for (const visual of deck.querySelectorAll?.('.slide-visual.has-gallery') || []) {
+    const track = document.createElement('div');
+    track.className = 'photo-track';
+    track.tabIndex = 0;
+    track.setAttribute('role', 'region');
+    track.setAttribute('aria-label', '사진 모음 · 좌우로 밀어 보세요');
+    visual.prepend(track);
+    track.append(visual.querySelector('.visual-main'), visual.querySelector('.slide-gallery'));
+    const photos = [track.querySelector('.visual-main'), ...track.querySelectorAll('.gallery-item')];
+    const controls = document.createElement('div');
+    controls.className = 'photo-controls';
+    controls.innerHTML = '<button type="button" aria-label="이전 사진">←</button><p>좌우로 밀어보세요 <span aria-live="polite" aria-atomic="true"></span></p><button type="button" aria-label="다음 사진">→</button>';
+    track.after(controls);
+    const [back, forward] = controls.querySelectorAll('button');
+    let photoIndex = 0;
+    const updatePhoto = () => {
+      const left = track.getBoundingClientRect().left;
+      photoIndex = photos.reduce((closest, photo, index) => Math.abs(photo.getBoundingClientRect().left - left) < Math.abs(photos[closest].getBoundingClientRect().left - left) ? index : closest, 0);
+      controls.querySelector('span').textContent = `${photoIndex + 1} / ${photos.length}`;
+      back.disabled = photoIndex === 0;
+      forward.disabled = photoIndex === photos.length - 1;
+    };
+    const movePhoto = direction => {
+      const photo = photos[Math.max(0, Math.min(photos.length - 1, photoIndex + direction))];
+      track.scrollBy({left: photo.getBoundingClientRect().left - track.getBoundingClientRect().left, behavior: reducedMotion.matches ? 'instant' : 'smooth'});
+    };
+    back.addEventListener('click', () => movePhoto(-1));
+    forward.addEventListener('click', () => movePhoto(1));
+    track.addEventListener('scroll', updatePhoto, {passive: true});
+    updatePhoto();
+  }
+
   function hashIndex() {
     const number = Number(location.hash.match(/^#page=(\d+)$/)?.[1] || 1);
     return Math.max(0, Math.min(slides.length - 1, number - 1));
@@ -54,6 +86,7 @@
   addEventListener('hashchange', () => show(hashIndex(), false));
   addEventListener('keydown', event => {
     if (event.altKey || event.ctrlKey || event.metaKey || event.target.closest('input, textarea, select, button, a, summary, [contenteditable="true"]')) return;
+    if (event.target.closest('.photo-track') && !desktop.matches) return;
     if (['ArrowRight', 'PageDown', ' '].includes(event.key)) { event.preventDefault(); show(Math.min(slides.length - 1, current + 1)); }
     if (['ArrowLeft', 'PageUp'].includes(event.key)) { event.preventDefault(); show(current - 1); }
     if (event.key === 'Home') { event.preventDefault(); show(0); }
@@ -63,7 +96,7 @@
   deck.addEventListener('pointerdown', event => {
     if(event.pointerType!=='touch')return;
     touchStart=null;
-    if(!event.isPrimary||event.target.closest('a, button, input, textarea, select, summary, [contenteditable="true"]'))return;
+    if(!event.isPrimary||event.target.closest('a, button, input, textarea, select, summary, [contenteditable="true"]')||(!desktop.matches&&event.target.closest('.photo-track')))return;
     touchStart={id:event.pointerId,x:event.clientX,y:event.clientY,time:performance.now()};
   }, {passive: true});
   deck.addEventListener('pointermove',event=>{

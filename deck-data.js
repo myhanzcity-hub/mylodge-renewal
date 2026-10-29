@@ -15,9 +15,9 @@ window.MYLODGE_SLIDES = [
     ],
     "subtitle": "이 꿈 같은 로망이 즉시 현실이 되다",
     "image": "assets/mylodge-edited/tropical-pool-villa.png",
-    "imageAlt": "따뜻한 저녁빛과 전용 수영장이 어우러진 열대 풀빌라 AI 공간 콘셉트",
+    "imageAlt": "따뜻한 저녁빛과 전용 수영장이 어우러진 열대 풀빌라",
     "imageFit": "contain",
-    "imageCaption": "메인 사진은 AI 콘셉트 · 실제 제공 시설은 상품별 안내",
+    "imageCaption": "",
     "gallery": [
       {
         "image": "assets/reference-originals/57822.png",
@@ -30,7 +30,7 @@ window.MYLODGE_SLIDES = [
         "label": "함께하는 저녁"
       }
     ],
-    "note": "태국 소개 지역은 푸켓·치앙마이·방콕입니다 공급 시설·참여 금액·권리 조건은 확정 후 안내합니다",
+    "note": "태국 소개 지역은 푸켓·치앙마이·방콕입니다",
     "brandBridge": {
       "primary": "MyLodge에서 시작하는 별장 라이프",
       "next": "HanzCity로 이어지는 더 넓은 가능성",
@@ -48,7 +48,7 @@ window.MYLODGE_SLIDES = [
     "image": "assets/reference-originals/57795.png",
     "imageAlt": "유리창과 발코니를 갖춘 복층 모듈러 주택 외관",
     "imageFit": "contain",
-    "imageCaption": "공간 참고 이미지 · 실제 제공 시설은 상품별 안내를 확인해 주세요",
+    "imageCaption": "",
     "points": [
       "독립된 공간을 누리는 프라이빗 별장",
       "도시의 일상을 즐기는 콘도",
@@ -71,26 +71,26 @@ window.MYLODGE_SLIDES = [
     "layout": "split",
     "theme": "dark",
     "image": "assets/mylodge-thailand-concepts/phuket-pool.png",
-    "imageAlt": "열대 정원과 전용 수영장이 어우러진 푸켓 풀빌라 AI 콘셉트",
+    "imageAlt": "열대 정원과 전용 수영장이 어우러진 푸켓 풀빌라",
     "imageFit": "contain",
-    "imageCaption": "푸켓·치앙마이·방콕 체류 분위기 AI 콘셉트 · 실제 제공 시설은 상품별 안내",
+    "imageCaption": "",
     "points": [
       "푸켓 · 해변과 풀빌라",
       "치앙마이 · 자연과 여유",
       "방콕 · 도심과 콘도"
     ],
-    "note": "태국 소개 지역은 푸켓·치앙마이·방콕입니다 실제 공급 시설과 이용 조건은 확정 후 안내합니다",
+    "note": "태국 소개 지역은 푸켓·치앙마이·방콕입니다",
     "subtitle": "휴양 · 자연 · 도시",
     "gallery": [
       {
         "image": "assets/feedback-v2/forest-courtyard.png",
-        "imageAlt": "자연 속 체류 분위기를 표현한 기존 MyLodge 모델의 AI 콘셉트",
-        "label": "치앙마이 · 자연 속 체류 · AI 콘셉트"
+        "imageAlt": "자연 속 체류 분위기를 표현한 기존 MyLodge 모델의",
+        "label": "치앙마이 · 자연 속 체류"
       },
       {
         "image": "assets/mylodge-edited/condo-retreat.png",
-        "imageAlt": "방콕 도심 체류의 실내 분위기를 제안하는 AI 편집 콘셉트",
-        "label": "방콕 · 도심 생활 · AI 콘셉트"
+        "imageAlt": "방콕 도심 체류의 실내 분위기를 제안하는",
+        "label": "방콕 · 도심 생활"
       }
     ]
   },
@@ -104,9 +104,9 @@ window.MYLODGE_SLIDES = [
     "theme": "light",
     "links": [],
     "image": "assets/mylodge-thailand-concepts/phuket-living.png",
-    "imageAlt": "높은 천장과 정원 전망을 갖춘 푸켓 빌라 거실·다이닝 AI 콘셉트",
+    "imageAlt": "높은 천장과 정원 전망을 갖춘 푸켓 빌라 거실·다이닝",
     "imageFit": "contain",
-    "imageCaption": "MyLodge 푸켓 공간 AI 콘셉트 · 실제 제공 시설은 확정 후 안내",
+    "imageCaption": "",
     "points": [
       "가족과 친구가 모이는 넉넉한 공간",
       "우리의 속도로 즐기는 전용 수영장",
@@ -116,13 +116,13 @@ window.MYLODGE_SLIDES = [
     "gallery": [
       {
         "image": "assets/feedback-v2/deck-04-pool-view.png",
-        "imageAlt": "거실에서 정원과 전용 수영장을 바라보는 푸켓 별장 AI 콘셉트",
-        "label": "거실 너머 전용 풀 · AI 콘셉트"
+        "imageAlt": "거실에서 정원과 전용 수영장을 바라보는 푸켓 별장",
+        "label": "거실 너머 전용 풀"
       },
       {
         "image": "assets/mylodge-thailand-concepts/phuket-bedroom.png",
-        "imageAlt": "수영장과 이어지는 푸켓 빌라 침실 AI 콘셉트",
-        "label": "풀사이드 침실 · AI 콘셉트"
+        "imageAlt": "수영장과 이어지는 푸켓 빌라 침실",
+        "label": "풀사이드 침실"
       }
     ],
     "subtitle": "푸켓 · 프라이빗 풀빌라"
@@ -136,9 +136,9 @@ window.MYLODGE_SLIDES = [
     "layout": "split",
     "theme": "dark",
     "image": "assets/mylodge-edited/living-retreat.png",
-    "imageAlt": "기존 실내 구조를 바탕으로 색감과 정원 전망을 다듬은 거실 AI 편집 콘셉트",
+    "imageAlt": "기존 실내 구조를 바탕으로 색감과 정원 전망을 다듬은 거실",
     "imageFit": "contain",
-    "imageCaption": "메인 사진은 AI 콘셉트 · 실제 제공 시설은 상품별 안내",
+    "imageCaption": "",
     "points": [
       "함께 머무는 사람에게 집중하는 시간",
       "독립된 공간에서 누리는 편안함",
@@ -167,9 +167,9 @@ window.MYLODGE_SLIDES = [
     "layout": "split",
     "theme": "light",
     "image": "assets/feedback-v2/deck-06-shared-dinner.png",
-    "imageAlt": "별장 식탁에서 친구들과 저녁 식사를 나누는 생활 장면 AI 콘셉트",
+    "imageAlt": "별장 식탁에서 친구들과 저녁 식사를 나누는 생활 장면",
     "imageFit": "contain",
-    "imageCaption": "기존 MyLodge 분위기 기반 AI 콘셉트 · 실제 제공 시설은 상품별 안내",
+    "imageCaption": "",
     "points": [
       "가족이 함께 쌓는 새로운 추억",
       "친구를 초대하는 특별한 즐거움",
@@ -185,9 +185,9 @@ window.MYLODGE_SLIDES = [
     "layout": "split",
     "theme": "dark",
     "image": "assets/feedback-v2/deck-07-ready-to-rest.png",
-    "imageAlt": "침구와 수건이 정돈된 밝은 별장 침실 AI 콘셉트",
+    "imageAlt": "침구와 수건이 정돈된 밝은 별장 침실",
     "imageFit": "contain",
-    "imageCaption": "기존 MyLodge 분위기 기반 AI 콘셉트 · 실제 제공 시설은 상품별 안내",
+    "imageCaption": "",
     "points": [
       "정돈된 공간에서 시작하는 하루",
       "집안일보다 휴식에 더 많은 시간",
@@ -212,9 +212,9 @@ window.MYLODGE_SLIDES = [
     "theme": "light",
     "links": [],
     "image": "assets/feedback-v2/rose-living.png",
-    "imageAlt": "주방과 식탁, 분홍빛 소파가 연결된 아늑한 체류 공간 AI 콘셉트",
+    "imageAlt": "주방과 식탁, 분홍빛 소파가 연결된 아늑한 체류 공간",
     "imageFit": "contain",
-    "imageCaption": "기존 MyLodge 공간 기반 AI 콘셉트 · 실제 제공 시설은 상품별 안내",
+    "imageCaption": "",
     "points": [
       "혼자 또는 둘이 즐기는 도시 생활",
       "취향대로 발견하는 주변의 즐거움",
@@ -238,9 +238,9 @@ window.MYLODGE_SLIDES = [
     "layout": "split",
     "theme": "dark",
     "image": "assets/feedback-v2/exterior-evening.png",
-    "imageAlt": "저녁 조명과 넓은 유리창, 테라스가 어우러진 독립형 별장 외관 AI 콘셉트",
+    "imageAlt": "저녁 조명과 넓은 유리창, 테라스가 어우러진 독립형 별장 외관",
     "imageFit": "contain",
-    "imageCaption": "기존 MyLodge 공간 기반 AI 콘셉트 · 실제 제공 시설은 상품별 안내",
+    "imageCaption": "",
     "points": [
       "프라이빗 별장 · 우리끼리 보내는 휴양",
       "콘도 · 도시와 연결되는 생활",
@@ -265,7 +265,7 @@ window.MYLODGE_SLIDES = [
     "image": "assets/reference-originals/57798.png",
     "imageAlt": "넓은 테라스와 녹지가 어우러진 복층 별장",
     "imageFit": "contain",
-    "imageCaption": "기존 MyLodge 공간 참고 이미지 · 보조 사진은 AI 콘셉트입니다",
+    "imageCaption": "",
     "gallery": [
       {
         "image": "assets/feedback-v2/kitchen.png",
@@ -310,13 +310,13 @@ window.MYLODGE_SLIDES = [
       },
       {
         "image": "assets/feedback-v2/deck-10-rose-dining.png",
-        "imageAlt": "분홍빛 의자와 주방이 이어지는 별장 다이닝 공간 AI 콘셉트",
-        "label": "다이닝에서 바라본 실내 · AI 콘셉트"
+        "imageAlt": "분홍빛 의자와 주방이 이어지는 별장 다이닝 공간",
+        "label": "다이닝에서 바라본 실내"
       },
       {
         "image": "assets/feedback-v2/deck-10-garden-exterior.png",
-        "imageAlt": "정원 산책로에서 바라본 2층 별장 외관 AI 콘셉트",
-        "label": "정원에서 만나는 별장 · AI 콘셉트"
+        "imageAlt": "정원 산책로에서 바라본 2층 별장 외관",
+        "label": "정원에서 만나는 별장"
       },
       {
         "image": "assets/feedback-v2/coastal-courtyard.png",
@@ -335,11 +335,11 @@ window.MYLODGE_SLIDES = [
       },
       {
         "image": "assets/feedback-v2/deck-10-forest-courtyard.png",
-        "imageAlt": "숲속 별장 사이에 놓인 정원 산책로와 휴식 공간 AI 콘셉트",
-        "label": "숲속 중정과 산책로 · AI 콘셉트"
+        "imageAlt": "숲속 별장 사이에 놓인 정원 산책로와 휴식 공간",
+        "label": "숲속 중정과 산책로"
       }
     ],
-    "imageCollectionNote": "기존 MyLodge 분위기 참고용 AI 콘셉트 사진입니다 신규 태국 프라이빗 별장·콘도의 실물 또는 공급 확정 사진이 아닙니다",
+    "imageCollectionNote": "",
     "points": [
       "혼자 쉬어도, 함께 즐겨도 좋은 공간",
       "가족·취미·웰니스로 이어지는 만남",
@@ -358,7 +358,7 @@ window.MYLODGE_SLIDES = [
     "image": "assets/reference-originals/57808.png",
     "imageAlt": "두 층의 독립된 공간과 야외 테이블을 갖춘 별장",
     "imageFit": "contain",
-    "imageCaption": "공간 참고 이미지 · 실제 제공 시설은 상품별 안내를 확인해 주세요",
+    "imageCaption": "",
     "points": [
       "함께 나누는 별장 참여의 부담",
       "나에게 맞춰 선택하는 참여 규모",
@@ -377,7 +377,7 @@ window.MYLODGE_SLIDES = [
     "image": "assets/reference-originals/57810.png",
     "imageAlt": "테라스가 있는 복층 모듈러 별장 구성",
     "imageFit": "contain",
-    "imageCaption": "공간 참고 이미지 · 실제 제공 시설은 상품별 안내를 확인해 주세요",
+    "imageCaption": "",
     "points": [
       "상품과 옵션에 맞춘 참여 계획",
       "전체 금액과 납입 일정을 한눈에",
@@ -391,18 +391,14 @@ window.MYLODGE_SLIDES = [
       {
         "label": "기존 럭셔리형",
         "value": "USD 4,149"
-      },
-      {
-        "label": "신규 태국 상품",
-        "value": "확정 후 안내"
       }
     ],
-    "note": "기존 MyLodge 기획 기준 금액입니다 신규 태국 별장·콘도 가격은 확정 전이며, 실제 납입은 최종 계약에 따릅니다",
+    "note": "기존 MyLodge 기획 기준 금액입니다",
     "details": [
       {
         "summary": "기존 MyLodge 5차 납입 일정 보기",
         "paragraphs": [
-          "기존 기본형 1구좌의 납입 기획안입니다 신규 태국 별장·콘도의 납입 조건은 별도로 안내하며, 실제 납입은 최종 계약과 공식 청구를 확인해 주세요"
+          "기존 기본형 1구좌의 납입 기획안입니다"
         ],
         "items": [
           "1차 USD 100 · 계약 시 · LC계좌 입금",
@@ -424,9 +420,9 @@ window.MYLODGE_SLIDES = [
     "layout": "split",
     "theme": "dark",
     "image": "assets/mylodge-edited/poolside-terrace.png",
-    "imageAlt": "우드 라운지와 열대 정원이 수영장으로 이어지는 테라스 AI 공간 콘셉트",
+    "imageAlt": "우드 라운지와 열대 정원이 수영장으로 이어지는 테라스",
     "imageFit": "contain",
-    "imageCaption": "메인 사진은 AI 콘셉트 · 실제 제공 시설은 상품별 안내",
+    "imageCaption": "",
     "points": [
       "머무는 동안에는 나만의 휴양 공간",
       "비워 두는 기간에는 임대 활용 검토",
@@ -445,7 +441,7 @@ window.MYLODGE_SLIDES = [
     "image": "assets/reference-originals/57794.jpg",
     "imageAlt": "흰색 복층 별장과 넓은 테라스 외관",
     "imageFit": "contain",
-    "imageCaption": "공간 참고 이미지 · 실제 제공 시설은 상품별 안내를 확인해 주세요",
+    "imageCaption": "",
     "points": [
       "여행을 넘어 생각하는 장기적인 활용",
       "내 생활에 맞춰 세우는 보유 계획",
@@ -468,9 +464,9 @@ window.MYLODGE_SLIDES = [
       }
     ],
     "image": "assets/feedback-v2/deck-15-pool-morning.png",
-    "imageAlt": "아침 햇살 아래 전용 풀과 테라스에서 즐기는 휴식 AI 콘셉트",
+    "imageAlt": "아침 햇살 아래 전용 풀과 테라스에서 즐기는 휴식",
     "imageFit": "contain",
-    "imageCaption": "기존 MyLodge 분위기 기반 AI 콘셉트 · 실제 제공 시설은 상품별 안내",
+    "imageCaption": "",
     "points": [
       "365일 달력으로 한눈에 보는 일정",
       "3일 단위 구간으로 살펴보는 체류 계획",
@@ -502,7 +498,7 @@ window.MYLODGE_SLIDES = [
     "image": "assets/reference-originals/57797.png",
     "imageAlt": "숲을 배경으로 한 복층 별장과 야외 데크",
     "imageFit": "contain",
-    "imageCaption": "공간 참고 이미지 · 실제 제공 시설은 상품별 안내를 확인해 주세요",
+    "imageCaption": "",
     "points": [
       "주말에 떠올리는 가까운 휴양",
       "가족과 함께 준비하는 여름 휴가",
@@ -525,9 +521,9 @@ window.MYLODGE_SLIDES = [
       }
     ],
     "image": "assets/feedback-v2/deck-17-phuket-sea.png",
-    "imageAlt": "푸켓 바다와 야자수를 바라보는 프라이빗 풀빌라 테라스 AI 콘셉트",
+    "imageAlt": "푸켓 바다와 야자수를 바라보는 프라이빗 풀빌라 테라스",
     "imageFit": "contain",
-    "imageCaption": "기존 MyLodge 분위기 기반 AI 콘셉트 · 실제 제공 시설은 상품별 안내",
+    "imageCaption": "",
     "points": [
       "푸켓 · 프라이빗 휴양",
       "치앙마이 · 자연 속 체류",
@@ -537,13 +533,13 @@ window.MYLODGE_SLIDES = [
     "gallery": [
       {
         "image": "assets/feedback-v2/deck-17-chiangmai-green.png",
-        "imageAlt": "치앙마이 숲과 산을 바라보는 별장 테라스 AI 콘셉트",
-        "label": "치앙마이 · 숲을 향한 쉼 · AI 콘셉트"
+        "imageAlt": "치앙마이 숲과 산을 바라보는 별장 테라스",
+        "label": "치앙마이 · 숲을 향한 쉼"
       },
       {
         "image": "assets/feedback-v2/deck-17-bangkok-city.png",
-        "imageAlt": "방콕 도시 전망과 아늑한 거실이 이어지는 콘도 AI 콘셉트",
-        "label": "방콕 · 도시 전망의 체류 · AI 콘셉트"
+        "imageAlt": "방콕 도시 전망과 아늑한 거실이 이어지는 콘도",
+        "label": "방콕 · 도시 전망의 체류"
       }
     ],
     "subtitle": "푸켓 · 치앙마이 · 방콕"
@@ -562,9 +558,9 @@ window.MYLODGE_SLIDES = [
       "조건 확인 후 별도 신청·계약"
     ],
     "image": "assets/feedback-v2/deck-18-arrival-living.png",
-    "imageAlt": "여행 가방을 내려놓고 머무르기 시작하는 콘도 입구와 거실 AI 콘셉트",
+    "imageAlt": "여행 가방을 내려놓고 머무르기 시작하는 콘도 입구와 거실",
     "imageFit": "contain",
-    "imageCaption": "기존 MyLodge 분위기 기반 AI 콘셉트 · 실제 제공 시설은 상품별 안내",
+    "imageCaption": "",
     "note": "회원가입·로그인은 상단 버튼에서 진행됩니다 상품 신청·계약은 별도이며, 가입만으로 구좌나 예약이 확정되지는 않습니다"
   },
   {
@@ -576,9 +572,9 @@ window.MYLODGE_SLIDES = [
     "layout": "split",
     "theme": "dark",
     "image": "assets/feedback-v2/deck-19-interior-walkthrough.png",
-    "imageAlt": "현관에서 거실과 테라스까지 공간이 이어지는 별장 내부 AI 콘셉트",
+    "imageAlt": "현관에서 거실과 테라스까지 공간이 이어지는 별장 내부",
     "imageFit": "contain",
-    "imageCaption": "기존 MyLodge 분위기 기반 AI 콘셉트 · 실제 제공 시설은 상품별 안내",
+    "imageCaption": "",
     "points": [
       "사진으로 만나는 공간의 분위기",
       "3D로 둘러보는 1층과 2층",
@@ -606,9 +602,9 @@ window.MYLODGE_SLIDES = [
     "layout": "split",
     "theme": "light",
     "image": "assets/feedback-v2/deck-20-homecoming-night.png",
-    "imageAlt": "따뜻한 실내 조명과 수영장 불빛이 어우러진 풀빌라 야경 AI 콘셉트",
+    "imageAlt": "따뜻한 실내 조명과 수영장 불빛이 어우러진 풀빌라 야경",
     "imageFit": "contain",
-    "imageCaption": "기존 MyLodge 분위기 기반 AI 콘셉트 · 실제 제공 시설은 상품별 안내",
+    "imageCaption": "",
     "points": [
       "내가 좋아하는 곳에서",
       "내가 좋아하는 사람들과",

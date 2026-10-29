@@ -350,7 +350,7 @@ tl.call(positionBridge,[],4.48);
 tl.to(bridge,{strokeDashoffset:0,duration:.92,ease:'power1.inOut'},4.5);
 const travel={progress:0};
 tl.to(token,{opacity:1,scale:1,duration:.18,ease:'power2.out'},4.5);
-tl.to(travel,{progress:1,duration:.86,ease:'power2.inOut',onUpdate:()=>{const p=bridge.getPointAtLength(travel.progress*bridge.getTotalLength());gsap.set(token,{attr:{cx:p.x,cy:p.y}})}},4.66);
+tl.to(travel,{progress:1,duration:.86,ease:'power2.inOut',onUpdate:()=>{const length=bridge.getTotalLength();if(!length)return;const p=bridge.getPointAtLength(travel.progress*length);gsap.set(token,{attr:{cx:p.x,cy:p.y}})}},4.66);
 tl.to(token,{scale:.3,opacity:0,duration:.2,ease:'power2.in'},5.48);
 
 // Load the existing Anatomy villa at an assembled pose, then stage every physical group off its mount.

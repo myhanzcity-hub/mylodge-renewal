@@ -99,14 +99,14 @@ test('each gallery updates desktop and nearby mobile previews with accessible se
   }
 });
 
-test('Thai locations keep the requested order and use original AI concepts with accurate captions',async()=>{
+test('Thai locations keep the requested order and preserve photos without repetitive disclaimer captions',async()=>{
   const thai=destinations.filter(item=>item.product==='thailand');
   assert.deepEqual(thai.map(item=>item.label),['푸켓','치앙마이','방콕']);
   assert.deepEqual(thai.map(item=>item.id),['phuket','chiangmai','bangkok']);
   assert.ok(thai[0].image.startsWith('assets/mylodge-thailand-concepts/'));
   for(const item of thai){
     assert.ok(!item.image.startsWith('assets/thailand-reference/'));
-    assert.ok(item.caption.includes('AI 콘셉트'));
+    assert.equal(item.caption,'');
   }
   const html=await readFile(new URL('../index.html',import.meta.url),'utf8');
   const group=html.match(/aria-label="태국 관심 지역">([\s\S]*?)<\/div>/)?.[1];

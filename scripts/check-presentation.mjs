@@ -74,11 +74,7 @@ for(let index=0;index<slides.length;index++){
   assert.ok(slide.image,'Every chapter must have a visible photo: '+slide.id);
   if(slide.image){
     assert.equal(slide.imageFit,'contain','Preserve the full existing concept image');
-    const originalReference=slide.image.startsWith('assets/reference-originals/');
-    if(originalReference)assert.ok(/참고/.test(slide.imageCaption)&&/실제 제공 시설|기존 MyLodge/.test(slide.imageCaption),'Distinguish reference imagery from actual inventory');
-    else if(/^assets\/(mylodge-edited|mylodge-thailand-concepts)\//.test(slide.image))assert.ok(/AI/.test(slide.imageCaption)&&/콘셉트/.test(slide.imageCaption)&&/실제 제공 시설/.test(slide.imageCaption),'Distinguish generated concepts from actual supplied facilities');
-    else assert.ok(/AI/.test(slide.imageCaption)&&/콘셉트/.test(slide.imageCaption)&&/기존/.test(slide.imageCaption),'Identify AI images as existing-product concepts');
-    included(section,slide.imageCaption,slide.id+'.image caption');
+    if(slide.imageCaption)included(section,slide.imageCaption,slide.id+'.image caption');
     assert.ok(!slide.gallery||Array.isArray(slide.gallery)&&slide.gallery.length<=2);
     for(const visual of [slide,...(slide.gallery||[]),...(slide.imageCollection||[])]){
       const referenceFile=visual.image.startsWith('assets/reference-originals/');
@@ -88,12 +84,9 @@ for(let index=0;index<slides.length;index++){
         assert.deepEqual(await readFile(path.join(root,visual.image)),await readFile(path.join(root,'참고 이미지 (3D 도면화)',name)),'Preserve original photo bytes');
       }else if(visual.image.startsWith('assets/mylodge-thailand-concepts/')){
         assert.ok(['phuket-pool.png','phuket-living.png','phuket-bedroom.png'].includes(path.basename(visual.image)),'Use the reviewed original MyLodge concepts');
-        assert.ok(/푸켓/.test(visual.imageAlt)&&/AI/.test(visual.imageAlt),'Identify new Phuket imagery as AI concepts');
-        if(visual!==slide)assert.ok(/AI 콘셉트/.test(visual.label),'Supporting photos must also identify concepts');
         assert.ok(['destinations','private-villa','thailand-schedule'].includes(slide.id),'Keep the new pool-villa concepts in the intended chapters');
       }else if(visual.image.startsWith('assets/mylodge-edited/')){
         assert.ok(['tropical-pool-villa.png','living-retreat.png','condo-retreat.png','poolside-terrace.png'].includes(path.basename(visual.image)),'Only reviewed image edits and new concepts');
-        assert.ok(/AI/.test(visual.imageAlt),'Edited imagery must be identifiable as AI concepts');
       }else assert.ok(/^assets\/feedback-v2\/[^/]+\.png$/.test(visual.image),'Use supplied references or existing concepts');
       included(section,visual.imageAlt,slide.id+'.image alt');
       await access(path.join(root,visual.image));
@@ -135,11 +128,10 @@ assert.ok(html.includes('schedule.html'),'The annual schedule preview must be re
 const chapter=id=>JSON.stringify(slides.find(slide=>slide.id===id));
 assert.ok(chapter('opening').includes('나 해외에 호화 별장 가진 사람이야'));
 assert.ok(chapter('opening').includes('이 꿈 같은 로망이 즉시 현실이 되다'));
+assert.ok(!/AI (?:공간 |편집 )?콘셉트|확정 후 안내/.test(html),'Remove repetitive concept and pending-notice copy');
 const price=chapter('pricing');
 assert.ok(price.includes('3,999')&&price.includes('4,149')&&price.includes('기존'),'Keep existing MyLodge prices scoped to the existing product');
-assert.ok(/태국|프라이빗/.test(price)&&/콘도/.test(price)&&/미정|미확정|확인|확정 전/.test(price),'New villa and condo pricing must stay separate and unconfirmed');
 const paymentPlan=slides.find(slide=>slide.id==='pricing').details.find(detail=>detail.summary.includes('5차 납입'));
-assert.ok(paymentPlan&&paymentPlan.paragraphs.some(text=>text.includes('신규 태국 별장·콘도')),'The old payment plan must state its product scope');
 const payments=Array.from(paymentPlan.items).filter(item=>/^\d차 USD /.test(item));
 assert.deepEqual(payments.map(text=>Number(text.match(/^\d차 USD ([\d,]+)/)[1].replaceAll(',',''))),[100,1000,1000,1000,899]);
 assert.ok(payments.slice(0,2).every(text=>text.includes('LC계좌 입금'))&&payments.slice(2).every(text=>text.includes('현금 납입')));

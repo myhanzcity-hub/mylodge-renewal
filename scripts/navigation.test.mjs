@@ -33,6 +33,14 @@ test('horizontal touch moves one page and vertical reading does not',()=>{
   events.pointerdown(touch(200,300));events.pointerup(touch(190,100));assert.deepEqual(app.visible(),[2]);
 });
 const touch=(x,y,extra={})=>({pointerType:'touch',pointerId:1,isPrimary:true,clientX:x,clientY:y,target:{closest:()=>null},...extra});
+test('mobile photo swipes and arrow keys stay within the photo gallery',()=>{
+  const app=controller('',{mobile:true}),events=app.targets['[data-deck]'].events;
+  const target={closest:selector=>selector==='.photo-track'?{}:null};
+  events.pointerdown(touch(250,100,{target}));
+  events.pointerup(touch(100,100,{target}));
+  app.events.keydown({key:'ArrowRight',target,preventDefault(){assert.fail('Gallery arrow key must retain native scrolling');}});
+  assert.deepEqual(app.visible(),[1]);
+});
 test('reading, pinch zoom, interactive controls and cancelled gestures never turn a page',()=>{
   const app=controller('',{mobile:true}),events=app.targets['[data-deck]'].events;
   events.pointerdown(touch(250,200));events.pointermove(touch(245,160));events.pointerup(touch(100,190));

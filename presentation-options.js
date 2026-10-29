@@ -6,9 +6,9 @@ export const pricePlans = Object.freeze({
 export const destinations = [
   {id:'jumunjin',label:'주문진',product:'original',title:'파도 소리로 시작하는 하루',body:'바다를 바라보며 천천히 걷고, 좋아하는 사람과 느긋한 저녁을 보내세요',mood:'바다 · 가족 · 휴식',image:'57794.jpg'},
   {id:'yangyang',label:'양양',product:'original',title:'낮에는 활기차게, 저녁에는 여유롭게',body:'새로운 취미와 만남으로 채우는 하루 활동적인 휴가를 좋아하는 당신에게 어울리는 제안입니다',mood:'활동 · 만남 · 주말',image:'57808.png'},
-  {id:'phuket',label:'푸켓',product:'thailand',title:'푸켓 · 프라이빗 휴양',body:'수영장 옆에서 책을 읽고, 따뜻한 바람을 즐기는 오후 우리만의 속도로 쉬어 가는 풀빌라 라이프를 그려보세요',mood:'해변 · 풀빌라 · 휴양',image:'assets/mylodge-thailand-concepts/phuket-pool.png',imageAlt:'열대 정원과 전용 수영장이 어우러진 푸켓 풀빌라 AI 콘셉트',caption:'MyLodge 푸켓 공간 AI 콘셉트 · 실제 제공 시설은 확정 후 안내'},
-  {id:'chiangmai',label:'치앙마이',product:'thailand',title:'치앙마이 · 자연 속 체류',body:'초록을 바라보며 보내는 느긋한 아침 일과 휴식 사이의 균형을 찾고, 조금 더 오래 머무는 일상을 그려보세요',mood:'자연 · 장기 체류 · 여유',image:'assets/feedback-v2/forest-courtyard.png',imageAlt:'자연 속 체류 분위기를 표현한 기존 MyLodge 모델의 AI 콘셉트',caption:'치앙마이 체류 분위기 · 기존 모델을 활용한 AI 콘셉트 · 실제 제공 시설은 확정 후 안내'},
-  {id:'bangkok',label:'방콕',product:'thailand',title:'방콕 · 편리한 도시 생활',body:'카페와 맛집을 발견하고, 새로운 문화를 만나는 하루 도시를 즐긴 뒤 돌아올 편안한 콘도 생활을 그려보세요',mood:'도심 · 콘도 · 생활',image:'assets/mylodge-edited/condo-retreat.png',imageAlt:'방콕 도심 체류의 실내 분위기를 제안하는 AI 편집 콘셉트',caption:'방콕 실내 분위기 · AI 콘셉트 · 실제 제공 시설은 확정 후 안내'}
+  {id:'phuket',label:'푸켓',product:'thailand',title:'푸켓 · 프라이빗 휴양',body:'수영장 옆에서 책을 읽고, 따뜻한 바람을 즐기는 오후 우리만의 속도로 쉬어 가는 풀빌라 라이프를 그려보세요',mood:'해변 · 풀빌라 · 휴양',image:'assets/mylodge-thailand-concepts/phuket-pool.png',imageAlt:'열대 정원과 전용 수영장이 어우러진 푸켓 풀빌라',caption:''},
+  {id:'chiangmai',label:'치앙마이',product:'thailand',title:'치앙마이 · 자연 속 체류',body:'초록을 바라보며 보내는 느긋한 아침 일과 휴식 사이의 균형을 찾고, 조금 더 오래 머무는 일상을 그려보세요',mood:'자연 · 장기 체류 · 여유',image:'assets/feedback-v2/forest-courtyard.png',imageAlt:'자연 속 체류 분위기를 표현한 기존 MyLodge 모델의',caption:''},
+  {id:'bangkok',label:'방콕',product:'thailand',title:'방콕 · 편리한 도시 생활',body:'카페와 맛집을 발견하고, 새로운 문화를 만나는 하루 도시를 즐긴 뒤 돌아올 편안한 콘도 생활을 그려보세요',mood:'도심 · 콘도 · 생활',image:'assets/mylodge-edited/condo-retreat.png',imageAlt:'방콕 도심 체류의 실내 분위기를 제안하는',caption:''}
 ];
 export const communities = [
   {id:'family',label:'패밀리',title:'함께 자라는 가족의 추억',body:'아이와 보내는 느긋한 아침, 온 가족이 모이는 저녁 세대가 함께 즐길 별장 생활을 그려보세요',image:'57798.png'},

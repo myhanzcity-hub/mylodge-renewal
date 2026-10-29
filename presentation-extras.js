@@ -13,8 +13,8 @@ export function mountExperiences(root=document){
     const community=input('community').selectedOptions[0].text;
     selection.querySelector('[data-selection-label]').textContent=result.priced?`${result.region} · ${community} · ${result.plan} · ${result.shares}구좌`:`${result.region} · ${community}`;
     if(result.priced)animateAmount(selection.querySelector('[data-selection-total]'),result.total);
-    else setAmountText(selection.querySelector('[data-selection-total]'),'상품별 금액 안내 예정');
-    selection.querySelector('[data-selection-first]').textContent=result.priced?`합계에 포함된 1차 납입금 ${usd(result.first)}`:'태국 상품의 가격·구좌·납입 조건은 별도로 안내합니다';
+    else setAmountText(selection.querySelector('[data-selection-total]'),'—');
+    selection.querySelector('[data-selection-first]').textContent=result.priced?`합계에 포함된 1차 납입금 ${usd(result.first)}`:'';
     selection.querySelector('[data-selection-state]').textContent=result.priced?'기존 MyLodge 기획 기준으로 살펴보는 참여 예시':'관심 지역과 취향을 먼저 골라보세요';
     revealSelection(selection.querySelector('.selection-summary'));
   }

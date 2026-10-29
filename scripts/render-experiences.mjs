@@ -7,7 +7,7 @@ export function renderExperience(slide,assets){
   const imageObject=item=>{
     const src=item.image.startsWith('assets/')?item.image:'assets/reference-originals/'+item.image,asset=assetsByPath.get(src);
     if(!asset)throw new Error('Missing gallery asset: '+src);
-    return {src:encodeURI(src),srcset:asset.variants.filter(v=>v.width>0).map(v=>encodeURI(v.src)+' '+v.width+'w').join(', '),width:asset.width,height:asset.height,alt:item.imageAlt||item.title+' · 공간 참고 이미지',caption:item.caption||'공간 참고 이미지 · 실제 제공 시설은 상품별 안내'};
+    return {src:encodeURI(src),srcset:asset.variants.filter(v=>v.width>0).map(v=>encodeURI(v.src)+' '+v.width+'w').join(', '),width:asset.width,height:asset.height,alt:item.imageAlt||item.title+' · 공간 참고 이미지',caption:item.caption||''};
   };
   const imageData=item=>escape(JSON.stringify(imageObject(item)));
   const preview=(items,selected)=>{
@@ -22,12 +22,12 @@ export function renderExperience(slide,assets){
   };
   const choices=(items,selected,kind)=>{
     const tabs=kind==='regions'?`<div class="destination-groups">${[['태국',items.filter(item=>item.product==='thailand')],['국내',items.filter(item=>item.product==='original')]].map(([label,regions])=>`<div class="destination-group"><p>${label}</p><div class="choice-tabs" role="group" aria-label="${label} 관심 지역">${regions.map(item=>choiceButton(item,selected,kind)).join('')}</div></div>`).join('')}</div>`:`<div class="choice-tabs${kind==='communities'||kind==='life'?' expanding-gallery':''}" role="group" aria-label="${kind==='communities'?'관심 커뮤니티':'사진 주제'}">${items.map(item=>choiceButton(item,selected,kind)).join('')}</div>`;
-    return `<div data-choices="${kind}">${tabs}${preview(items,selected)}${items.map(item=>`<div class="choice-panel" id="${slide.id}-${item.id}" data-choice-panel="${item.id}" data-choice-image="${imageData(item)}"${item.id!==selected?' hidden':''}><h4>${escape(item.title)}</h4><p>${escape(item.body)}</p>${item.mood?`<dl class="region-summary"><div><dt>이런 휴식에</dt><dd>${escape(item.mood)}</dd></div><div><dt>참여 금액</dt><dd>${item.product==='original'?`기존 기본형 1구좌 ${usd(pricePlans.basic.base)}부터`:'태국 상품별 확정 후 안내'}</dd></div></dl>`:''}</div>`).join('')}</div>`;
+    return `<div data-choices="${kind}">${tabs}${preview(items,selected)}${items.map(item=>`<div class="choice-panel" id="${slide.id}-${item.id}" data-choice-panel="${item.id}" data-choice-image="${imageData(item)}"${item.id!==selected?' hidden':''}><h4>${escape(item.title)}</h4><p>${escape(item.body)}</p>${item.mood?`<dl class="region-summary"><div><dt>이런 휴식에</dt><dd>${escape(item.mood)}</dd></div>${item.product==='original'?`<div><dt>참여 금액</dt><dd>기존 기본형 1구좌 ${usd(pricePlans.basic.base)}부터</dd></div>`:''}</dl>`:''}</div>`).join('')}</div>`;
   };
   const destinationOptions=[['국내','original'],['태국','thailand']].map(([label,product])=>`<optgroup label="${label}">${destinations.filter(item=>item.product===product).map(item=>`<option value="${item.id}"${item.id==='jumunjin'?' selected':''}>${escape(item.label)}</option>`).join('')}</optgroup>`).join('');
   switch(slide.id){
     case 'opening':return `<div class="hero-shortcuts" aria-label="관심 내용 바로가기"><a href="#page=3">머물 곳 둘러보기 <span aria-hidden="true">↗</span></a><a href="#page=12">참여 금액 알아보기 <span aria-hidden="true">↗</span></a></div>`;
-    case 'destinations':return block('THREE PLACES IN THAILAND','태국의 세 가지 라이프',choices(destinations,'phuket','regions')+'<p class="experience-footnote">세 지역의 사진은 체류 분위기를 담은 AI 콘셉트입니다 실제 제공 시설과 일정은 상품별로 안내합니다</p>');
+    case 'destinations':return block('THREE PLACES IN THAILAND','태국의 세 가지 라이프',choices(destinations,'phuket','regions'));
     case 'lifestyle':return block('MOMENTS TO KEEP','그곳에서 보내게 될 하루',choices(lifeScenes,'evening','life'));
     case 'community':return block('FIND YOUR PEOPLE','나와 닮은 취향을 골라보세요',choices(communities,'family','communities')+'<p class="experience-footnote">관심 취향을 살펴보는 화면입니다 커뮤니티 운영과 배정은 상품별로 안내합니다</p>');
     case 'ownership':return block('A SHARE OF YOUR OWN','별장 라이프에 가까워지는 세 걸음',`${motionFrame('ownership')}<ol class="ownership-path"><li><span>01</span><strong>나의 공간 찾기</strong><p>머물고 싶은 지역과 생활 방식을 고릅니다</p></li><li><span>02</span><strong>참여 규모 정하기</strong><p>구좌와 이용 범위를 나의 계획에 맞춥니다</p></li><li><span>03</span><strong>함께 누리는 별장</strong><p>상품별 권리와 이용 조건을 확인하고 시작합니다</p></li></ol><p class="experience-footnote">구좌별 권리와 이용일은 최종 계약에 따릅니다</p><div class="space-links"><a href="#page=12">참여 금액 살펴보기 →</a></div>`);
