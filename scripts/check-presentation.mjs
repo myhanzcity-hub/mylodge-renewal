@@ -31,7 +31,8 @@ assert.ok(sections[0][2].includes('기존 MyLodge 27평 모델 · 신규 태국 
 assert.ok(!Object.hasOwn(pageAliases,'villa.html'));
 assert.ok(!Object.hasOwn(pageAliases,'schedule.html'));
 assert.ok(!/<form\b|site-menu|desktop-nav/.test(html),'Keep the main presentation linear');
-assert.equal([...html.matchAll(/<dialog\b/g)].length,1,'Only the requested video player uses a dialog');
+assert.equal([...html.matchAll(/<dialog\b/g)].length,2,'Video player and requested table of contents use dialogs');
+assert.equal([...html.matchAll(/data-toc-page="\d+"/g)].length,20,'Every chapter is reachable from the contents');
 assert.ok(html.includes('id="space-film-modal"')&&html.includes('aria-controls="space-film-modal"'));
 
 const escape=value=>String(value??'').replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));

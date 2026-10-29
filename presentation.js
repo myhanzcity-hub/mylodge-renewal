@@ -13,6 +13,35 @@
   const saveData = navigator.connection?.saveData || /(^|-)2g$/.test(navigator.connection?.effectiveType || '');
   let current = 0;
   let lastNavigation = 0;
+  const contents = document.querySelector('[data-contents-dialog]');
+  const contentsButton = document.querySelector('[data-contents-open]');
+  contentsButton?.addEventListener('click', () => {
+    for (const link of contents.querySelectorAll('[data-toc-page]')) {
+      if (Number(link.dataset.tocPage) === current) link.setAttribute('aria-current', 'page');
+      else link.removeAttribute('aria-current');
+    }
+    contents.showModal();
+    contentsButton.setAttribute('aria-expanded', 'true');
+    const activeLink = contents.querySelector('[aria-current="page"]');
+    activeLink?.focus({preventScroll: true});
+    activeLink?.scrollIntoView({block: 'nearest'});
+  });
+  contents?.querySelector('[data-contents-close]').addEventListener('click', () => contents.close());
+  contents?.addEventListener('click', event => {
+    const link = event.target.closest('[data-toc-page]');
+    if (link) {
+      event.preventDefault();
+      contents.close();
+      show(Number(link.dataset.tocPage));
+    } else if (event.target === contents) {
+      const rect = contents.getBoundingClientRect();
+      if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) contents.close();
+    }
+  });
+  contents?.addEventListener('close', () => {
+    contentsButton.setAttribute('aria-expanded', 'false');
+    contentsButton.focus({preventScroll: true});
+  });
 
   for (const visual of deck.querySelectorAll?.('.slide-visual.has-gallery') || []) {
     const track = document.createElement('div');
@@ -85,6 +114,7 @@
   next.addEventListener('click', () => show(current === slides.length - 1 ? 0 : current + 1));
   addEventListener('hashchange', () => show(hashIndex(), false));
   addEventListener('keydown', event => {
+    if (contents?.open) return;
     if (event.altKey || event.ctrlKey || event.metaKey || event.target.closest('input, textarea, select, button, a, summary, [contenteditable="true"]')) return;
     if (event.target.closest('.photo-track') && !desktop.matches) return;
     if (['ArrowRight', 'PageDown', ' '].includes(event.key)) { event.preventDefault(); show(Math.min(slides.length - 1, current + 1)); }
