@@ -84,6 +84,8 @@ for(let index=0;index<slides.length;index++){
         const name=path.basename(visual.image);
         assert.ok(['57794.jpg','57795.png','57796.png','57797.png','57798.png','57800.png','57801.png','57802.png','57803 (1).png','57804.png','57805.png','57808.png','57810.png','57821.png','57822.png'].includes(name),'Only approved folder photos; exclude spiral staircases');
         assert.deepEqual(await readFile(path.join(root,visual.image)),await readFile(path.join(root,'참고 이미지 (3D 도면화)',name)),'Preserve original photo bytes');
+      }else if(visual.image.startsWith('assets/user-media/')){
+        assert.ok(/^assets\/user-media\/image-[0-7]\.png$/.test(visual.image),'Only the eight supplied originals are site media');
       }else if(visual.image.startsWith('assets/mylodge-thailand-concepts/')){
         assert.ok(['phuket-pool.png','phuket-living.png','phuket-bedroom.png'].includes(path.basename(visual.image)),'Use the reviewed original MyLodge concepts');
         assert.ok(!slide.id.startsWith('free'),'Keep the reviewed pool-villa images in Mansion chapters');
@@ -165,6 +167,13 @@ for(const asset of manifestContext.window.MYLODGE_ASSETS){
   const variants=asset.variants.filter(v=>v.width>0);
   assert.ok(variants.length>=2&&variants.some(v=>v.width<=480),'Mobile display sizes exist: '+asset.src);
   const imageTag=[...(html+freeHtml).matchAll(/<img\b[^>]*>/g)].find(([tag])=>tag.includes('src="'+escape(encodeURI(asset.src))+'"'))?.[0];
+  if(!imageTag){
+    const choice=[...(html+freeHtml).matchAll(/data-choice-image="([^"]+)"/g)].map(([,value])=>JSON.parse(value.replaceAll('&quot;','"').replaceAll('&amp;','&'))).find(item=>item.src===encodeURI(asset.src));
+    assert.ok(choice,'Manifest image must be rendered or reachable through a photo choice: '+asset.src);
+    assert.equal(choice.width,asset.width);assert.equal(choice.height,asset.height);
+    for(const variant of variants){await access(path.join(root,variant.src));assert.ok(choice.srcset.includes(encodeURI(variant.src)+' '+variant.width+'w'));}
+    continue;
+  }
   assert.ok(imageTag?.includes('srcset="')&&imageTag.includes('sizes="'),'Browser can choose a smaller image: '+asset.src);
   assert.ok(imageTag.includes(`width="${asset.width}" height="${asset.height}"`),'Image reserves its aspect ratio');
   for(const variant of variants){await access(path.join(root,variant.src));assert.ok(imageTag.includes(escape(encodeURI(variant.src))+' '+variant.width+'w'));}

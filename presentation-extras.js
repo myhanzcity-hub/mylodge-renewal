@@ -1,5 +1,6 @@
 import {pricePlans,destinations,selectionEstimate,usd} from './presentation-options.js';
 import {animateAmount,setAmountText,transitionPhoto,revealSelection,mountMotion,mountPhotoBranding} from './presentation-motion.js';
+import {mountHandGuidance} from './hand-guidance.js';
 
 export function mountExperiences(root=document){
   const selection=root.querySelector('[data-selection]');
@@ -90,4 +91,4 @@ export function mountQuickPlanner(root=document){
   sharesSelect.addEventListener('change',updateQuote);
   updateQuote();
 }
-if(typeof document!=='undefined'){mountExperiences();mountQuickPlanner();mountMotion();mountPhotoBranding();}
+if(typeof document!=='undefined'){mountExperiences();mountQuickPlanner();mountMotion();mountPhotoBranding();mountHandGuidance();}

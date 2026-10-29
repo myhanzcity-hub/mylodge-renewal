@@ -90,6 +90,7 @@
     visual.prepend(track);
     track.append(visual.querySelector('.visual-main'), visual.querySelector('.slide-gallery'));
     const photos = [track.querySelector('.visual-main'), ...track.querySelectorAll('.gallery-item')];
+    track.style.setProperty('--photo-count', photos.length);
     const controls = document.createElement('div');
     controls.className = 'photo-controls';
     controls.innerHTML = '<button type="button" aria-label="이전 사진">←</button><p>좌우로 밀어보세요 <span aria-live="polite" aria-atomic="true"></span></p><button type="button" aria-label="다음 사진">→</button>';
@@ -129,6 +130,7 @@
         slide.scrollTop = 0;
         if (!reducedMotion.matches) slide.classList.add('is-entering');
         slide.querySelector('img')?.setAttribute('loading', 'eager');
+        slide.querySelectorAll?.('.photo-track img').forEach(image => image.setAttribute('loading', 'eager'));
       }
     });
     const active = slides[current];

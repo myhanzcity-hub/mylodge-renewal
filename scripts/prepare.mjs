@@ -11,6 +11,8 @@ const context={window:{}};
 vm.runInNewContext(await readFile(path.join(root,'deck-data.js'),'utf8'),context);
 const slides=context.window.MYLODGE_SLIDES;
 const responsive=JSON.parse(await readFile(path.join(root,'review/responsive-images.json'),'utf8').catch(()=>'{}'));
+const userMedia=JSON.parse(await readFile(path.join(root,'assets/user-media/manifest.json'),'utf8'));
+Object.assign(responsive,userMedia.images);
 const activeImages=new Map();
 const experiencePhotos=[...destinations,...communities,...lifeScenes,...spaces].map(item=>({image:item.image.startsWith('assets/')?item.image:'assets/reference-originals/'+item.image,imageAlt:item.imageAlt||item.title}));
 for(const slide of [...slides,{id:'mylodge-free',gallery:freePhotos},{id:'experiences',gallery:experiencePhotos}]){

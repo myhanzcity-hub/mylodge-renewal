@@ -27,9 +27,28 @@ test('Mansion prices and model choices are separated from the existing Free prod
   assert.ok(free.includes('기존 27평')&&viewer.includes('MYLODGE FREE'));
   assert.ok(html.includes('data-quick-page="models"')&&html.includes('data-quick-view="models"'));
   assert.ok(!/57810(?:-|\.)/.test(html+free),'Exclude the image with the embedded supplier logo');
-  assert.ok(html.includes('private-mansion-film.mp4')&&!html.includes('data-src="assets/video/mylodge-hero.mp4"'));
+  assert.ok(html.includes('mylodge-user-film.mp4')&&!html.includes('data-src="assets/video/mylodge-hero.mp4"'));
   assert.ok(free.includes('src="assets/video/mylodge-hero.mp4"'));
   assert.ok(html.includes('data-quote-legacy')&&html.includes('data-quote-mansion'));
+});
+
+test('all eight supplied photos and the original video are published without changing their bytes',async()=>{
+  const base=new URL('../',import.meta.url);
+  const manifest=JSON.parse(await readFile(new URL('assets/user-media/manifest.json',base),'utf8'));
+  const html=await readFile(new URL('index.html',base),'utf8');
+  assert.equal(Object.keys(manifest.images).length,8);
+  for(let index=0;index<8;index++){
+    const file=`assets/user-media/image-${index}.png`,record=manifest.images[file];
+    assert.ok(record&&html.includes(file),`Image ${index} must be placed in the presentation`);
+    assert.equal(createHash('sha256').update(await readFile(new URL(file,base))).digest('hex'),record.sourceSha256);
+    assert.equal(record.originalName,index===0?'image.png':`image (${index}).png`);
+    assert.deepEqual(record.variants.map(item=>item.width),[480,960,1440]);
+    for(const variant of record.variants)await access(new URL(variant.src,base));
+  }
+  assert.equal(manifest.video.originalName,'download (8).mp4');
+  assert.equal(createHash('sha256').update(await readFile(new URL(manifest.video.src,base))).digest('hex'),manifest.video.sha256);
+  assert.match(html,/<button[^>]*data-hero-play/);
+  assert.ok(html.includes(`data-src="${manifest.video.src}"`),'Keep the new film in the existing player');
 });
 
 test('all regions, plans and share counts keep Thai prices unconfigured',()=>{

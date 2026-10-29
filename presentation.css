@@ -1024,3 +1024,72 @@ a.quick-primary { text-align: center; text-decoration: none; }
   .page-button.next { grid-column: 3; }
 }
 
+/* Equal-size photographic slides; the original image sources stay unchanged. */
+.hand-guidance { position: fixed; z-index: 1000; width: 44px; height: 54px; pointer-events: none; user-select: none; filter: drop-shadow(0 2px 4px #0006); }
+.hand-guidance svg { display: block; animation: guidance-tap .8s ease-in-out 2; transform-origin: 14px 8px; }
+.hand-guidance-target { outline: 2px solid var(--gold); outline-offset: 3px; }
+@keyframes guidance-tap { 0%,100% { transform: translateY(0) rotate(-8deg); } 50% { transform: translateY(4px) rotate(-8deg); } }
+@media(prefers-reduced-motion:reduce) { .hand-guidance svg { animation: none; } }
+@media print { .hand-guidance { display: none !important; } }
+.presentation-deck .slide:has(.photo-track) {
+  display: flex; flex-direction: column; align-items: stretch;
+}
+.presentation-deck .slide:has(.photo-track) > .slide-copy {
+  flex: 0 0 auto; align-self: stretch; width: 100%; max-width: 1100px;
+  margin-inline: auto;
+}
+.presentation-deck .image-contain[data-slide] > .slide-visual.has-gallery {
+  --rail-photo-height: clamp(250px,24vw,360px);
+  position: relative; top: auto; order: -1; flex: 0 0 auto; align-self: stretch;
+  display: block; width: 100%; height: auto; min-height: 0;
+  padding: 24px clamp(24px,4vw,64px) 12px;
+}
+.presentation-deck .photo-track {
+  display: grid; grid-template-columns: repeat(var(--photo-count,3),minmax(0,1fr));
+  align-items: start; gap: 20px; width: 100%; min-width: 0;
+}
+.presentation-deck .photo-track .slide-gallery { display: contents; }
+.presentation-deck .photo-track > .visual-main,
+.presentation-deck .photo-track .gallery-item {
+  grid-column: auto; grid-row: auto; width: 100%; min-width: 0;
+  margin: 0; animation: none;
+}
+.presentation-deck .photo-track > .visual-main {
+  height: var(--rail-photo-height); border-radius: 20px; overflow: hidden;
+}
+.presentation-deck .photo-track .gallery-item {
+  display: grid; grid-template-rows: var(--rail-photo-height) auto;
+  height: auto; gap: 0;
+}
+.presentation-deck .photo-track .gallery-item > .branded-photo {
+  height: var(--rail-photo-height); border-radius: 20px; overflow: hidden;
+}
+.presentation-deck .photo-track img {
+  width: 100%; height: 100%; object-fit: cover; object-position: center;
+}
+.presentation-deck .photo-track .gallery-item figcaption {
+  position: static; min-height: 38px; padding: 10px 4px 0;
+  font-size: 13px; line-height: 1.6; text-align: left;
+}
+.presentation-deck .photo-controls { display: none; }
+@media screen and (max-width:900px), screen and (max-width:1000px) and (pointer:coarse) {
+  .presentation-deck .image-contain[data-slide] > .slide-visual.has-gallery {
+    --rail-photo-height: clamp(230px,34svh,340px);
+    padding: 12px max(20px,env(safe-area-inset-right,0px)) 8px max(20px,env(safe-area-inset-left,0px));
+  }
+  .presentation-deck .photo-track {
+    display: flex; gap: 12px; overflow-x: auto; overflow-y: hidden;
+    scroll-snap-type: x mandatory; overscroll-behavior-x: contain;
+    touch-action: pan-x pan-y pinch-zoom; scrollbar-width: none;
+  }
+  .presentation-deck .photo-track > .visual-main,
+  .presentation-deck .photo-track .gallery-item {
+    flex: 0 0 calc(100% - 28px); width: calc(100% - 28px);
+    scroll-snap-align: start; scroll-snap-stop: always;
+  }
+  .presentation-deck .photo-controls { display: flex; }
+  .presentation-deck .slide:has(.photo-track) > .slide-copy {
+    width: calc(100% - 24px); margin-inline: 12px;
+  }
+}
+

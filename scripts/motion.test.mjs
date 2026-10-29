@@ -89,7 +89,7 @@ let modalFixtureId=0;
 async function modalFixture({rejectPlay=false}={}){
   const observers=[],events={},documentEvents={};
   const target=(dataset={})=>({dataset,attributes:{},events:{},hidden:false,classList:{add(){},remove(){}},addEventListener(name,fn){this.events[name]=fn;},getAttribute(name){return this.attributes[name];},setAttribute(name,value){this.attributes[name]=value;},set src(value){this.attributes.src=value;},focus(){this.focused=true;}});
-  const video=Object.assign(target({src:'assets/video/private-mansion-film.mp4'}),{muted:true,volume:0,paused:true,currentTime:0,error:null,play(){if(rejectPlay)return Promise.reject(new Error('Playback blocked'));this.paused=false;this.events.playing?.();return Promise.resolve();},pause(){this.paused=true;},load(){this.error=null;this.reloaded=true;}});
+  const video=Object.assign(target({src:'assets/video/mylodge-user-film.mp4'}),{muted:true,volume:0,paused:true,currentTime:0,error:null,play(){if(rejectPlay)return Promise.reject(new Error('Playback blocked'));this.paused=false;this.events.playing?.();return Promise.resolve();},pause(){this.paused=true;},load(){this.error=null;this.reloaded=true;}});
   const play=target(),close=target(),status=target(),slide={hidden:false},messages=[];
   play.closest=()=>slide;
   const modal=Object.assign(target(),{open:false,showModal(){this.open=true;},close(){this.open=false;this.events.close?.();}});

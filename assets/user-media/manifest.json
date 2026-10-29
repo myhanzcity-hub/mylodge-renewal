@@ -1,0 +1,226 @@
+{
+  "images": {
+    "assets/user-media/image-0.png": {
+      "originalName": "image.png",
+      "width": 1685,
+      "height": 934,
+      "sourceBytes": 2954091,
+      "sourceSha256": "68f2696d40675de714b2b661487db2b398edf0d27f7e3d4f728b91e832323bb0",
+      "variants": [
+        {
+          "src": "assets/responsive/user-media/image-0-480.webp",
+          "width": 480,
+          "height": 266,
+          "bytes": 55662
+        },
+        {
+          "src": "assets/responsive/user-media/image-0-960.webp",
+          "width": 960,
+          "height": 532,
+          "bytes": 169972
+        },
+        {
+          "src": "assets/responsive/user-media/image-0-1440.webp",
+          "width": 1440,
+          "height": 798,
+          "bytes": 375214
+        }
+      ]
+    },
+    "assets/user-media/image-1.png": {
+      "originalName": "image (1).png",
+      "width": 1683,
+      "height": 934,
+      "sourceBytes": 3323878,
+      "sourceSha256": "fdf621641c1986d626e843da53c389658e1333690af585a344adae70845263c9",
+      "variants": [
+        {
+          "src": "assets/responsive/user-media/image-1-480.webp",
+          "width": 480,
+          "height": 266,
+          "bytes": 63256
+        },
+        {
+          "src": "assets/responsive/user-media/image-1-960.webp",
+          "width": 960,
+          "height": 533,
+          "bytes": 220444
+        },
+        {
+          "src": "assets/responsive/user-media/image-1-1440.webp",
+          "width": 1440,
+          "height": 799,
+          "bytes": 506630
+        }
+      ]
+    },
+    "assets/user-media/image-2.png": {
+      "originalName": "image (2).png",
+      "width": 1684,
+      "height": 934,
+      "sourceBytes": 2920154,
+      "sourceSha256": "a5f8cf6f41b67e629e2712413e5a5185f3d60de4c5a5117de93cb70a7f69171a",
+      "variants": [
+        {
+          "src": "assets/responsive/user-media/image-2-480.webp",
+          "width": 480,
+          "height": 266,
+          "bytes": 53470
+        },
+        {
+          "src": "assets/responsive/user-media/image-2-960.webp",
+          "width": 960,
+          "height": 532,
+          "bytes": 163562
+        },
+        {
+          "src": "assets/responsive/user-media/image-2-1440.webp",
+          "width": 1440,
+          "height": 799,
+          "bytes": 368150
+        }
+      ]
+    },
+    "assets/user-media/image-3.png": {
+      "originalName": "image (3).png",
+      "width": 1701,
+      "height": 925,
+      "sourceBytes": 3363987,
+      "sourceSha256": "c740f65992809bbe11065a4d2c204e5453169dbed90ea2e011e816b6391090a6",
+      "variants": [
+        {
+          "src": "assets/responsive/user-media/image-3-480.webp",
+          "width": 480,
+          "height": 261,
+          "bytes": 63542
+        },
+        {
+          "src": "assets/responsive/user-media/image-3-960.webp",
+          "width": 960,
+          "height": 522,
+          "bytes": 222404
+        },
+        {
+          "src": "assets/responsive/user-media/image-3-1440.webp",
+          "width": 1440,
+          "height": 783,
+          "bytes": 515376
+        }
+      ]
+    },
+    "assets/user-media/image-4.png": {
+      "originalName": "image (4).png",
+      "width": 1708,
+      "height": 921,
+      "sourceBytes": 3097429,
+      "sourceSha256": "85bddf6850011d432e50c8e9ef4ab297578552864046d076129e0ed07163f295",
+      "variants": [
+        {
+          "src": "assets/responsive/user-media/image-4-480.webp",
+          "width": 480,
+          "height": 259,
+          "bytes": 53820
+        },
+        {
+          "src": "assets/responsive/user-media/image-4-960.webp",
+          "width": 960,
+          "height": 518,
+          "bytes": 177328
+        },
+        {
+          "src": "assets/responsive/user-media/image-4-1440.webp",
+          "width": 1440,
+          "height": 776,
+          "bytes": 414224
+        }
+      ]
+    },
+    "assets/user-media/image-5.png": {
+      "originalName": "image (5).png",
+      "width": 1677,
+      "height": 938,
+      "sourceBytes": 3197392,
+      "sourceSha256": "1128fe14257254a06e0748b659dd04f63e36b4a77b31009ae10d7a1f9261e721",
+      "variants": [
+        {
+          "src": "assets/responsive/user-media/image-5-480.webp",
+          "width": 480,
+          "height": 268,
+          "bytes": 62488
+        },
+        {
+          "src": "assets/responsive/user-media/image-5-960.webp",
+          "width": 960,
+          "height": 537,
+          "bytes": 211934
+        },
+        {
+          "src": "assets/responsive/user-media/image-5-1440.webp",
+          "width": 1440,
+          "height": 805,
+          "bytes": 475644
+        }
+      ]
+    },
+    "assets/user-media/image-6.png": {
+      "originalName": "image (6).png",
+      "width": 1677,
+      "height": 938,
+      "sourceBytes": 3246294,
+      "sourceSha256": "6f94f3efc932e4e7c6ee75b90776706c9e3f803a55b02d847d1f93e3b795312d",
+      "variants": [
+        {
+          "src": "assets/responsive/user-media/image-6-480.webp",
+          "width": 480,
+          "height": 268,
+          "bytes": 62590
+        },
+        {
+          "src": "assets/responsive/user-media/image-6-960.webp",
+          "width": 960,
+          "height": 537,
+          "bytes": 215782
+        },
+        {
+          "src": "assets/responsive/user-media/image-6-1440.webp",
+          "width": 1440,
+          "height": 805,
+          "bytes": 487764
+        }
+      ]
+    },
+    "assets/user-media/image-7.png": {
+      "originalName": "image (7).png",
+      "width": 1700,
+      "height": 925,
+      "sourceBytes": 3224622,
+      "sourceSha256": "6c77bb29f1b12f9b89f849de99851c940671630446c92d09357ab50c0fccace5",
+      "variants": [
+        {
+          "src": "assets/responsive/user-media/image-7-480.webp",
+          "width": 480,
+          "height": 261,
+          "bytes": 61484
+        },
+        {
+          "src": "assets/responsive/user-media/image-7-960.webp",
+          "width": 960,
+          "height": 522,
+          "bytes": 208678
+        },
+        {
+          "src": "assets/responsive/user-media/image-7-1440.webp",
+          "width": 1440,
+          "height": 784,
+          "bytes": 473520
+        }
+      ]
+    }
+  },
+  "video": {
+    "originalName": "download (8).mp4",
+    "src": "assets/video/mylodge-user-film.mp4",
+    "sha256": "cd633f28b57edfd5936b8f2049bde9b47773a35b9de7222bfbe33e6a79c186e4"
+  },
+  "excluded": "Seven photographs of a person operating a phone were UI references, not website media."
+}

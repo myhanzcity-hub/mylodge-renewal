@@ -14,20 +14,20 @@ window.MYLODGE_SLIDES = [
       "휴식부터 비즈니스까지, 달라지는 공간의 쓰임"
     ],
     "subtitle": "“다음엔 내 해외 별장에서 만나” 그 한마디가 달라지는 삶",
-    "image": "assets/mylodge-edited/tropical-pool-villa.png",
-    "imageAlt": "따뜻한 저녁빛과 전용 수영장이 어우러진 열대 풀빌라",
+    "image": "assets/user-media/image-7.png",
+    "imageAlt": "노을과 야경이 어우러진 MyLodge 별장 단지 전경",
     "imageFit": "contain",
     "imageCaption": "",
     "gallery": [
       {
-        "image": "assets/feedback-v2/deck-04-pool-view.png",
-        "imageAlt": "푸켓 빌라 거실에서 바라보는 전용 수영장",
-        "label": "거실 너머 전용 풀"
+        "image": "assets/user-media/image-4.png",
+        "imageAlt": "바다로 이어지는 중앙 수영장과 해안 별장 단지",
+        "label": "바다를 바라보는 단지 전경"
       },
       {
-        "image": "assets/mylodge-thailand-concepts/phuket-bedroom.png",
-        "imageAlt": "정원과 수영장으로 이어지는 푸켓 빌라 침실",
-        "label": "프라이빗한 풀사이드 침실"
+        "image": "assets/user-media/image-1.png",
+        "imageAlt": "해변을 따라 배치된 별장과 수영장",
+        "label": "해변과 이어지는 별장"
       }
     ],
     "note": "태국 소개 지역은 푸켓·치앙마이·방콕입니다",
@@ -147,8 +147,8 @@ window.MYLODGE_SLIDES = [
     "body": "친구에게 건네는 초대 한마디, 함께 요리하고 늦도록 이야기하는 시간이 관계에 새로운 이야기를 더합니다",
     "layout": "split",
     "theme": "light",
-    "image": "assets/feedback-v2/deck-06-shared-dinner.png",
-    "imageAlt": "별장 식탁에서 친구들과 저녁 식사를 나누는 생활 장면",
+    "image": "assets/user-media/image-2.png",
+    "imageAlt": "별장 테라스에서 바비큐를 즐기며 이야기를 나누는 친구들",
     "imageFit": "contain",
     "imageCaption": "",
     "points": [
@@ -236,8 +236,8 @@ window.MYLODGE_SLIDES = [
     "body": "취미가 맞는 사람과의 만남, 함께 즐기는 활동, 편안하게 이어지는 대화까지 별장 생활의 또 다른 즐거움을 만나보세요",
     "layout": "split",
     "theme": "light",
-    "image": "assets/reference-originals/57821.png",
-    "imageAlt": "넓은 다이닝에서 함께 저녁을 나누는 사람들",
+    "image": "assets/user-media/image-5.png",
+    "imageAlt": "중앙 클럽하우스와 수영장을 중심으로 펼쳐지는 만남의 공간",
     "imageFit": "contain",
     "imageCaption": "",
     "points": [
@@ -269,8 +269,8 @@ window.MYLODGE_SLIDES = [
     "body": "별장을 혼자 마련하는 방식만 생각할 필요는 없습니다 구좌와 이용 범위를 살펴보고 나에게 맞는 참여 계획을 세워보세요",
     "layout": "split",
     "theme": "dark",
-    "image": "assets/feedback-v2/terrace.png",
-    "imageAlt": "대화와 휴식을 위한 프라이빗 테라스",
+    "image": "assets/user-media/image-3.png",
+    "imageAlt": "넓은 수영장과 커뮤니티 공간이 어우러진 별장 단지",
     "imageFit": "contain",
     "imageCaption": "",
     "points": [
@@ -288,8 +288,8 @@ window.MYLODGE_SLIDES = [
     "body": "디럭스 10평과 프레스티지 20평, 공간의 크기와 참여 규모를 비교하며 나에게 맞는 구성을 골라보세요",
     "layout": "split",
     "theme": "light",
-    "image": "assets/reference-originals/57800.png",
-    "imageAlt": "정원과 이어지는 밝은 거실 공간",
+    "image": "assets/user-media/image-6.png",
+    "imageAlt": "중앙 수영장과 개별 별장을 함께 살펴보는 단지 배치",
     "imageFit": "contain",
     "imageCaption": "",
     "points": [
@@ -507,8 +507,8 @@ window.MYLODGE_SLIDES = [
     "body": "친구와의 만남, 중요한 사람과의 대화, 그리고 가족과 오래 남길 시간까지 — 나의 별장에서 시작할 이야기를 골라보세요",
     "layout": "split",
     "theme": "light",
-    "image": "assets/feedback-v2/deck-20-homecoming-night.png",
-    "imageAlt": "따뜻한 실내 조명과 수영장 불빛이 어우러진 풀빌라 야경",
+    "image": "assets/user-media/image-0.png",
+    "imageAlt": "바다를 바라보는 별장 테라스에서 함께하는 웨딩 장면",
     "imageFit": "contain",
     "imageCaption": "",
     "points": [
