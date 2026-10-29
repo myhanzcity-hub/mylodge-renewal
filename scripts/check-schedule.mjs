@@ -50,6 +50,6 @@ const js = await readFile(new URL('../schedule.js', import.meta.url), 'utf8');
 assert.ok(html.includes('운영안 미리보기 · 실제 예약이 아닙니다'));
 assert.ok(html.includes('표시된 실제 배정</dt><dd>0건'));
 assert.ok(html.includes('assets/brand/mylodge-logo-green.png'));
-assert.ok(html.includes('index.html#page=1'),'Calendar return leads to the introduction first page');
+assert.ok(html.includes('index.html#page=16'));
 assert.ok(!/localStorage|sessionStorage|fetch\(|XMLHttpRequest|sendBeacon/.test(js), 'Selection stays in memory without storing or submitting user data');
 console.log('PASS: 365/366-day calendars; 12 months; 3-day groups across months; domestic hold examples; blocked mixed groups; year-end remainder; single-day practice; no invented Thai holds; reversible in-memory selection; explicit preview and zero real allocations.');

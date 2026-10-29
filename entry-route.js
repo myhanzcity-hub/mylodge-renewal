@@ -1,2 +1,7 @@
-// Product information is the first screen. The original brand animation remains
-// available separately at intro.html and returns to index.html#page=1.
+// The intro precedes a fresh visit; chapter links also serve as the return route.
+(() => {
+  if (/^#page=\d+$/.test(location.hash)) return;
+  const destination = new URL('intro.html', location.href);
+  destination.search = location.search;
+  location.replace(destination.href);
+})();

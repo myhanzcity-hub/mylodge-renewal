@@ -22,10 +22,10 @@ assert.equal(model.scene.getObjectByName('FF').userData.gross_area_m2,33.0855);
 assert.ok(Math.abs(bounds.GF.max[0]-bounds.GF.min[0]-8.2)<.05);
 assert.ok(bounds.FF.min[1]>2.9&&bounds.FF.max[1]<6.1,'Upper floor is at the intended elevation');
 for(const name of groups)assert.ok(model.scene.getObjectByName(name).visible,'Enclosed interior needs '+name);
-const html=await readFile('index.html','utf8'),free=await readFile('free.html','utf8'),viewer=await readFile('villa.html','utf8');
-assert.ok(/href="villa\.html(?:\?[^\"]*)?"/.test(free),'The legacy model remains reachable from MyLodge Free');
-assert.ok(!html.includes('href="villa.html"'),'Do not present the legacy modular model as Private Mansion');
-assert.ok(viewer.includes('index.html#page=1'),'The viewer return action leads to the introduction first page');
+const html=await readFile('index.html','utf8'),viewer=await readFile('villa.html','utf8');
+assert.equal([...html.matchAll(/class="overview-link"/g)].length,1);
+const firstPageLink=html.indexOf('조감도 확인하기');
+assert.ok(firstPageLink>=0&&firstPageLink<html.indexOf('data-slide="2"'),'Link belongs to the first page');
 assert.ok(!viewer.includes('http-equiv="refresh"'),'3D viewer must not be overwritten by an alias');
 for(const label of ['ground','upper','upper-plan','overview'])assert.ok(viewer.includes('data-view="'+label+'"'));
 for(const label of ['living','kitchen','bedroom','bathroom'])assert.ok(viewer.includes('data-room="'+label+'"'));
@@ -43,6 +43,6 @@ async function dependencies(file,seen=new Set()){
   }return seen;
 }
 const imports=await dependencies('villa-viewer.js');
-const result={format:'glTF 2.0 binary',bytes:binary.length,meshes,triangles,groups,bounds,grossAreasM2:[56.17,33.0855],localModules:imports.size,viewModes:4,interiorShell:'enclosed with optional upper-floor cutaway',posterRenders:6,freeProductLink:true,returnToIntroductionFirstPage:true,browserRender:'not verified: browser access host unavailable'};
+const result={format:'glTF 2.0 binary',bytes:binary.length,meshes,triangles,groups,bounds,grossAreasM2:[56.17,33.0855],localModules:imports.size,viewModes:4,interiorShell:'enclosed with optional upper-floor cutaway',posterRenders:6,firstPageLink:true,browserRender:'not verified: browser access host unavailable'};
 await writeFile('review/villa-runtime-validation.json',JSON.stringify(result,null,2)+'\n');
-console.log('PASS: real GLB decoded, '+meshes+' meshes, '+Math.round(triangles)+' triangles, floor bounds, enclosed shell, Free product link and first-page return, '+imports.size+' local modules, native model and 6 renders.');
+console.log('PASS: real GLB decoded, '+meshes+' meshes, '+Math.round(triangles)+' triangles, floor bounds, enclosed shell, first-page link, '+imports.size+' local modules, native model and 6 renders.');

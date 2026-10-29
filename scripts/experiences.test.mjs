@@ -8,7 +8,7 @@ import {mountExperiences} from '../presentation-extras.js';
 
 test('the existing proposal, price picker and selection share the same amounts',async()=>{
   const context={window:{}};
-  vm.runInNewContext(await readFile(new URL('../free-deck-data.js',import.meta.url),'utf8'),context);
+  vm.runInNewContext(await readFile(new URL('../deck-data.js',import.meta.url),'utf8'),context);
   const price=context.window.MYLODGE_SLIDES.find(slide=>slide.id==='pricing');
   assert.equal(price.facts[0].value,'USD 3,999');
   assert.equal(price.facts[1].value,'USD 4,149');
@@ -99,7 +99,7 @@ test('each gallery updates desktop and nearby mobile previews with accessible se
   }
 });
 
-test('legacy Thai concepts retain their provenance without becoming Mansion prices or inventory',async()=>{
+test('Thai locations keep the requested order and use original AI concepts with accurate captions',async()=>{
   const thai=destinations.filter(item=>item.product==='thailand');
   assert.deepEqual(thai.map(item=>item.label),['푸켓','치앙마이','방콕']);
   assert.deepEqual(thai.map(item=>item.id),['phuket','chiangmai','bangkok']);
@@ -108,12 +108,15 @@ test('legacy Thai concepts retain their provenance without becoming Mansion pric
     assert.ok(!item.image.startsWith('assets/thailand-reference/'));
     assert.ok(item.caption.includes('AI 콘셉트'));
   }
-  const html=await readFile(new URL('../free.html',import.meta.url),'utf8');
-  const mansion=await readFile(new URL('../index.html',import.meta.url),'utf8');
-  assert.ok(!html.includes('<optgroup label="태국">'),'Free selection stays with its domestic product');
-  const options=html.match(/<optgroup label="국내">([\s\S]*?)<\/optgroup>/)?.[1];
-  assert.deepEqual([...options.matchAll(/value="([^"]+)"/g)].map(m=>m[1]),['jumunjin','yangyang']);
-  assert.ok(!mansion.includes('data-selection')&&!mansion.includes('data-price-picker'),'Legacy controls stay in Free');
+  const html=await readFile(new URL('../index.html',import.meta.url),'utf8');
+  const group=html.match(/aria-label="태국 관심 지역">([\s\S]*?)<\/div>/)?.[1];
+  assert.ok(group);
+  assert.deepEqual([...group.matchAll(/data-choice="([^"]+)"/g)].map(m=>m[1]),['phuket','chiangmai','bangkok']);
+  assert.match(group,/data-choice="phuket" aria-pressed="true"/);
+  const options=html.match(/<optgroup label="태국">([\s\S]*?)<\/optgroup>/)?.[1];
+  assert.deepEqual([...options.matchAll(/value="([^"]+)"/g)].map(m=>m[1]),['phuket','chiangmai','bangkok']);
+  assert.ok(!/푸껫|Erawana|Erawan-Grand|Seacon/i.test(html));
+  assert.ok(!html.includes('thailand-reference/'),'Original website photos are no longer used in the presentation');
   const audit=JSON.parse(await readFile(new URL('../review/mylodge-thailand-concepts.json',import.meta.url),'utf8'));
   assert.equal(audit.sourceMode,'new-generation-no-image-input');
   assert.equal(audit.images.length,3);
@@ -122,35 +125,41 @@ test('legacy Thai concepts retain their provenance without becoming Mansion pric
     const bytes=await readFile(new URL('../'+record.path,import.meta.url));
     assert.equal(createHash('sha256').update(bytes).digest('hex'),record.sha256,'Use the inspected generated asset');
     assert.ok(record.prompt.trim());
-    assert.ok(!mansion.includes(record.path),'Mansion uses the requested official reference photos');
+    assert.ok(html.includes(record.path),'Each new concept is used in the presentation');
   }
 });
 
-test('Mansion separates product conditions and account entry from purchase completion',async()=>{
+test('the first chapter explains the HanzCity connection before actions and keeps signup separate from purchase',async()=>{
   const html=await readFile(new URL('../index.html',import.meta.url),'utf8');
   const opening=html.match(/data-slide="1"[^>]*>([\s\S]*?)<\/section>/)?.[1];
-  assert.ok(opening.includes('href="#page=16"'),'Owner CTA reaches mansion conditions instead of a legacy price');
-  assert.ok(html.includes('https://hanzcity.com/auth/sign-in'));
-  const context={window:{}};vm.runInNewContext(await readFile(new URL('../deck-data.js',import.meta.url),'utf8'),context);
-  const application=JSON.stringify(context.window.MYLODGE_SLIDES.find(slide=>slide.id==='application'));
-  assert.ok(/HanzCity/.test(application)&&/계약/.test(application)&&/별도|확정|구분/.test(application));
-  const free=await readFile(new URL('../free.html',import.meta.url),'utf8');
-  assert.ok(free.includes('data-choices="spaces"')&&/href="villa\.html(?:\?[^\"]*)?"/.test(free),'Keep the legacy space gallery in Free');
+  for(const text of ['MyLodge에서 시작하는 별장 라이프','HanzCity로 이어지는 더 넓은 가능성','회원가입·로그인은 HanzCity에서 진행됩니다'])assert.ok(opening.includes(text));
+  assert.ok(opening.indexOf('class="brand-bridge"')<opening.indexOf('class="overview-link"'),'Show the relationship prominently before the first-page action');
+  assert.equal([...html.matchAll(/href="https:\/\/hanzcity\.com\/auth\/sign-in"/g)].length,1);
+  assert.match(html,/<span class="signup-hint" id="signup-hint">HanzCity 계정으로 시작<\/span>/);
+  assert.match(html,/aria-describedby="signup-hint"/);
+  const application=html.match(/data-slide="18"[^>]*>([\s\S]*?)<\/section>/)?.[1];
+  assert.ok(application.includes('상품 신청·계약은 별도'));
+  assert.ok(application.includes('가입만으로 구좌나 예약이 확정되지는 않습니다'));
+  const platform=html.match(/data-slide="19"[^>]*>([\s\S]*?)<\/section>/)?.[1];
+  assert.ok(platform.includes('준비 중')&&platform.includes('새로운 서비스와 계정 연계는 순차 안내'));
+  assert.ok(platform.includes('data-choices="spaces"'),'Keep the existing space gallery');
 });
 
-test('Free controls resolve to unique panels and responsive photos without importing Mansion conditions',async()=>{
-  const html=await readFile(new URL('../free.html',import.meta.url),'utf8');
+test('generated controls resolve to unique panels and local responsive photos without reference-site pricing or attribution',async()=>{
+  const html=await readFile(new URL('../index.html',import.meta.url),'utf8');
   const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);
   assert.equal(ids.length,new Set(ids).size);
   for(const [,id] of html.matchAll(/aria-controls="([^"]+)"/g))assert.ok(ids.includes(id));
-  assert.equal([...html.matchAll(/data-choices="/g)].length,2);
-  assert.equal([...html.matchAll(/class="choice-preview"/g)].length,2);
+  assert.equal([...html.matchAll(/data-choices="/g)].length,4);
+  assert.equal([...html.matchAll(/class="choice-preview"/g)].length,4);
   assert.equal([...html.matchAll(/data-plan="/g)].length,2);
   assert.ok(html.includes('type="module" src="presentation-extras.js"'));
-  assert.ok(!/USD 5,999|USD 199|USD 390|디럭스|프레스티지|대표|녹취/.test(html));
+  assert.ok(!/USD 5,999|USD 199|USD 390|디럭스|프레스티지|Botanica|Sansiri|대표|녹취/.test(html));
   for(const [,json] of html.matchAll(/data-choice-image="([^"]+)"/g)){
     const asset=JSON.parse(json.replaceAll('&quot;','"').replaceAll('&amp;','&'));
     await access(new URL('../'+asset.src,import.meta.url));
     assert.ok(asset.srcset.includes('480w'));
   }
+  const visible=html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/g,'').replace(/<[^>]+>/g,'');
+  assert.ok(!/[가-힣]\.(?=\s|$)/.test(visible),'Promotional copy has no sentence-ending dots');
 });

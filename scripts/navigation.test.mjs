@@ -4,7 +4,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 const script=await readFile(new URL('../presentation.js',import.meta.url),'utf8');
 const html=await readFile(new URL('../index.html',import.meta.url),'utf8');
-const titles=[...html.matchAll(/data-slide="\d+"[^>]*data-title="([^"]+)"/g)].map(match=>match[1]);
+const titles=[...html.matchAll(/data-slide="\d+" data-title="([^"]+)"/g)].map(match=>match[1]);
 function controller(hash='',{mobile=false,saveData=false}={}){
   const element=()=>({events:{},style:{},dataset:{},attributes:{},textContent:'',disabled:false,hidden:false,addEventListener(name,fn){this.events[name]=fn;},setAttribute(name,value){this.attributes[name]=value;},classList:{add(){},remove(){}}});
   const slides=titles.map(title=>{const slide=element(),img=element();slide.image=img;slide.dataset.title=title;slide.scrollHeight=800;slide.clientHeight=800;slide.scrollTop=0;slide.querySelector=()=>img;return slide;});

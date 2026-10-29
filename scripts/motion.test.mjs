@@ -151,13 +151,13 @@ test('blocked playback leaves an accessible modal and working close control',asy
 });
 
 test('motion pages are local, retain licenses and contain no transplanted prices or share promises',async()=>{
-  const html=await readFile(new URL('../free.html',import.meta.url),'utf8');
+  const html=await readFile(new URL('../index.html',import.meta.url),'utf8');
   assert.ok(html.includes('data-hero-video'));assert.ok(html.includes('preload="none"'));
   assert.match(html,/<dialog\b[^>]*data-video-modal[\s\S]*<video\b[^>]*controls[^>]*><\/video>[\s\S]*<\/dialog>/);
   assert.ok(html.indexOf('<dialog')>html.indexOf('</main>'),'Video dialog sits outside the slide scroller');
   assert.ok(!/<video[^>]*aria-hidden="true"/.test(html),'Player controls remain accessible');
   assert.equal([...html.matchAll(/data-motion-frame/g)].length,2);
-  assert.equal([...html.matchAll(/expanding-gallery/g)].length,1,'The community gallery remains in Free; lifestyle scenes are now separate Mansion slides');
+  assert.equal([...html.matchAll(/expanding-gallery/g)].length,2);
   for(const name of ['ownership-story.html','luxury-preview.html']){
     const source=await readFile(new URL('../assets/motion/'+name,import.meta.url),'utf8');
     await access(new URL('../assets/motion/'+name,import.meta.url));
