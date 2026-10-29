@@ -32,14 +32,15 @@ test('Mansion prices and model choices are separated from the existing Free prod
   assert.ok(html.includes('data-quote-legacy')&&html.includes('data-quote-mansion'));
 });
 
-test('all eight supplied photos and the original video are published without changing their bytes',async()=>{
+test('all eight supplied photos remain preserved and their AI refinements are displayed; video bytes stay unchanged',async()=>{
   const base=new URL('../',import.meta.url);
   const manifest=JSON.parse(await readFile(new URL('assets/user-media/manifest.json',base),'utf8'));
+  const refined=JSON.parse(await readFile(new URL('assets/ai-refined/manifest.json',base),'utf8'));
   const html=await readFile(new URL('index.html',base),'utf8');
   assert.equal(Object.keys(manifest.images).length,8);
   for(let index=0;index<8;index++){
     const file=`assets/user-media/image-${index}.png`,record=manifest.images[file];
-    assert.ok(record&&html.includes(file),`Image ${index} must be placed in the presentation`);
+    assert.ok(record&&html.includes(refined.mappings[file]),`Refined image ${index} must be placed in the presentation`);
     assert.equal(createHash('sha256').update(await readFile(new URL(file,base))).digest('hex'),record.sourceSha256);
     assert.equal(record.originalName,index===0?'image.png':`image (${index}).png`);
     assert.deepEqual(record.variants.map(item=>item.width),[480,960,1440]);
@@ -48,7 +49,28 @@ test('all eight supplied photos and the original video are published without cha
   assert.equal(manifest.video.originalName,'download (8).mp4');
   assert.equal(createHash('sha256').update(await readFile(new URL(manifest.video.src,base))).digest('hex'),manifest.video.sha256);
   assert.match(html,/<button[^>]*data-hero-play/);
-  assert.ok(html.includes(`data-src="${manifest.video.src}"`),'Keep the new film in the existing player');
+  assert.ok(html.includes(`data-src="${manifest.video.src}?v=${manifest.video.sha256.slice(0,12)}"`),'Keep the new film in the existing player');
+});
+
+test('sixteen AI edits preserve their originals, framing and prompts and cover most main pages',async()=>{
+  const base=new URL('../',import.meta.url);
+  const refined=JSON.parse(await readFile(new URL('assets/ai-refined/manifest.json',base),'utf8'));
+  const html=await readFile(new URL('index.html',base),'utf8');
+  assert.equal(refined.generator,'built-in image_gen');
+  assert.equal(refined.edits.length,16);
+  for(const edit of refined.edits){
+    const original=await readFile(new URL(edit.source,base)),output=await readFile(new URL(edit.output,base));
+    assert.equal(createHash('sha256').update(original).digest('hex'),edit.sourceSha256);
+    assert.equal(createHash('sha256').update(output).digest('hex'),edit.outputSha256);
+    assert.notEqual(edit.sourceSha256,edit.outputSha256);
+    assert.ok(edit.prompt.trim()&&html.includes(edit.output));
+    const originalRatio=original.readUInt32BE(16)/original.readUInt32BE(20);
+    const outputRatio=output.readUInt32BE(16)/output.readUInt32BE(20);
+    assert.ok(Math.abs(originalRatio-outputRatio)<0.02,'Keep source framing aspect ratio');
+  }
+  const context={window:{}};
+  vm.runInNewContext(await readFile(new URL('deck-data.js',base),'utf8'),context);
+  assert.ok(context.window.MYLODGE_SLIDES.filter(slide=>slide.image.startsWith('assets/ai-refined/')).length>=14);
 });
 
 test('all regions, plans and share counts keep Thai prices unconfigured',()=>{
@@ -133,10 +155,11 @@ test('each gallery updates desktop and nearby mobile previews with accessible se
 });
 
 test('Thai locations keep the requested order and preserve photos without repetitive disclaimer captions',async()=>{
+  const refined=JSON.parse(await readFile(new URL('../assets/ai-refined/manifest.json',import.meta.url),'utf8'));
   const thai=destinations.filter(item=>item.product==='thailand');
   assert.deepEqual(thai.map(item=>item.label),['푸켓','치앙마이','방콕']);
   assert.deepEqual(thai.map(item=>item.id),['phuket','chiangmai','bangkok']);
-  assert.ok(thai[0].image.startsWith('assets/mylodge-thailand-concepts/'));
+  assert.equal(thai[0].image,refined.mappings['assets/mylodge-thailand-concepts/phuket-pool.png']);
   for(const item of thai){
     assert.ok(!item.image.startsWith('assets/thailand-reference/'));
     assert.equal(item.caption,'');
@@ -159,7 +182,7 @@ test('Thai locations keep the requested order and preserve photos without repeti
     const bytes=await readFile(new URL('../'+record.path,import.meta.url));
     assert.equal(createHash('sha256').update(bytes).digest('hex'),record.sha256,'Use the inspected generated asset');
     assert.ok(record.prompt.trim());
-    assert.ok((html+await readFile(new URL('../free.html',import.meta.url),'utf8')).includes(record.path),'Each new concept is used in the presentation');
+    assert.ok((html+await readFile(new URL('../free.html',import.meta.url),'utf8')).includes(refined.mappings[record.path]||record.path),'Each original concept or its refined version is used in the presentation');
   }
 });
 

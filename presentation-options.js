@@ -6,9 +6,9 @@ export const pricePlans = Object.freeze({
 export const destinations = [
   {id:'jumunjin',label:'주문진',product:'original',title:'파도 소리로 시작하는 하루',body:'바다를 바라보며 천천히 걷고, 좋아하는 사람과 느긋한 저녁을 보내세요',mood:'바다 · 가족 · 휴식',image:'57794.jpg',imageAlt:'MyLodge Free 기존 27평 별장 모델'},
   {id:'yangyang',label:'양양',product:'original',title:'낮에는 활기차게, 저녁에는 여유롭게',body:'새로운 취미와 만남으로 채우는 하루 활동적인 휴가를 좋아하는 당신에게 어울리는 제안입니다',mood:'활동 · 만남 · 주말',image:'57808.png'},
-  {id:'phuket',label:'푸켓',product:'thailand',title:'푸켓 · 프라이빗 휴양',body:'수영장 옆에서 책을 읽고, 따뜻한 바람을 즐기는 오후 우리만의 속도로 쉬어 가는 풀빌라 라이프를 그려보세요',mood:'해변 · 풀빌라 · 휴양',image:'assets/mylodge-thailand-concepts/phuket-pool.png',imageAlt:'열대 정원과 전용 수영장이 어우러진 푸켓 풀빌라',caption:''},
+  {id:'phuket',label:'푸켓',product:'thailand',title:'푸켓 · 프라이빗 휴양',body:'수영장 옆에서 책을 읽고, 따뜻한 바람을 즐기는 오후 우리만의 속도로 쉬어 가는 풀빌라 라이프를 그려보세요',mood:'해변 · 풀빌라 · 휴양',image:'assets/ai-refined/pool-v1.png',imageAlt:'열대 정원과 전용 수영장이 어우러진 푸켓 풀빌라',caption:''},
   {id:'chiangmai',label:'치앙마이',product:'thailand',title:'치앙마이 · 자연 속 체류',body:'초록을 바라보며 보내는 느긋한 아침 일과 휴식 사이의 균형을 찾고, 조금 더 오래 머무는 일상을 그려보세요',mood:'자연 · 장기 체류 · 여유',image:'assets/feedback-v2/deck-17-chiangmai-green.png',imageAlt:'치앙마이의 숲과 산을 바라보는 테라스',caption:''},
-  {id:'bangkok',label:'방콕',product:'thailand',title:'방콕 · 편리한 도시 생활',body:'카페와 맛집을 발견하고, 새로운 문화를 만나는 하루 도시를 즐긴 뒤 돌아올 편안한 콘도 생활을 그려보세요',mood:'도심 · 콘도 · 생활',image:'assets/mylodge-edited/condo-retreat.png',imageAlt:'방콕 도심 체류를 위한 거실 공간',caption:''}
+  {id:'bangkok',label:'방콕',product:'thailand',title:'방콕 · 편리한 도시 생활',body:'카페와 맛집을 발견하고, 새로운 문화를 만나는 하루 도시를 즐긴 뒤 돌아올 편안한 콘도 생활을 그려보세요',mood:'도심 · 콘도 · 생활',image:'assets/ai-refined/condo-v1.png',imageAlt:'방콕 도심 체류를 위한 거실 공간',caption:''}
 ];
 export const communities = [
   {id:'family',label:'패밀리',title:'함께 자라는 가족의 추억',body:'아이와 보내는 느긋한 아침, 온 가족이 모이는 저녁 세대가 함께 즐길 별장 생활을 그려보세요',image:'57822.png'},
@@ -19,14 +19,14 @@ export const communities = [
 ];
 export const lifeScenes = [
   {id:'evening',label:'함께하는 저녁',title:'오늘의 메뉴는 함께 만드는 추억',body:'좋아하는 음식을 준비하고 테이블에 둘러앉는 시간 평범한 저녁도 별장에서는 특별해집니다',image:'57821.png'},
-  {id:'family',label:'둘만의 기념일',title:'특별한 날을 함께 남기는 공간',body:'둘만의 저녁과 느긋한 아침, 기념일의 순간을 별장에서 이어가 보세요',image:'assets/mylodge-thailand-concepts/phuket-bedroom.png'},
+  {id:'family',label:'둘만의 기념일',title:'특별한 날을 함께 남기는 공간',body:'둘만의 저녁과 느긋한 아침, 기념일의 순간을 별장에서 이어가 보세요',image:'assets/ai-refined/bedroom-v1.png'},
   {id:'invitation',label:'친구 초대',title:'오랜만이라는 말 대신, 자주 만나자는 약속',body:'넓은 거실에 모여 못다 한 이야기를 나눠보세요 다음 만남을 기다리게 하는 공간을 꿈꿉니다',image:'57800.png'}
 ];
 export const spaces = [
   {id:'interior',label:'실내',title:'함께 머물고 싶은 거실과 주방',body:'식탁에서 시작해 거실로 이어지는 대화 우리만의 시간을 채우는 공간을 둘러보세요',image:'57821.png'},
   {id:'exterior',label:'외관',title:'문을 열기 전부터 시작되는 설렘',body:'밝은 외관과 탁 트인 창으로 만나는 별장의 첫인상 나의 휴식에 어울리는 집을 그려보세요',image:'assets/feedback-v2/deck-20-homecoming-night.png'},
-  {id:'terrace',label:'테라스',title:'실내의 편안함을 바깥까지',body:'커피 한 잔과 함께하는 아침, 바람을 느끼는 저녁 테라스에서 휴식의 폭을 넓혀보세요',image:'assets/mylodge-edited/poolside-terrace.png'},
-  {id:'upper',label:'공간 구성',title:'나에게 맞는 공간의 크기',body:'디럭스 10평과 프레스티지 20평, 생활 방식에 맞춰 공간을 선택해 보세요',image:'assets/mylodge-thailand-concepts/phuket-bedroom.png'}
+  {id:'terrace',label:'테라스',title:'실내의 편안함을 바깥까지',body:'커피 한 잔과 함께하는 아침, 바람을 느끼는 저녁 테라스에서 휴식의 폭을 넓혀보세요',image:'assets/ai-refined/terrace-v1.png'},
+  {id:'upper',label:'공간 구성',title:'나에게 맞는 공간의 크기',body:'디럭스 10평과 프레스티지 20평, 생활 방식에 맞춰 공간을 선택해 보세요',image:'assets/ai-refined/bedroom-v1.png'}
 ];
 export function selectionEstimate({destination='jumunjin',plan='basic',shares=1}={}){
   const region=destinations.find(item=>item.id===destination);

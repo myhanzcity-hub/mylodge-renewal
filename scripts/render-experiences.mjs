@@ -15,8 +15,8 @@ export function renderQuickPlanner(assets){
   const galleries=regions.map(region=>{
     const photos=region.id==='phuket'?[
       [region.image,'푸켓 · 정원과 전용 수영장'],
-      ['assets/mylodge-thailand-concepts/phuket-living.png','푸켓 · 거실과 다이닝'],
-      ['assets/mylodge-thailand-concepts/phuket-bedroom.png','푸켓 · 풀사이드 침실']
+      ['assets/ai-refined/living-v1.png','푸켓 · 거실과 다이닝'],
+      ['assets/ai-refined/bedroom-v1.png','푸켓 · 풀사이드 침실']
     ]:[[region.image,region.title]];
     return `<div data-region-gallery="${region.id}"${region.id!=='phuket'?' hidden':''}><div class="quick-region-photos" tabindex="0" role="region" aria-label="${region.label} 사진 · 좌우로 넘기기">${photos.map(([src,alt])=>image(src,alt)).join('')}</div>${photos.length>1?'<p class="quick-photo-hint">사진을 좌우로 밀어보세요</p>':''}<h3>${escape(region.label)}</h3><p class="quick-region-mood">${escape(region.mood)}</p></div>`;
   }).join('');

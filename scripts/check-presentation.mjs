@@ -84,6 +84,9 @@ for(let index=0;index<slides.length;index++){
         const name=path.basename(visual.image);
         assert.ok(['57794.jpg','57795.png','57796.png','57797.png','57798.png','57800.png','57801.png','57802.png','57803 (1).png','57804.png','57805.png','57808.png','57810.png','57821.png','57822.png'].includes(name),'Only approved folder photos; exclude spiral staircases');
         assert.deepEqual(await readFile(path.join(root,visual.image)),await readFile(path.join(root,'참고 이미지 (3D 도면화)',name)),'Preserve original photo bytes');
+      }else if(visual.image.startsWith('assets/ai-refined/')){
+        const refined=JSON.parse(await readFile(path.join(root,'assets/ai-refined/manifest.json'),'utf8'));
+        assert.ok(Object.values(refined.mappings).includes(visual.image),'Use inspected AI refinements with preserved originals');
       }else if(visual.image.startsWith('assets/user-media/')){
         assert.ok(/^assets\/user-media\/image-[0-7]\.png$/.test(visual.image),'Only the eight supplied originals are site media');
       }else if(visual.image.startsWith('assets/mylodge-thailand-concepts/')){

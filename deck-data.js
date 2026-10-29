@@ -14,18 +14,18 @@ window.MYLODGE_SLIDES = [
       "휴식부터 비즈니스까지, 달라지는 공간의 쓰임"
     ],
     "subtitle": "“다음엔 내 해외 별장에서 만나” 그 한마디가 달라지는 삶",
-    "image": "assets/user-media/image-7.png",
+    "image": "assets/ai-refined/image7-v1.png",
     "imageAlt": "노을과 야경이 어우러진 MyLodge 별장 단지 전경",
     "imageFit": "contain",
     "imageCaption": "",
     "gallery": [
       {
-        "image": "assets/user-media/image-4.png",
+        "image": "assets/ai-refined/image4-v1.png",
         "imageAlt": "바다로 이어지는 중앙 수영장과 해안 별장 단지",
         "label": "바다를 바라보는 단지 전경"
       },
       {
-        "image": "assets/user-media/image-1.png",
+        "image": "assets/ai-refined/image1-v1.png",
         "imageAlt": "해변을 따라 배치된 별장과 수영장",
         "label": "해변과 이어지는 별장"
       }
@@ -45,7 +45,7 @@ window.MYLODGE_SLIDES = [
     "body": "독립된 빌라에서 누리는 프라이빗한 시간부터 도시와 가까운 콘도 생활까지, 내가 머물고 싶은 방식으로 선택하세요",
     "layout": "split",
     "theme": "light",
-    "image": "assets/mylodge-thailand-concepts/phuket-bedroom.png",
+    "image": "assets/ai-refined/bedroom-v1.png",
     "imageAlt": "정원과 전용 풀로 이어지는 프라이빗 빌라 침실",
     "imageFit": "contain",
     "imageCaption": "",
@@ -63,7 +63,7 @@ window.MYLODGE_SLIDES = [
     "body": "푸켓의 바다, 치앙마이의 자연, 방콕의 도시 생활 — 나를 가장 설레게 하는 곳부터 둘러보세요",
     "layout": "split",
     "theme": "dark",
-    "image": "assets/mylodge-thailand-concepts/phuket-pool.png",
+    "image": "assets/ai-refined/pool-v1.png",
     "imageAlt": "열대 정원과 전용 수영장이 어우러진 푸켓 풀빌라",
     "imageFit": "contain",
     "imageCaption": "",
@@ -81,7 +81,7 @@ window.MYLODGE_SLIDES = [
         "label": "치앙마이 · 자연 속 체류"
       },
       {
-        "image": "assets/mylodge-edited/condo-retreat.png",
+        "image": "assets/ai-refined/condo-v1.png",
         "imageAlt": "방콕 도심 체류의 실내 분위기를 제안하는",
         "label": "방콕 · 도심 생활"
       }
@@ -96,7 +96,7 @@ window.MYLODGE_SLIDES = [
     "layout": "split",
     "theme": "light",
     "links": [],
-    "image": "assets/mylodge-thailand-concepts/phuket-living.png",
+    "image": "assets/ai-refined/living-v1.png",
     "imageAlt": "높은 천장과 정원 전망을 갖춘 푸켓 빌라 거실·다이닝",
     "imageFit": "contain",
     "imageCaption": "",
@@ -113,7 +113,7 @@ window.MYLODGE_SLIDES = [
         "label": "거실 너머 전용 풀"
       },
       {
-        "image": "assets/mylodge-thailand-concepts/phuket-bedroom.png",
+        "image": "assets/ai-refined/bedroom-v1.png",
         "imageAlt": "수영장과 이어지는 푸켓 빌라 침실",
         "label": "풀사이드 침실"
       }
@@ -128,7 +128,7 @@ window.MYLODGE_SLIDES = [
     "body": "소중한 사람과의 저녁부터 중요한 비즈니스 대화까지, 독립된 공간에서 함께하는 사람에게 집중하세요",
     "layout": "split",
     "theme": "dark",
-    "image": "assets/mylodge-edited/living-retreat.png",
+    "image": "assets/ai-refined/retreat-v1.png",
     "imageAlt": "기존 실내 구조를 바탕으로 색감과 정원 전망을 다듬은 거실",
     "imageFit": "contain",
     "imageCaption": "",
@@ -147,7 +147,7 @@ window.MYLODGE_SLIDES = [
     "body": "친구에게 건네는 초대 한마디, 함께 요리하고 늦도록 이야기하는 시간이 관계에 새로운 이야기를 더합니다",
     "layout": "split",
     "theme": "light",
-    "image": "assets/user-media/image-2.png",
+    "image": "assets/ai-refined/image2-v1.png",
     "imageAlt": "별장 테라스에서 바비큐를 즐기며 이야기를 나누는 친구들",
     "imageFit": "contain",
     "imageCaption": "",
@@ -165,7 +165,7 @@ window.MYLODGE_SLIDES = [
     "body": "청소와 생활 관리를 돕는 서비스를 살펴보고, 머무는 동안 내가 하고 싶은 일에 더 많은 시간을 쓰세요",
     "layout": "split",
     "theme": "dark",
-    "image": "assets/feedback-v2/deck-07-ready-to-rest.png",
+    "image": "assets/ai-refined/ready-v1.png",
     "imageAlt": "침구와 수건이 정돈된 밝은 별장 침실",
     "imageFit": "contain",
     "imageCaption": "",
@@ -192,7 +192,7 @@ window.MYLODGE_SLIDES = [
     "layout": "split",
     "theme": "light",
     "links": [],
-    "image": "assets/feedback-v2/rose-living.png",
+    "image": "assets/ai-refined/rose-v1.png",
     "imageAlt": "주방과 식탁, 분홍빛 소파가 연결된 아늑한 체류 공간",
     "imageFit": "contain",
     "imageCaption": "",
@@ -218,7 +218,7 @@ window.MYLODGE_SLIDES = [
     "body": "여럿을 초대할 넉넉한 공간이 필요한지, 도시를 가까이에서 즐기고 싶은지 — 함께할 사람과 생활 방식으로 비교하세요",
     "layout": "split",
     "theme": "dark",
-    "image": "assets/mylodge-edited/condo-retreat.png",
+    "image": "assets/ai-refined/condo-v1.png",
     "imageAlt": "도시 체류를 위한 거실과 침실 공간",
     "imageFit": "contain",
     "imageCaption": "",
@@ -236,7 +236,7 @@ window.MYLODGE_SLIDES = [
     "body": "취미가 맞는 사람과의 만남, 함께 즐기는 활동, 편안하게 이어지는 대화까지 별장 생활의 또 다른 즐거움을 만나보세요",
     "layout": "split",
     "theme": "light",
-    "image": "assets/user-media/image-5.png",
+    "image": "assets/ai-refined/image5-v1.png",
     "imageAlt": "중앙 클럽하우스와 수영장을 중심으로 펼쳐지는 만남의 공간",
     "imageFit": "contain",
     "imageCaption": "",
@@ -269,7 +269,7 @@ window.MYLODGE_SLIDES = [
     "body": "별장을 혼자 마련하는 방식만 생각할 필요는 없습니다 구좌와 이용 범위를 살펴보고 나에게 맞는 참여 계획을 세워보세요",
     "layout": "split",
     "theme": "dark",
-    "image": "assets/user-media/image-3.png",
+    "image": "assets/ai-refined/image3-v1.png",
     "imageAlt": "넓은 수영장과 커뮤니티 공간이 어우러진 별장 단지",
     "imageFit": "contain",
     "imageCaption": "",
@@ -288,7 +288,7 @@ window.MYLODGE_SLIDES = [
     "body": "디럭스 10평과 프레스티지 20평, 공간의 크기와 참여 규모를 비교하며 나에게 맞는 구성을 골라보세요",
     "layout": "split",
     "theme": "light",
-    "image": "assets/user-media/image-6.png",
+    "image": "assets/ai-refined/image6-v1.png",
     "imageAlt": "중앙 수영장과 개별 별장을 함께 살펴보는 단지 배치",
     "imageFit": "contain",
     "imageCaption": "",
@@ -324,7 +324,7 @@ window.MYLODGE_SLIDES = [
     "body": "직접 이용할 일정과 비워 두는 기간을 함께 살펴보세요 임대가 가능한 상품은 운영 조건에 맞춰 활용 방법을 살펴볼 수 있습니다",
     "layout": "split",
     "theme": "dark",
-    "image": "assets/mylodge-edited/poolside-terrace.png",
+    "image": "assets/ai-refined/terrace-v1.png",
     "imageAlt": "우드 라운지와 열대 정원이 수영장으로 이어지는 테라스",
     "imageFit": "contain",
     "imageCaption": "",
@@ -507,7 +507,7 @@ window.MYLODGE_SLIDES = [
     "body": "친구와의 만남, 중요한 사람과의 대화, 그리고 가족과 오래 남길 시간까지 — 나의 별장에서 시작할 이야기를 골라보세요",
     "layout": "split",
     "theme": "light",
-    "image": "assets/user-media/image-0.png",
+    "image": "assets/ai-refined/image0-v1.png",
     "imageAlt": "바다를 바라보는 별장 테라스에서 함께하는 웨딩 장면",
     "imageFit": "contain",
     "imageCaption": "",

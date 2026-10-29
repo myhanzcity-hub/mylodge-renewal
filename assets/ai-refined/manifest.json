@@ -1,0 +1,554 @@
+{
+  "generator": "built-in image_gen",
+  "date": "2026-10-29",
+  "mappings": {
+    "assets/user-media/image-0.png": "assets/ai-refined/image0-v1.png",
+    "assets/user-media/image-1.png": "assets/ai-refined/image1-v1.png",
+    "assets/user-media/image-2.png": "assets/ai-refined/image2-v1.png",
+    "assets/user-media/image-3.png": "assets/ai-refined/image3-v1.png",
+    "assets/user-media/image-4.png": "assets/ai-refined/image4-v1.png",
+    "assets/user-media/image-5.png": "assets/ai-refined/image5-v1.png",
+    "assets/user-media/image-6.png": "assets/ai-refined/image6-v1.png",
+    "assets/user-media/image-7.png": "assets/ai-refined/image7-v1.png",
+    "assets/mylodge-thailand-concepts/phuket-bedroom.png": "assets/ai-refined/bedroom-v1.png",
+    "assets/mylodge-thailand-concepts/phuket-pool.png": "assets/ai-refined/pool-v1.png",
+    "assets/mylodge-thailand-concepts/phuket-living.png": "assets/ai-refined/living-v1.png",
+    "assets/mylodge-edited/living-retreat.png": "assets/ai-refined/retreat-v1.png",
+    "assets/feedback-v2/deck-07-ready-to-rest.png": "assets/ai-refined/ready-v1.png",
+    "assets/feedback-v2/rose-living.png": "assets/ai-refined/rose-v1.png",
+    "assets/mylodge-edited/condo-retreat.png": "assets/ai-refined/condo-v1.png",
+    "assets/mylodge-edited/poolside-terrace.png": "assets/ai-refined/terrace-v1.png"
+  },
+  "images": {
+    "assets/ai-refined/image0-v1.png": {
+      "width": 1685,
+      "height": 934,
+      "sourceBytes": 2705417,
+      "sourceSha256": "20afdfc455d67d67c68a8c48ed8b65348b490c94b0d4190c8b689165332d5627",
+      "variants": [
+        {
+          "src": "assets/responsive/ai-refined/image0-v1-480.webp",
+          "width": 480,
+          "height": 266,
+          "bytes": 54082
+        },
+        {
+          "src": "assets/responsive/ai-refined/image0-v1-960.webp",
+          "width": 960,
+          "height": 532,
+          "bytes": 168816
+        },
+        {
+          "src": "assets/responsive/ai-refined/image0-v1-1440.webp",
+          "width": 1440,
+          "height": 798,
+          "bytes": 370398
+        }
+      ]
+    },
+    "assets/ai-refined/image1-v1.png": {
+      "width": 1683,
+      "height": 934,
+      "sourceBytes": 3199061,
+      "sourceSha256": "52328e545ed35e2035ded649198fc9d0c9d01c2e5c6c11647e9ecacd8772eddc",
+      "variants": [
+        {
+          "src": "assets/responsive/ai-refined/image1-v1-480.webp",
+          "width": 480,
+          "height": 266,
+          "bytes": 62550
+        },
+        {
+          "src": "assets/responsive/ai-refined/image1-v1-960.webp",
+          "width": 960,
+          "height": 533,
+          "bytes": 214134
+        },
+        {
+          "src": "assets/responsive/ai-refined/image1-v1-1440.webp",
+          "width": 1440,
+          "height": 799,
+          "bytes": 479442
+        }
+      ]
+    },
+    "assets/ai-refined/image2-v1.png": {
+      "width": 1685,
+      "height": 934,
+      "sourceBytes": 2665507,
+      "sourceSha256": "a0caaa8650de5b2bc5af91a41cd4d45966f79a164926527579c6bc9c065ac702",
+      "variants": [
+        {
+          "src": "assets/responsive/ai-refined/image2-v1-480.webp",
+          "width": 480,
+          "height": 266,
+          "bytes": 54142
+        },
+        {
+          "src": "assets/responsive/ai-refined/image2-v1-960.webp",
+          "width": 960,
+          "height": 532,
+          "bytes": 167512
+        },
+        {
+          "src": "assets/responsive/ai-refined/image2-v1-1440.webp",
+          "width": 1440,
+          "height": 798,
+          "bytes": 370266
+        }
+      ]
+    },
+    "assets/ai-refined/image3-v1.png": {
+      "width": 1701,
+      "height": 925,
+      "sourceBytes": 3190263,
+      "sourceSha256": "8104ac8018ca39cf849f4785a12d36c70fcfc278a7321d34359bd59d08b92bfa",
+      "variants": [
+        {
+          "src": "assets/responsive/ai-refined/image3-v1-480.webp",
+          "width": 480,
+          "height": 261,
+          "bytes": 60934
+        },
+        {
+          "src": "assets/responsive/ai-refined/image3-v1-960.webp",
+          "width": 960,
+          "height": 522,
+          "bytes": 211616
+        },
+        {
+          "src": "assets/responsive/ai-refined/image3-v1-1440.webp",
+          "width": 1440,
+          "height": 783,
+          "bytes": 478358
+        }
+      ]
+    },
+    "assets/ai-refined/image4-v1.png": {
+      "width": 1708,
+      "height": 921,
+      "sourceBytes": 2938175,
+      "sourceSha256": "d12df5e037e77e47869aace4a58466b0ae5cef3f11468264e56008ad7b668bdf",
+      "variants": [
+        {
+          "src": "assets/responsive/ai-refined/image4-v1-480.webp",
+          "width": 480,
+          "height": 259,
+          "bytes": 51872
+        },
+        {
+          "src": "assets/responsive/ai-refined/image4-v1-960.webp",
+          "width": 960,
+          "height": 518,
+          "bytes": 172850
+        },
+        {
+          "src": "assets/responsive/ai-refined/image4-v1-1440.webp",
+          "width": 1440,
+          "height": 776,
+          "bytes": 405248
+        }
+      ]
+    },
+    "assets/ai-refined/image5-v1.png": {
+      "width": 1677,
+      "height": 938,
+      "sourceBytes": 3131432,
+      "sourceSha256": "61c5745edd2cbf8f4d40178a0b0be4eeba96b47b8fa411d1ba4e2163f3e5afec",
+      "variants": [
+        {
+          "src": "assets/responsive/ai-refined/image5-v1-480.webp",
+          "width": 480,
+          "height": 268,
+          "bytes": 61498
+        },
+        {
+          "src": "assets/responsive/ai-refined/image5-v1-960.webp",
+          "width": 960,
+          "height": 537,
+          "bytes": 213476
+        },
+        {
+          "src": "assets/responsive/ai-refined/image5-v1-1440.webp",
+          "width": 1440,
+          "height": 805,
+          "bytes": 480634
+        }
+      ]
+    },
+    "assets/ai-refined/image6-v1.png": {
+      "width": 1677,
+      "height": 938,
+      "sourceBytes": 3157197,
+      "sourceSha256": "9b03e80980656e03d56911d219a31f71546296c54e8bfd8ae89a2beb75015e50",
+      "variants": [
+        {
+          "src": "assets/responsive/ai-refined/image6-v1-480.webp",
+          "width": 480,
+          "height": 268,
+          "bytes": 60386
+        },
+        {
+          "src": "assets/responsive/ai-refined/image6-v1-960.webp",
+          "width": 960,
+          "height": 537,
+          "bytes": 208192
+        },
+        {
+          "src": "assets/responsive/ai-refined/image6-v1-1440.webp",
+          "width": 1440,
+          "height": 805,
+          "bytes": 479134
+        }
+      ]
+    },
+    "assets/ai-refined/image7-v1.png": {
+      "width": 1700,
+      "height": 925,
+      "sourceBytes": 2994434,
+      "sourceSha256": "2e2efaa49935aeb9f170f7e0e17729b675eda91a98e8937b07975f88e2e12e0e",
+      "variants": [
+        {
+          "src": "assets/responsive/ai-refined/image7-v1-480.webp",
+          "width": 480,
+          "height": 261,
+          "bytes": 59604
+        },
+        {
+          "src": "assets/responsive/ai-refined/image7-v1-960.webp",
+          "width": 960,
+          "height": 522,
+          "bytes": 201314
+        },
+        {
+          "src": "assets/responsive/ai-refined/image7-v1-1440.webp",
+          "width": 1440,
+          "height": 784,
+          "bytes": 451546
+        }
+      ]
+    },
+    "assets/ai-refined/bedroom-v1.png": {
+      "width": 1536,
+      "height": 1024,
+      "sourceBytes": 2857261,
+      "sourceSha256": "0fb810608373af8b1e55ffd39315da4f083c0a63b4b5625905486b74d289a478",
+      "variants": [
+        {
+          "src": "assets/responsive/ai-refined/bedroom-v1-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 39030
+        },
+        {
+          "src": "assets/responsive/ai-refined/bedroom-v1-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 136232
+        },
+        {
+          "src": "assets/responsive/ai-refined/bedroom-v1-1440.webp",
+          "width": 1440,
+          "height": 960,
+          "bytes": 351594
+        }
+      ]
+    },
+    "assets/ai-refined/pool-v1.png": {
+      "width": 1536,
+      "height": 1024,
+      "sourceBytes": 3109240,
+      "sourceSha256": "0fe6cd194c9843f515fbd98a20344bb277f809c4a09062434353250e7c4f751d",
+      "variants": [
+        {
+          "src": "assets/responsive/ai-refined/pool-v1-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 55810
+        },
+        {
+          "src": "assets/responsive/ai-refined/pool-v1-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 191992
+        },
+        {
+          "src": "assets/responsive/ai-refined/pool-v1-1440.webp",
+          "width": 1440,
+          "height": 960,
+          "bytes": 467060
+        }
+      ]
+    },
+    "assets/ai-refined/living-v1.png": {
+      "width": 1536,
+      "height": 1024,
+      "sourceBytes": 3075091,
+      "sourceSha256": "2190110822ff233b4795d8307092a879606334a7c8b75baf540da280335ddd57",
+      "variants": [
+        {
+          "src": "assets/responsive/ai-refined/living-v1-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 45152
+        },
+        {
+          "src": "assets/responsive/ai-refined/living-v1-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 158160
+        },
+        {
+          "src": "assets/responsive/ai-refined/living-v1-1440.webp",
+          "width": 1440,
+          "height": 960,
+          "bytes": 414776
+        }
+      ]
+    },
+    "assets/ai-refined/retreat-v1.png": {
+      "width": 1254,
+      "height": 1254,
+      "sourceBytes": 2622762,
+      "sourceSha256": "5c345b9130e9d4381517df147696362854c70419b5bc1d23dd39276f78b5228b",
+      "variants": [
+        {
+          "src": "assets/responsive/ai-refined/retreat-v1-480.webp",
+          "width": 480,
+          "height": 480,
+          "bytes": 59750
+        },
+        {
+          "src": "assets/responsive/ai-refined/retreat-v1-960.webp",
+          "width": 960,
+          "height": 960,
+          "bytes": 190798
+        },
+        {
+          "src": "assets/responsive/ai-refined/retreat-v1-1254.webp",
+          "width": 1254,
+          "height": 1254,
+          "bytes": 278232
+        }
+      ]
+    },
+    "assets/ai-refined/ready-v1.png": {
+      "width": 1536,
+      "height": 1024,
+      "sourceBytes": 2600931,
+      "sourceSha256": "4b9108f7bad7a18b721567b4af2f65b77f4f47e3a77f6a1524e6f5733f96d29b",
+      "variants": [
+        {
+          "src": "assets/responsive/ai-refined/ready-v1-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 36922
+        },
+        {
+          "src": "assets/responsive/ai-refined/ready-v1-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 120528
+        },
+        {
+          "src": "assets/responsive/ai-refined/ready-v1-1440.webp",
+          "width": 1440,
+          "height": 960,
+          "bytes": 301402
+        }
+      ]
+    },
+    "assets/ai-refined/rose-v1.png": {
+      "width": 1536,
+      "height": 1024,
+      "sourceBytes": 2565062,
+      "sourceSha256": "dbf1d30bcb13cd2e65decaa6f078f72aacee6bc09afc7b8ec55e48bdda32fd68",
+      "variants": [
+        {
+          "src": "assets/responsive/ai-refined/rose-v1-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 37246
+        },
+        {
+          "src": "assets/responsive/ai-refined/rose-v1-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 119530
+        },
+        {
+          "src": "assets/responsive/ai-refined/rose-v1-1440.webp",
+          "width": 1440,
+          "height": 960,
+          "bytes": 280534
+        }
+      ]
+    },
+    "assets/ai-refined/condo-v1.png": {
+      "width": 1254,
+      "height": 1254,
+      "sourceBytes": 2322298,
+      "sourceSha256": "b1efcd4f6f6edaf8f161349655cbbd9cd7ca94447c60ae2b57dbbf4666dff3f3",
+      "variants": [
+        {
+          "src": "assets/responsive/ai-refined/condo-v1-480.webp",
+          "width": 480,
+          "height": 480,
+          "bytes": 37212
+        },
+        {
+          "src": "assets/responsive/ai-refined/condo-v1-960.webp",
+          "width": 960,
+          "height": 960,
+          "bytes": 122546
+        },
+        {
+          "src": "assets/responsive/ai-refined/condo-v1-1254.webp",
+          "width": 1254,
+          "height": 1254,
+          "bytes": 189940
+        }
+      ]
+    },
+    "assets/ai-refined/terrace-v1.png": {
+      "width": 1536,
+      "height": 1024,
+      "sourceBytes": 3295052,
+      "sourceSha256": "679a96bb0deb77c0a30eb63f19041d4d5a8018e91cf09df424b3ef1889d71e64",
+      "variants": [
+        {
+          "src": "assets/responsive/ai-refined/terrace-v1-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 58190
+        },
+        {
+          "src": "assets/responsive/ai-refined/terrace-v1-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 206724
+        },
+        {
+          "src": "assets/responsive/ai-refined/terrace-v1-1440.webp",
+          "width": 1440,
+          "height": 960,
+          "bytes": 492298
+        }
+      ]
+    }
+  },
+  "edits": [
+    {
+      "source": "assets/user-media/image-0.png",
+      "sourceSha256": "68f2696d40675de714b2b661487db2b398edf0d27f7e3d4f728b91e832323bb0",
+      "output": "assets/ai-refined/image0-v1.png",
+      "outputSha256": "20afdfc455d67d67c68a8c48ed8b65348b490c94b0d4190c8b689165332d5627",
+      "prompt": "Edit target: this MyLodge sunset villa terrace wedding photograph. Make a gentle high-end photographic refinement only: slightly soften over-saturated orange/magenta light, refine candle glow, flowers, fabric texture, skin and hands to look naturally photographed, and slightly improve natural depth and warm highlights. Preserve the exact wide viewpoint and framing, villa architecture, ocean/mountain skyline, flower arch, bride, groom, officiant, all seated guests, their positions, garments and poses, and all existing objects. No new people, objects, amenities, writing or logos. Keep the same sunset and romantic warm mood. The image must remain recognizably the same composition with minor natural polish. One edited image, same wide aspect ratio."
+    },
+    {
+      "source": "assets/user-media/image-1.png",
+      "sourceSha256": "fdf621641c1986d626e843da53c389658e1333690af585a344adae70845263c9",
+      "output": "assets/ai-refined/image1-v1.png",
+      "outputSha256": "52328e545ed35e2035ded649198fc9d0c9d01c2e5c6c11647e9ecacd8772eddc",
+      "prompt": "Edit target: the supplied wide MyLodge resort image. Apply only a restrained high-end photographic refinement: soften harsh amber highlights and excessive magenta/purple neon a little, improve natural depth, realistic pool-water reflections and existing foliage/material textures. Preserve the exact camera viewpoint, framing/aspect ratio, every building and its location, all pool contours and levels, landscaping layout, people placements, mountains and horizon. Keep the same time of evening and sunset position. No structural changes, additional buildings, new amenities, new people, text, logos or watermarks. The result must look like this same image with a gentle natural polish, not a redesign. Produce one edited image. In particular retain the sloping coastline, beach width, terraced pools and oblique left-to-right aerial composition."
+    },
+    {
+      "source": "assets/user-media/image-2.png",
+      "sourceSha256": "a5f8cf6f41b67e629e2712413e5a5185f3d60de4c5a5117de93cb70a7f69171a",
+      "output": "assets/ai-refined/image2-v1.png",
+      "outputSha256": "a0caaa8650de5b2bc5af91a41cd4d45966f79a164926527579c6bc9c065ac702",
+      "prompt": "Edit target: this MyLodge villa barbecue photograph. Apply a subtle photographic polish, not a new scene: make warm evening lighting a little softer and more realistic, gently improve skin and hand realism, existing food and table textures, water reflections and foliage detail. Preserve all five adults, faces as recognizable as possible, their clothes, positions, expressions and poses, the barbecue, table setting, pool, full villa architecture and exact wide viewpoint and crop. Retain sunset sky and warm luxurious atmosphere. No added or removed people, food, buildings, text, watermarks or logos. Keep the same wide aspect ratio and overall composition. One edited image."
+    },
+    {
+      "source": "assets/user-media/image-3.png",
+      "sourceSha256": "c740f65992809bbe11065a4d2c204e5453169dbed90ea2e011e816b6391090a6",
+      "output": "assets/ai-refined/image3-v1.png",
+      "outputSha256": "8104ac8018ca39cf849f4785a12d36c70fcfc278a7321d34359bd59d08b92bfa",
+      "prompt": "Edit target: the supplied wide MyLodge resort image. Apply only a restrained high-end photographic refinement: soften harsh amber highlights and excessive magenta/purple neon a little, improve natural depth, realistic pool-water reflections and existing foliage/material textures. Preserve the exact camera viewpoint, framing/aspect ratio, every building and its location, all pool contours and levels, landscaping layout, people placements, mountains and horizon. Keep the same time of evening and sunset position. No structural changes, additional buildings, new amenities, new people, text, logos or watermarks. The result must look like this same image with a gentle natural polish, not a redesign. Produce one edited image. In particular retain the symmetric front-facing multi-level infinity pool, central pavilion and distant inland water view."
+    },
+    {
+      "source": "assets/user-media/image-4.png",
+      "sourceSha256": "85bddf6850011d432e50c8e9ef4ab297578552864046d076129e0ed07163f295",
+      "output": "assets/ai-refined/image4-v1.png",
+      "outputSha256": "d12df5e037e77e47869aace4a58466b0ae5cef3f11468264e56008ad7b668bdf",
+      "prompt": "Edit target: this wide aerial MyLodge coastal resort at sunset. Very subtly refine light and atmosphere: more natural sunset gradation, slightly softer amber building highlights, restrained purple pool lighting, realistic water reflections and texture, and gentle variation within the existing palms and landscaping. Preserve the exact camera angle, wide framing and aspect ratio, all buildings and their arrangement, the central pool outline, cabanas, paths, coastline, sunset position and distant mountain silhouettes. Do not redesign, add amenities, remove structures or change the landscape. No new text, logos or watermarks. Recognizably the same scene, just mildly more natural and polished. One edited image."
+    },
+    {
+      "source": "assets/user-media/image-5.png",
+      "sourceSha256": "1128fe14257254a06e0748b659dd04f63e36b4a77b31009ae10d7a1f9261e721",
+      "output": "assets/ai-refined/image5-v1.png",
+      "outputSha256": "61c5745edd2cbf8f4d40178a0b0be4eeba96b47b8fa411d1ba4e2163f3e5afec",
+      "prompt": "Edit target: the supplied wide MyLodge resort image. Apply only a restrained high-end photographic refinement: soften harsh amber highlights and excessive magenta/purple neon a little, improve natural depth, realistic pool-water reflections and existing foliage/material textures. Preserve the exact camera viewpoint, framing/aspect ratio, every building and its location, all pool contours and levels, landscaping layout, people placements, mountains and horizon. Keep the same time of evening and sunset position. No structural changes, additional buildings, new amenities, new people, text, logos or watermarks. The result must look like this same image with a gentle natural polish, not a redesign. Produce one edited image. In particular retain the active evening gathering around the central clubhouse, twin pool levels and purple accent lighting as subtle accents, not eliminated entirely."
+    },
+    {
+      "source": "assets/user-media/image-6.png",
+      "sourceSha256": "6f94f3efc932e4e7c6ee75b90776706c9e3f803a55b02d847d1f93e3b795312d",
+      "output": "assets/ai-refined/image6-v1.png",
+      "outputSha256": "9b03e80980656e03d56911d219a31f71546296c54e8bfd8ae89a2beb75015e50",
+      "prompt": "Edit target: the supplied wide MyLodge resort image. Apply only a restrained high-end photographic refinement: soften harsh amber highlights and excessive magenta/purple neon a little, improve natural depth, realistic pool-water reflections and existing foliage/material textures. Preserve the exact camera viewpoint, framing/aspect ratio, every building and its location, all pool contours and levels, landscaping layout, people placements, mountains and horizon. Keep the same time of evening and sunset position. No structural changes, additional buildings, new amenities, new people, text, logos or watermarks. The result must look like this same image with a gentle natural polish, not a redesign. Produce one edited image. In particular retain the quieter clubhouse scene, symmetric stacked pools, foreground twin villas and dusk coastline."
+    },
+    {
+      "source": "assets/user-media/image-7.png",
+      "sourceSha256": "6c77bb29f1b12f9b89f849de99851c940671630446c92d09357ab50c0fccace5",
+      "output": "assets/ai-refined/image7-v1.png",
+      "outputSha256": "2e2efaa49935aeb9f170f7e0e17729b675eda91a98e8937b07975f88e2e12e0e",
+      "prompt": "Edit target: the attached MyLodge resort aerial photograph. Make only a subtle, high-end photographic refinement (lighting-weather edit), not a redesign: slightly soften excessive magenta/neon highlights, refine realistic warm window illumination and pool reflections, add restrained natural variation to existing foliage and surface textures, improve atmospheric depth. Preserve the exact wide camera viewpoint, crop/aspect ratio, all building positions and shapes, pool layout, shoreline, mountain skyline, people placement and the entrance sign. The entrance sign must keep its existing exact 'My Lodge' lettering and emblem. Keep dusk/night time and the sunset. No new buildings, amenities, people, text, watermarks or logos. The result should clearly be the same image, gently polished and more natural, not a substantially new scene. Produce one edited image only."
+    },
+    {
+      "source": "assets/mylodge-thailand-concepts/phuket-bedroom.png",
+      "sourceSha256": "91b849020658dc142492e4aab59f3254569435f11bf7133c57af3ea0a713a1a7",
+      "output": "assets/ai-refined/bedroom-v1.png",
+      "outputSha256": "0fb810608373af8b1e55ffd39315da4f083c0a63b4b5625905486b74d289a478",
+      "prompt": "Edit target: the supplied MyLodge architectural photograph. Make a gentle photographic refinement only, preserving the exact camera viewpoint, crop, original aspect ratio, architecture, furnishings and all object locations. Improve realistic daylight balance, subtle material texture and natural highlight/shadow transitions; keep the existing warm cream, wood and green palette. Do not redesign the room or building, change furniture, add people or props, or introduce any text/logo/watermark. It must remain recognizably the same image with a small high-end editorial polish. One edited image. Keep the bed, bedside lamps, bench, sliding glass doors, garden and pool exactly where they are; subtly refine linen and stone textures and soften overly golden sunlight."
+    },
+    {
+      "source": "assets/mylodge-thailand-concepts/phuket-pool.png",
+      "sourceSha256": "14f55a472aef4864acbce6699b11f3a3f552e987ac9511ad2c4de36ae8f920cc",
+      "output": "assets/ai-refined/pool-v1.png",
+      "outputSha256": "0fe6cd194c9843f515fbd98a20344bb277f809c4a09062434353250e7c4f751d",
+      "prompt": "Edit target: the supplied MyLodge architectural photograph. Make a gentle photographic refinement only, preserving the exact camera viewpoint, crop, original aspect ratio, architecture, furnishings and all object locations. Improve realistic daylight balance, subtle material texture and natural highlight/shadow transitions; keep the existing warm cream, wood and green palette. Do not redesign the room or building, change furniture, add people or props, or introduce any text/logo/watermark. It must remain recognizably the same image with a small high-end editorial polish. One edited image. Keep the entire villa, pool shape, lounge chairs, ocean view and plants in place; give water caustics and palm foliage slightly more natural variation and soften harsh sun highlights."
+    },
+    {
+      "source": "assets/mylodge-thailand-concepts/phuket-living.png",
+      "sourceSha256": "8575f3ebce5bd4701ffa4956f07b43276120dce713d54901d934d451d604fd9d",
+      "output": "assets/ai-refined/living-v1.png",
+      "outputSha256": "2190110822ff233b4795d8307092a879606334a7c8b75baf540da280335ddd57",
+      "prompt": "Edit target: the supplied MyLodge architectural photograph. Make a gentle photographic refinement only, preserving the exact camera viewpoint, crop, original aspect ratio, architecture, furnishings and all object locations. Improve realistic daylight balance, subtle material texture and natural highlight/shadow transitions; keep the existing warm cream, wood and green palette. Do not redesign the room or building, change furniture, add people or props, or introduce any text/logo/watermark. It must remain recognizably the same image with a small high-end editorial polish. One edited image. Keep the sofa, round coffee table, armchair, dining table, glazing and pool view unchanged; gently balance interior light and soften over-sharp stone, upholstery and timber textures."
+    },
+    {
+      "source": "assets/mylodge-edited/living-retreat.png",
+      "sourceSha256": "0849ec9835e95e40dea3766c32b3b8e917a3f3299fa355b0b200081d3163f658",
+      "output": "assets/ai-refined/retreat-v1.png",
+      "outputSha256": "5c345b9130e9d4381517df147696362854c70419b5bc1d23dd39276f78b5228b",
+      "prompt": "Edit target: the supplied MyLodge architectural photograph. Make a gentle photographic refinement only, preserving the exact camera viewpoint, crop, original aspect ratio, architecture, furnishings and all object locations. Improve realistic daylight balance, subtle material texture and natural highlight/shadow transitions; keep the existing warm cream, wood and green palette. Do not redesign the room or building, change furniture, add people or props, or introduce any text/logo/watermark. It must remain recognizably the same image with a small high-end editorial polish. One edited image. Preserve the square crop, compact living room, white sofas, round glass table, ceiling light lines, curtain and tropical window view; gently refine fabric realism and make the daylight less yellow."
+    },
+    {
+      "source": "assets/feedback-v2/deck-07-ready-to-rest.png",
+      "sourceSha256": "8e22253ee4a5bea9db2dba04553648a366d5223e8472b77fb31e37a378c697cd",
+      "output": "assets/ai-refined/ready-v1.png",
+      "outputSha256": "4b9108f7bad7a18b721567b4af2f65b77f4f47e3a77f6a1524e6f5733f96d29b",
+      "prompt": "Edit target: the attached existing MyLodge photograph. Make a small, tasteful high-end editorial photographic refinement only. Balance the warm daylight, soften artificial-looking highlights, add subtle realism to existing fabric, wood, stone and plant textures, and keep colors natural. Preserve the exact viewpoint, crop and aspect ratio, all architecture, room dimensions, objects, furniture placement and existing garden. Do not redesign anything, change the scene's purpose or add people, objects, writing, logos or watermarks. It must still be recognizably the same photograph, gently refined. Produce one edited image. Keep the neatly made bed, folded towels, window framing, curtain and doorway view unchanged; refine linen texture and make the yellow cast slightly softer."
+    },
+    {
+      "source": "assets/feedback-v2/rose-living.png",
+      "sourceSha256": "863c3718b0df23ab9294c27d48be316b0d5c02dd6df127f60120e35c06e371aa",
+      "output": "assets/ai-refined/rose-v1.png",
+      "outputSha256": "dbf1d30bcb13cd2e65decaa6f078f72aacee6bc09afc7b8ec55e48bdda32fd68",
+      "prompt": "Edit target: the attached existing MyLodge photograph. Make a small, tasteful high-end editorial photographic refinement only. Balance the warm daylight, soften artificial-looking highlights, add subtle realism to existing fabric, wood, stone and plant textures, and keep colors natural. Preserve the exact viewpoint, crop and aspect ratio, all architecture, room dimensions, objects, furniture placement and existing garden. Do not redesign anything, change the scene's purpose or add people, objects, writing, logos or watermarks. It must still be recognizably the same photograph, gently refined. Produce one edited image. Keep the muted rose sofa cushions and wall, kitchen, small round dining table and flowering garden; subtly improve warm daylight and tactile upholstery without moving or replacing objects."
+    },
+    {
+      "source": "assets/mylodge-edited/condo-retreat.png",
+      "sourceSha256": "3807903cd6d66738b9588f9591056f53e5101d041c92a6b63a723ffa2399b43f",
+      "output": "assets/ai-refined/condo-v1.png",
+      "outputSha256": "b1efcd4f6f6edaf8f161349655cbbd9cd7ca94447c60ae2b57dbbf4666dff3f3",
+      "prompt": "Edit target: the attached existing MyLodge photograph. Make a small, tasteful high-end editorial photographic refinement only. Balance the warm daylight, soften artificial-looking highlights, add subtle realism to existing fabric, wood, stone and plant textures, and keep colors natural. Preserve the exact viewpoint, crop and aspect ratio, all architecture, room dimensions, objects, furniture placement and existing garden. Do not redesign anything, change the scene's purpose or add people, objects, writing, logos or watermarks. It must still be recognizably the same photograph, gently refined. Produce one edited image. Keep the square frame, black glass table, white flowers, armchair, hallway, ceiling lights and air-conditioning grille; gently balance color and refine surfaces while preserving the same arrangement."
+    },
+    {
+      "source": "assets/mylodge-edited/poolside-terrace.png",
+      "sourceSha256": "0a826104b5289d607438c6e445d343b9d8aae646cda8052c6d21c8b27b3b0d34",
+      "output": "assets/ai-refined/terrace-v1.png",
+      "outputSha256": "679a96bb0deb77c0a30eb63f19041d4d5a8018e91cf09df424b3ef1889d71e64",
+      "prompt": "Edit target: the attached existing MyLodge photograph. Make a small, tasteful high-end editorial photographic refinement only. Balance the warm daylight, soften artificial-looking highlights, add subtle realism to existing fabric, wood, stone and plant textures, and keep colors natural. Preserve the exact viewpoint, crop and aspect ratio, all architecture, room dimensions, objects, furniture placement and existing garden. Do not redesign anything, change the scene's purpose or add people, objects, writing, logos or watermarks. It must still be recognizably the same photograph, gently refined. Produce one edited image. Keep the shaded terrace, round stone table, sofas, timber pergola, pool and tropical garden; subtly refine pool reflections and dappled sunlight while maintaining the same warm afternoon."
+    }
+  ]
+}
