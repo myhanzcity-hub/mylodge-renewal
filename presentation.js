@@ -13,6 +13,44 @@
   const saveData = navigator.connection?.saveData || /(^|-)2g$/.test(navigator.connection?.effectiveType || '');
   let current = 0;
   let lastNavigation = 0;
+  const quickDialog = document.querySelector('[data-quick-dialog]');
+  let quickSource;
+  function showQuickView(view) {
+    quickDialog.querySelector('[data-quick-title]').textContent = view === 'places' ? '머물 곳 둘러보기' : '견적 맞추기';
+    for (const panel of quickDialog.querySelectorAll('[data-quick-view]')) panel.hidden = panel.dataset.quickView !== view;
+    quickDialog.querySelector('[data-quick-body]').scrollTop = 0;
+  }
+  for (const source of deck.querySelectorAll?.('[data-quick-page]') || []) {
+    source.addEventListener('click', event => {
+      event.preventDefault();
+      quickSource = source;
+      showQuickView(source.dataset.quickPage === '3' ? 'places' : 'estimate');
+      source.setAttribute('aria-expanded', 'true');
+      quickDialog.showModal();
+      quickDialog.querySelector('[data-quick-body]').scrollTop = 0;
+    });
+  }
+  quickDialog?.querySelector('[data-quick-estimate]').addEventListener('click', () => {
+    showQuickView('estimate');
+    quickDialog.querySelector('[data-quote-region]').focus({preventScroll: true});
+  });
+  quickDialog?.querySelector('[data-quick-places]').addEventListener('click', () => {
+    showQuickView('places');
+    quickDialog.querySelector('[data-quick-region][aria-pressed="true"]').focus({preventScroll: true});
+  });
+  quickDialog?.querySelector('[data-quick-close]').addEventListener('click', () => quickDialog.close());
+  quickDialog?.addEventListener('click', event => {
+    if (event.target.closest('a[href^="#page="]')) quickDialog.close();
+    if (event.target === quickDialog) {
+      const rect = quickDialog.getBoundingClientRect();
+      if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) quickDialog.close();
+    }
+  });
+  quickDialog?.addEventListener('close', () => {
+    if (!quickSource) return;
+    quickSource.setAttribute('aria-expanded', 'false');
+    if (!quickSource.closest('[data-slide]').hidden) quickSource.focus({preventScroll: true});
+  });
   const contents = document.querySelector('[data-contents-dialog]');
   const contentsButton = document.querySelector('[data-contents-open]');
   contentsButton?.addEventListener('click', () => {
@@ -114,7 +152,7 @@
   next.addEventListener('click', () => show(current === slides.length - 1 ? 0 : current + 1));
   addEventListener('hashchange', () => show(hashIndex(), false));
   addEventListener('keydown', event => {
-    if (contents?.open) return;
+    if (contents?.open || quickDialog?.open) return;
     if (event.altKey || event.ctrlKey || event.metaKey || event.target.closest('input, textarea, select, button, a, summary, [contenteditable="true"]')) return;
     if (event.target.closest('.photo-track') && !desktop.matches) return;
     if (['ArrowRight', 'PageDown', ' '].includes(event.key)) { event.preventDefault(); show(Math.min(slides.length - 1, current + 1)); }

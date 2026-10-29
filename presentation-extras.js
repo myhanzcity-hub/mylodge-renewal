@@ -1,4 +1,4 @@
-import {pricePlans,selectionEstimate,usd} from './presentation-options.js';
+import {pricePlans,destinations,selectionEstimate,usd} from './presentation-options.js';
 import {animateAmount,setAmountText,transitionPhoto,revealSelection,mountMotion,mountPhotoBranding} from './presentation-motion.js';
 
 export function mountExperiences(root=document){
@@ -54,4 +54,36 @@ export function mountExperiences(root=document){
   });
   updateSelection();
 }
-if(typeof document!=='undefined'){mountExperiences();mountMotion();mountPhotoBranding();}
+export function mountQuickPlanner(root=document){
+  const planner=root.querySelector('[data-quick-dialog]');
+  if(!planner)return;
+  const regionSelect=planner.querySelector('[data-quote-region]');
+  const sharesSelect=planner.querySelector('[data-quote-shares]');
+  let plan='deluxe';
+  function updateQuote(){
+    const region=destinations.find(item=>item.id===regionSelect.value);
+    const label=plan==='deluxe'?'디럭스 10평':'프레스티지 20평';
+    planner.querySelector('[data-quote-summary]').textContent=`${region.label} · ${label} · ${sharesSelect.value}구좌`;
+    // Deluxe/Prestige have no configured prices. Never reuse the legacy plan amounts.
+    for(const key of ['base','total','payment'])planner.querySelector(`[data-quote-${key}]`).textContent='—';
+  }
+  function chooseRegion(id){
+    regionSelect.value=id;
+    planner.querySelectorAll('[data-quick-region]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.quickRegion===id)));
+    planner.querySelectorAll('[data-region-gallery]').forEach(gallery=>{
+      gallery.hidden=gallery.dataset.regionGallery!==id;
+      if(!gallery.hidden)gallery.querySelector('img')?.setAttribute('loading','eager');
+    });
+    updateQuote();
+  }
+  planner.querySelectorAll('[data-quick-region]').forEach(button=>button.addEventListener('click',()=>chooseRegion(button.dataset.quickRegion)));
+  planner.querySelectorAll('[data-quote-plan]').forEach(button=>button.addEventListener('click',()=>{
+    plan=button.dataset.quotePlan;
+    planner.querySelectorAll('[data-quote-plan]').forEach(item=>item.setAttribute('aria-pressed',String(item===button)));
+    updateQuote();
+  }));
+  regionSelect.addEventListener('change',()=>chooseRegion(regionSelect.value));
+  sharesSelect.addEventListener('change',updateQuote);
+  updateQuote();
+}
+if(typeof document!=='undefined'){mountExperiences();mountQuickPlanner();mountMotion();mountPhotoBranding();}

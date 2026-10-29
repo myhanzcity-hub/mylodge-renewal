@@ -3,17 +3,17 @@ window.MYLODGE_SLIDES = [
   {
     "id": "opening",
     "number": "01",
-    "kicker": "MYLODGE / YOUR PRIVATE WORLD",
-    "title": "나 해외에 호화 별장 가진 사람이야",
-    "body": "여행이 끝나도, 다시 돌아갈 나의 공간 가족과 친구를 초대하고 우리만의 휴식을 즐기는 해외 별장 라이프를 마이롯지와 만나보세요",
+    "kicker": "MyLodge Private Mansion · Global Network",
+    "title": "나! 해외에 호화 별장 가진 사람이야",
+    "body": "유명 휴양지에 돌아갈 나의 공간이 생깁니다 소중한 사람을 초대하고, 새로운 만남을 만들고, 비즈니스의 자리까지 넓혀보세요 MyLodge Private Mansion이 제안하는 초호화 별장 오너의 삶입니다",
     "layout": "split",
     "theme": "dark",
     "points": [
-      "꿈꾸던 해외 별장 라이프",
-      "소중한 사람들과 프라이빗한 휴식",
-      "함께 나누는 별장의 가치"
+      "여행지에 머무는 즐거움에서, 나의 공간을 갖는 가치로",
+      "사람을 초대하는 여유, 관계가 넓어지는 기회",
+      "휴식부터 비즈니스까지, 달라지는 공간의 쓰임"
     ],
-    "subtitle": "이 꿈 같은 로망이 즉시 현실이 되다",
+    "subtitle": "“다음엔 내 해외 별장에서 만나” 그 한마디가 달라지는 삶",
     "image": "assets/mylodge-edited/tropical-pool-villa.png",
     "imageAlt": "따뜻한 저녁빛과 전용 수영장이 어우러진 열대 풀빌라",
     "imageFit": "contain",
@@ -41,8 +41,8 @@ window.MYLODGE_SLIDES = [
     "id": "products",
     "number": "02",
     "kicker": "THREE WAYS TO STAY",
-    "title": "당신의 취향에 맞는 별장 라이프",
-    "body": "우리끼리 쉬고 싶은 날에는 프라이빗 별장, 도시를 즐기고 싶은 날에는 콘도 이웃과 취향을 나누는 마이롯지 커뮤니티까지, 당신이 원하는 휴식에서 선택을 시작하세요",
+    "title": "내가 살고 싶은 삶에, 어울리는 별장을 고르다",
+    "body": "독립된 빌라에서 누리는 프라이빗한 시간부터 도시와 가까운 콘도 생활까지, 내가 머물고 싶은 방식으로 선택하세요",
     "layout": "split",
     "theme": "light",
     "image": "assets/reference-originals/57795.png",
@@ -50,9 +50,9 @@ window.MYLODGE_SLIDES = [
     "imageFit": "contain",
     "imageCaption": "",
     "points": [
-      "독립된 공간을 누리는 프라이빗 별장",
-      "도시의 일상을 즐기는 콘도",
-      "취향으로 연결되는 커뮤니티"
+      "독립된 빌라에서 누리는 프라이빗한 시간",
+      "도시의 일상과 가까운 콘도 생활",
+      "머물 사람과 생활 방식에 맞춘 선택"
     ],
     "gallery": [
       {
@@ -66,8 +66,8 @@ window.MYLODGE_SLIDES = [
     "id": "destinations",
     "number": "03",
     "kicker": "FIND YOUR DESTINATION",
-    "title": "푸켓 · 치앙마이 · 방콕",
-    "body": "푸켓의 프라이빗 휴양, 치앙마이의 여유로운 체류, 방콕의 편리한 도시 생활 태국의 세 지역에서 나에게 어울리는 쉼을 골라보세요 국내 주문진·양양도 함께 둘러볼 수 있습니다",
+    "title": "내 해외 별장, 어디에 있으면 좋을까?",
+    "body": "푸켓의 바다, 치앙마이의 자연, 방콕의 도시 생활 — 나를 가장 설레게 하는 곳부터 둘러보세요",
     "layout": "split",
     "theme": "dark",
     "image": "assets/mylodge-thailand-concepts/phuket-pool.png",
@@ -75,9 +75,9 @@ window.MYLODGE_SLIDES = [
     "imageFit": "contain",
     "imageCaption": "",
     "points": [
-      "푸켓 · 해변과 풀빌라",
-      "치앙마이 · 자연과 여유",
-      "방콕 · 도심과 콘도"
+      "푸켓 · 바다와 전용 풀을 즐기는 휴양",
+      "치앙마이 · 자연 가까이 머무는 생활",
+      "방콕 · 만남과 일상이 이어지는 도시"
     ],
     "note": "태국 소개 지역은 푸켓·치앙마이·방콕입니다",
     "subtitle": "휴양 · 자연 · 도시",
@@ -98,8 +98,8 @@ window.MYLODGE_SLIDES = [
     "id": "private-villa",
     "number": "04",
     "kicker": "PRIVATE LUXURY VILLA",
-    "title": "넓은 거실과 전용 수영장 오늘은 우리 집처럼",
-    "body": "아침에는 수영을, 오후에는 느긋한 식사를 여럿이 모여도 넉넉한 거실과 각자의 쉼을 위한 침실이 있는 프라이빗 별장 함께하는 즐거움과 혼자만의 여유를 모두 담아보세요",
+    "title": "사진 속 호화 별장이, 내가 초대하는 공간으로",
+    "body": "넓은 거실에서 함께 식사하고 전용 수영장 곁에서 하루를 보내는 생활, 그 공간에서 누구와 무엇을 하고 싶은지 떠올려보세요",
     "layout": "split",
     "theme": "light",
     "links": [],
@@ -108,9 +108,9 @@ window.MYLODGE_SLIDES = [
     "imageFit": "contain",
     "imageCaption": "",
     "points": [
-      "가족과 친구가 모이는 넉넉한 공간",
+      "사람을 초대하는 넉넉한 거실과 다이닝",
       "우리의 속도로 즐기는 전용 수영장",
-      "함께 쉬고, 각자 편안하게"
+      "함께하는 공간과 각자의 쉼을 위한 침실"
     ],
     "note": "침실 약 4개·욕실 약 4~5개 구성은 참고 예시입니다 시설과 숙박 정원은 상품별로 다릅니다",
     "gallery": [
@@ -131,8 +131,8 @@ window.MYLODGE_SLIDES = [
     "id": "privacy",
     "number": "05",
     "kicker": "A PLACE APART",
-    "title": "누구의 눈치도 없이, 우리만의 휴식",
-    "body": "거실에서 나누는 긴 대화, 정원에서 보내는 조용한 오후, 수영장 옆에서의 여유 독립된 공간이 주는 편안함으로 소중한 사람들과의 시간에 더 집중해 보세요",
+    "title": "우리의 대화에, 다른 사람은 없어도 되니까",
+    "body": "소중한 사람과의 저녁부터 중요한 비즈니스 대화까지, 독립된 공간에서 함께하는 사람에게 집중하세요",
     "layout": "split",
     "theme": "dark",
     "image": "assets/mylodge-edited/living-retreat.png",
@@ -140,9 +140,9 @@ window.MYLODGE_SLIDES = [
     "imageFit": "contain",
     "imageCaption": "",
     "points": [
-      "함께 머무는 사람에게 집중하는 시간",
-      "독립된 공간에서 누리는 편안함",
-      "일상의 소음을 잠시 내려놓는 휴식"
+      "둘만의 이야기에 집중하는 저녁",
+      "함께 머무는 사람을 위한 독립된 공간",
+      "편안한 분위기에서 이어지는 비즈니스 대화"
     ],
     "note": "전용 시설과 보안·출입 관리 방식은 상품별로 확인해 주세요",
     "gallery": [
@@ -162,8 +162,8 @@ window.MYLODGE_SLIDES = [
     "id": "lifestyle",
     "number": "06",
     "kicker": "MORE THAN A HOLIDAY",
-    "title": "“다음 휴가는 우리 별장으로 와”",
-    "body": "가족과 함께 요리하고, 친구와 늦도록 이야기를 나누고, 좋아하는 사람에게 머물 자리를 내어주는 일 별장의 진짜 매력은 그곳에서 만들어 갈 추억에 있습니다",
+    "title": "“다음엔 내 해외 별장에서 만나”",
+    "body": "친구에게 건네는 초대 한마디, 함께 요리하고 늦도록 이야기하는 시간이 관계에 새로운 이야기를 더합니다",
     "layout": "split",
     "theme": "light",
     "image": "assets/feedback-v2/deck-06-shared-dinner.png",
@@ -171,17 +171,17 @@ window.MYLODGE_SLIDES = [
     "imageFit": "contain",
     "imageCaption": "",
     "points": [
-      "가족이 함께 쌓는 새로운 추억",
-      "친구를 초대하는 특별한 즐거움",
-      "반복되는 여행을 나만의 일상으로"
+      "친구에게 건네는 특별한 초대",
+      "함께 식사하고 이야기를 나누는 시간",
+      "다시 만날 이유가 생기는 나의 공간"
     ]
   },
   {
     "id": "maid",
     "number": "07",
     "kicker": "MORE TIME TO RELAX",
-    "title": "쉬러 온 당신은, 쉬는 일에만",
-    "body": "청소와 생활의 번거로움은 덜고, 좋아하는 일에 더 많은 시간을 쓰세요 머무는 동안의 편안함을 더하는 메이드 서비스로 한결 여유로운 별장 생활을 그려보세요",
+    "title": "별장을 누리는 시간에, 관리의 번거로움은 줄이고",
+    "body": "청소와 생활 관리를 돕는 서비스를 살펴보고, 머무는 동안 내가 하고 싶은 일에 더 많은 시간을 쓰세요",
     "layout": "split",
     "theme": "dark",
     "image": "assets/feedback-v2/deck-07-ready-to-rest.png",
@@ -190,8 +190,8 @@ window.MYLODGE_SLIDES = [
     "imageCaption": "",
     "points": [
       "정돈된 공간에서 시작하는 하루",
-      "집안일보다 휴식에 더 많은 시간",
-      "머무는 방식에 맞춘 생활 서비스"
+      "관리에 쓰는 시간보다 내가 즐기는 시간",
+      "머무는 방식에 맞춰 살펴보는 생활 서비스"
     ],
     "note": "참고 요금은 하루 약 USD 29입니다 실제 요금·이용 가능 여부·업무 범위는 상품별로 확인해 주세요",
     "gallery": [
@@ -206,8 +206,8 @@ window.MYLODGE_SLIDES = [
     "id": "condo",
     "number": "08",
     "kicker": "CONNECTED CITY LIVING",
-    "title": "문밖에는 도시, 집 안에는 나만의 여유",
-    "body": "방콕의 카페에서 하루를 시작하고, 도시를 둘러본 뒤 편안한 공간으로 돌아오는 생활 가볍게 떠나 오래 머물고 싶은 당신에게, 콘도라는 선택을 제안합니다",
+    "title": "방콕에, 다시 돌아갈 나의 공간이 있다면",
+    "body": "아침에는 익숙한 카페로, 낮에는 새로운 만남으로, 저녁에는 편안한 공간으로 돌아오는 도시 생활을 그려보세요",
     "layout": "split",
     "theme": "light",
     "links": [],
@@ -216,9 +216,9 @@ window.MYLODGE_SLIDES = [
     "imageFit": "contain",
     "imageCaption": "",
     "points": [
-      "혼자 또는 둘이 즐기는 도시 생활",
-      "취향대로 발견하는 주변의 즐거움",
-      "여행과 일상 사이, 편안한 체류"
+      "도시의 카페와 문화가 가까운 일상",
+      "일과 만남을 함께 계획하는 체류",
+      "하루를 마치고 편안하게 돌아올 공간"
     ],
     "gallery": [
       {
@@ -233,8 +233,8 @@ window.MYLODGE_SLIDES = [
     "id": "comparison",
     "number": "09",
     "kicker": "FIND YOUR FIT",
-    "title": "당신의 휴식은 어떤 모습인가요?",
-    "body": "가족과 함께 넓은 공간을 누리고 싶다면 프라이빗 별장 도시의 리듬을 가까이에서 즐기고 싶다면 콘도 함께할 사람과 보내고 싶은 시간을 기준으로 나에게 맞는 공간을 찾아보세요",
+    "title": "별장을 고르는 기준은, 내가 누릴 생활입니다",
+    "body": "여럿을 초대할 넉넉한 공간이 필요한지, 도시를 가까이에서 즐기고 싶은지 — 함께할 사람과 생활 방식으로 비교하세요",
     "layout": "split",
     "theme": "dark",
     "image": "assets/feedback-v2/exterior-evening.png",
@@ -242,9 +242,9 @@ window.MYLODGE_SLIDES = [
     "imageFit": "contain",
     "imageCaption": "",
     "points": [
-      "프라이빗 별장 · 우리끼리 보내는 휴양",
-      "콘도 · 도시와 연결되는 생활",
-      "나의 취향과 체류 방식에 맞춘 선택"
+      "빌라 · 여럿을 초대하는 프라이빗한 휴양",
+      "콘도 · 도시와 가까이 이어지는 생활",
+      "공간의 크기보다 먼저 생각하는 나의 쓰임"
     ],
     "gallery": [
       {
@@ -258,8 +258,8 @@ window.MYLODGE_SLIDES = [
     "id": "community",
     "number": "10",
     "kicker": "THE ORIGINAL MYLODGE",
-    "title": "나만의 쉼과 함께하는 즐거움, 마이롯지",
-    "body": "아늑한 복층 별장에서 충분히 쉬고, 마음이 맞는 이웃과 새로운 즐거움을 나누는 생활 가족 여행부터 취미 모임, 일과 휴식을 함께하는 체류까지 마이롯지에서 그려보세요",
+    "title": "공간을 넘어, 만나는 사람도 달라지도록",
+    "body": "취미가 맞는 사람과의 만남, 함께 즐기는 활동, 편안하게 이어지는 대화까지 별장 생활의 또 다른 즐거움을 만나보세요",
     "layout": "split",
     "theme": "light",
     "image": "assets/reference-originals/57798.png",
@@ -341,9 +341,9 @@ window.MYLODGE_SLIDES = [
     ],
     "imageCollectionNote": "",
     "points": [
-      "혼자 쉬어도, 함께 즐겨도 좋은 공간",
-      "가족·취미·웰니스로 이어지는 만남",
-      "휴식과 교류가 어우러지는 별장 라이프"
+      "취향이 맞는 사람과 나누는 새로운 이야기",
+      "취미와 활동을 함께 즐기는 교류",
+      "나만의 시간과 함께하는 시간의 균형"
     ],
     "note": "기존 MyLodge 27평 모델 기준의 공간 제안입니다 시설과 커뮤니티 프로그램은 준비 중입니다"
   },
@@ -351,8 +351,8 @@ window.MYLODGE_SLIDES = [
     "id": "ownership",
     "number": "11",
     "kicker": "SHARED PARTICIPATION",
-    "title": "혼자 짊어질 부담은 나누고, 별장의 가치는 함께",
-    "body": "큰 별장을 혼자 마련해야 한다는 생각에서 한 걸음 벗어나 보세요 원하는 참여 규모에 맞춰 구좌를 선택하고, 나의 라이프스타일에 어울리는 별장 이용을 계획하는 방식입니다",
+    "title": "호화 별장을 향한 선택, 내 규모에 맞게",
+    "body": "별장을 혼자 마련하는 방식만 생각할 필요는 없습니다 구좌와 이용 범위를 살펴보고 나에게 맞는 참여 계획을 세워보세요",
     "layout": "split",
     "theme": "dark",
     "image": "assets/reference-originals/57808.png",
@@ -360,9 +360,9 @@ window.MYLODGE_SLIDES = [
     "imageFit": "contain",
     "imageCaption": "",
     "points": [
-      "함께 나누는 별장 참여의 부담",
-      "나에게 맞춰 선택하는 참여 규모",
-      "휴양을 넘어 오래 즐기는 생활의 가치"
+      "나에게 맞춰 선택하는 구좌와 참여 규모",
+      "실제 생활에 맞춰 살펴보는 이용 범위",
+      "참여 전 확인하는 상품별 권리와 조건"
     ],
     "note": "구좌별 권리·이용 범위·총 구좌 수는 최종 계약에서 확인해 주세요"
   },
@@ -370,8 +370,8 @@ window.MYLODGE_SLIDES = [
     "id": "pricing",
     "number": "12",
     "kicker": "PRICE BY PRODUCT",
-    "title": "꿈꾸던 별장 생활, 나에게 맞는 계획으로",
-    "body": "어떤 공간에서 얼마나 머물고 싶은지부터 생각해 보세요 마이롯지 기본형과 럭셔리형, 태국 프라이빗 별장과 콘도까지 상품별 참여 금액과 납입 조건을 살펴보세요",
+    "title": "내가 원하는 공간은, 어느 정도일까?",
+    "body": "디럭스 10평과 프레스티지 20평, 공간의 크기와 참여 규모를 비교하며 나에게 맞는 구성을 골라보세요",
     "layout": "split",
     "theme": "light",
     "image": "assets/reference-originals/57810.png",
@@ -379,9 +379,9 @@ window.MYLODGE_SLIDES = [
     "imageFit": "contain",
     "imageCaption": "",
     "points": [
-      "상품과 옵션에 맞춘 참여 계획",
-      "전체 금액과 납입 일정을 한눈에",
-      "생활 방식과 예산을 함께 고려한 선택"
+      "디럭스 10평 · 나에게 맞는 공간 선택",
+      "프레스티지 20평 · 더 넓은 공간 선택",
+      "지역과 구좌 수에 맞춰 구성하는 참여 계획"
     ],
     "facts": [
       {
@@ -393,7 +393,7 @@ window.MYLODGE_SLIDES = [
         "value": "USD 4,149"
       }
     ],
-    "note": "기존 MyLodge 기획 기준 금액입니다",
+    "note": "아래 기본형·럭셔리형 금액은 기존 MyLodge 상품 기준이며, 디럭스 10평·프레스티지 20평의 가격이 아닙니다",
     "details": [
       {
         "summary": "기존 MyLodge 5차 납입 일정 보기",
@@ -415,8 +415,8 @@ window.MYLODGE_SLIDES = [
     "id": "rental",
     "number": "13",
     "kicker": "USE & RENTAL",
-    "title": "내가 쉬는 공간에, 또 하나의 활용 가능성",
-    "body": "직접 머무는 즐거움에 더해, 비워 두는 시간의 활용도 생각해 보세요 임대가 가능한 상품이라면 휴식과 공간 활용을 함께 계획할 수 있습니다",
+    "title": "내가 머물지 않는 시간까지 생각한 선택",
+    "body": "직접 이용할 일정과 비워 두는 기간을 함께 살펴보세요 임대가 가능한 상품은 운영 조건에 맞춰 활용 방법을 살펴볼 수 있습니다",
     "layout": "split",
     "theme": "dark",
     "image": "assets/mylodge-edited/poolside-terrace.png",
@@ -424,9 +424,9 @@ window.MYLODGE_SLIDES = [
     "imageFit": "contain",
     "imageCaption": "",
     "points": [
-      "머무는 동안에는 나만의 휴양 공간",
-      "비워 두는 기간에는 임대 활용 검토",
-      "이용 계획에 맞춰 살펴보는 운영 방식"
+      "직접 머물 날짜를 먼저 정하는 이용 계획",
+      "비워 두는 기간의 임대 활용 가능성",
+      "상품별 운영 조건에 맞춘 공간 활용"
     ],
     "note": "임대는 상품별 계약과 현지 규정에 따릅니다 수익과 원금 회수는 보장하지 않습니다"
   },
@@ -434,8 +434,8 @@ window.MYLODGE_SLIDES = [
     "id": "transfer",
     "number": "14",
     "kicker": "RIGHTS BEYOND YOUR STAY",
-    "title": "오늘의 휴식부터, 내일의 계획까지",
-    "body": "올해의 휴가만이 아니라 앞으로의 생활까지 생각하는 선택 나에게 맞는 권리와 이용 조건을 살펴보고, 오래 누릴 별장의 가치를 계획해 보세요",
+    "title": "올해의 여행을 넘어, 앞으로의 생활까지",
+    "body": "얼마나 오래 누리고 싶은지, 생활이 달라지면 어떻게 활용할지 — 보유와 양도 조건까지 함께 살펴보세요",
     "layout": "split",
     "theme": "light",
     "image": "assets/reference-originals/57794.jpg",
@@ -443,9 +443,9 @@ window.MYLODGE_SLIDES = [
     "imageFit": "contain",
     "imageCaption": "",
     "points": [
-      "여행을 넘어 생각하는 장기적인 활용",
-      "내 생활에 맞춰 세우는 보유 계획",
-      "상품별 조건에 따른 양도 가능성"
+      "앞으로의 생활까지 생각하는 보유 계획",
+      "생활이 달라질 때 살펴보는 활용 방식",
+      "상품별 계약에 따른 권리와 양도 조건"
     ],
     "note": "양도 가능 여부·비용·절차는 계약에 따릅니다 자산 가치 상승과 원금 보전을 보장하지 않습니다"
   },
@@ -453,8 +453,8 @@ window.MYLODGE_SLIDES = [
     "id": "annual-schedule",
     "number": "15",
     "kicker": "YOUR YEAR AT A GLANCE",
-    "title": "다음 휴가가 기다려지는 1년",
-    "body": "가족의 기념일, 친구들과의 약속, 나만의 재충전 시간 한 해의 달력 위에 머물고 싶은 날을 그려보세요 연간 일정 미리보기에서 나의 별장 생활을 먼저 계획할 수 있습니다",
+    "title": "달력에 휴가 대신, 별장에 갈 날을 적다",
+    "body": "친구와의 약속, 둘만의 기념일, 가족과의 여행까지 한 해의 중요한 날을 별장에서 보낼 시간으로 계획해보세요",
     "layout": "split",
     "theme": "dark",
     "links": [
@@ -468,9 +468,9 @@ window.MYLODGE_SLIDES = [
     "imageFit": "contain",
     "imageCaption": "",
     "points": [
-      "365일 달력으로 한눈에 보는 일정",
-      "3일 단위 구간으로 살펴보는 체류 계획",
-      "상품별로 구분해 보는 이용 일정"
+      "365일 달력에 그려보는 나의 체류 일정",
+      "3일 단위로 살펴보는 만남과 휴가 계획",
+      "지역과 상품을 구분해 확인하는 이용 일정"
     ],
     "note": "일정 화면은 미리보기입니다 날짜 선택으로 예약이 확정되지 않습니다",
     "gallery": [
@@ -485,8 +485,8 @@ window.MYLODGE_SLIDES = [
     "id": "domestic-schedule",
     "number": "16",
     "kicker": "YOUR LOCAL ESCAPE",
-    "title": "가까운 곳에서, 더 자주 만나는 쉼",
-    "body": "길게 떠나지 않아도 좋은 휴식이 있습니다 바다가 생각나는 주말, 가족과 보내고 싶은 여름날 국내 별장에서 나의 일상에 작은 휴가를 더해 보세요",
+    "title": "해외로 떠나지 않는 주말에도, 별장 생활은 계속",
+    "body": "주문진과 양양의 바다가 생각나는 날, 가까운 곳에서 짧게 머물며 일상에 별장의 시간을 더해보세요",
     "layout": "split",
     "theme": "light",
     "links": [
@@ -500,9 +500,9 @@ window.MYLODGE_SLIDES = [
     "imageFit": "contain",
     "imageCaption": "",
     "points": [
-      "주말에 떠올리는 가까운 휴양",
-      "가족과 함께 준비하는 여름 휴가",
-      "나의 일정에 맞춰 계획하는 쉼"
+      "주말에도 계획할 수 있는 가까운 체류",
+      "주문진과 양양에서 즐기는 바다의 시간",
+      "나의 생활 일정에 맞춰 더하는 짧은 휴가"
     ],
     "note": "이용일 수·성수기 날짜·배정 기준은 최종 운영 조건에 따라 안내합니다"
   },
@@ -510,8 +510,8 @@ window.MYLODGE_SLIDES = [
     "id": "thailand-schedule",
     "number": "17",
     "kicker": "YOUR SEASON IN THAILAND",
-    "title": "세 도시에서 보내는 나의 시간",
-    "body": "푸켓에서 보내는 휴가, 치앙마이에 여유롭게 머무는 시간, 방콕에서 즐기는 새로운 일상 머물고 싶은 지역과 나의 생활 방식에 맞춰 다음 체류를 그려보세요",
+    "title": "이번에는 푸켓, 다음에는 어떤 도시일까?",
+    "body": "바다를 즐길 휴가인지, 자연 속에 머물 시간인지, 도시를 경험할 일정인지 — 지역별 상품과 이용 조건을 비교해보세요",
     "layout": "split",
     "theme": "dark",
     "links": [
@@ -525,9 +525,9 @@ window.MYLODGE_SLIDES = [
     "imageFit": "contain",
     "imageCaption": "",
     "points": [
-      "푸켓 · 프라이빗 휴양",
-      "치앙마이 · 자연 속 체류",
-      "방콕 · 편리한 도시 생활"
+      "푸켓 · 바다와 전용 풀을 즐기는 일정",
+      "치앙마이 · 자연 가까이 머무는 시간",
+      "방콕 · 새로운 일상을 경험하는 체류"
     ],
     "note": "지역별 성수기·이용일·운영사 보유 일정은 최종 운영 조건에 따라 안내합니다",
     "gallery": [
@@ -548,14 +548,14 @@ window.MYLODGE_SLIDES = [
     "id": "application",
     "number": "18",
     "kicker": "JOIN, APPLY, CONFIRM",
-    "title": "나의 별장 라이프, 첫걸음을 시작하세요",
-    "body": "마음에 드는 공간을 찾았다면 HanzCity 계정으로 첫걸음을 시작하세요 관심 상품과 참여 조건을 살펴보고, 나에게 맞는 별장 라이프를 준비해 보세요",
+    "title": "내 별장 이야기를, 선택으로 구체화할 차례",
+    "body": "관심 지역과 공간, 참여 규모를 골라보세요 HanzCity 계정으로 시작하고 상품별 조건을 확인하며 다음 단계를 준비하세요",
     "layout": "split",
     "theme": "light",
     "points": [
-      "HanzCity 계정으로 시작",
-      "관심 지역·상품 선택",
-      "조건 확인 후 별도 신청·계약"
+      "관심 지역과 공간부터 구체적으로 선택",
+      "나에게 맞는 참여 규모와 조건 확인",
+      "HanzCity 계정으로 시작하고 별도로 신청·계약"
     ],
     "image": "assets/feedback-v2/deck-18-arrival-living.png",
     "imageAlt": "여행 가방을 내려놓고 머무르기 시작하는 콘도 입구와 거실",
@@ -567,8 +567,8 @@ window.MYLODGE_SLIDES = [
     "id": "platform-guide",
     "number": "19",
     "kicker": "EXPLORE YOUR FUTURE STAY",
-    "title": "눈으로 둘러보고, 나의 일상을 그려보세요",
-    "body": "사진으로 분위기를 느끼고, 3D 조감도에서 복층 공간을 둘러보고, 달력으로 다음 휴가를 계획해 보세요 나에게 어울리는 별장 생활을 한 걸음 더 가까이 만나보세요",
+    "title": "사진에서 마음이 움직였다면, 공간을 더 자세히",
+    "body": "사진으로 분위기를 살펴보고 3D 조감도로 구조를 확인하세요 내가 머물고 사람을 초대할 모습을 구체적으로 그려보세요",
     "layout": "split",
     "theme": "dark",
     "image": "assets/feedback-v2/deck-19-interior-walkthrough.png",
@@ -576,9 +576,9 @@ window.MYLODGE_SLIDES = [
     "imageFit": "contain",
     "imageCaption": "",
     "points": [
-      "사진으로 만나는 공간의 분위기",
-      "3D로 둘러보는 1층과 2층",
-      "달력 위에 그려보는 다음 휴가"
+      "사진으로 확인하는 공간의 분위기",
+      "연결된 모델의 1층과 2층을 살펴보는 3D",
+      "실제로 머무는 모습을 그려보는 체류 계획"
     ],
     "links": [
       {
@@ -597,8 +597,8 @@ window.MYLODGE_SLIDES = [
     "id": "closing",
     "number": "20",
     "kicker": "YOUR NEXT CHAPTER",
-    "title": "여행의 목적지가, 돌아갈 나의 공간이 되도록",
-    "body": "가족과의 추억, 친구와의 만남, 혼자만의 느긋한 하루까지 당신이 꿈꾸는 별장 생활을 마이롯지와 함께 그려보세요 첫걸음은 상단 회원가입 버튼에서 시작됩니다",
+    "title": "이제, 당신이 초대할 차례입니다",
+    "body": "친구와의 만남, 중요한 사람과의 대화, 그리고 가족과 오래 남길 시간까지 — 나의 별장에서 시작할 이야기를 골라보세요",
     "layout": "split",
     "theme": "light",
     "image": "assets/feedback-v2/deck-20-homecoming-night.png",
@@ -606,9 +606,9 @@ window.MYLODGE_SLIDES = [
     "imageFit": "contain",
     "imageCaption": "",
     "points": [
-      "내가 좋아하는 곳에서",
-      "내가 좋아하는 사람들과",
-      "마이롯지로 그리는 새로운 일상"
+      "친구를 초대하고 함께 쌓아갈 새로운 이야기",
+      "중요한 사람과 편안하게 나누는 깊은 대화",
+      "가족과 오래 남길 가장 소중한 시간"
     ]
   }
 ];

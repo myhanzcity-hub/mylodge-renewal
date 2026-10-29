@@ -154,7 +154,7 @@ test('generated controls resolve to unique panels and local responsive photos wi
   assert.equal([...html.matchAll(/class="choice-preview"/g)].length,4);
   assert.equal([...html.matchAll(/data-plan="/g)].length,2);
   assert.ok(html.includes('type="module" src="presentation-extras.js"'));
-  assert.ok(!/USD 5,999|USD 199|USD 390|디럭스|프레스티지|Botanica|Sansiri|대표|녹취/.test(html));
+  assert.ok(!/USD 5,999|USD 199|USD 390|Botanica|Sansiri|대표|녹취/.test(html));
   for(const [,json] of html.matchAll(/data-choice-image="([^"]+)"/g)){
     const asset=JSON.parse(json.replaceAll('&quot;','"').replaceAll('&amp;','&'));
     await access(new URL('../'+asset.src,import.meta.url));

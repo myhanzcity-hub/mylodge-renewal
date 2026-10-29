@@ -27,11 +27,11 @@ assert.equal(signup.length,1);assert.equal(signup[0][1],'https://hanzcity.com/au
 assert.ok(signup[0][2].includes('target="_blank"')&&signup[0][2].includes('rel="noopener noreferrer"'),'Open the external signup outside the embedded preview');
 assert.equal([...html.matchAll(/href="https:\/\/hanzcity\.com\/auth\/sign-in"/g)].length,1,'Use one shared signup destination button');
 assert.equal([...html.matchAll(/<a href="villa\.html" class="overview-link">/g)].length,1);
-assert.ok(sections[0][2].includes('기존 MyLodge 27평 모델 · 신규 태국 대형 빌라와 별도'),'Do not present the existing model as the new Thai mansion');
+assert.ok(sections[0][2].includes('디럭스 10평 · 프레스티지 20평'),'Show the requested Deluxe and Prestige floor areas');
 assert.ok(!Object.hasOwn(pageAliases,'villa.html'));
 assert.ok(!Object.hasOwn(pageAliases,'schedule.html'));
 assert.ok(!/<form\b|site-menu|desktop-nav/.test(html),'Keep the main presentation linear');
-assert.equal([...html.matchAll(/<dialog\b/g)].length,2,'Video player and requested table of contents use dialogs');
+assert.equal([...html.matchAll(/<dialog\b/g)].length,3,'Video, contents and shortcut dialogs');
 assert.equal([...html.matchAll(/data-toc-page="\d+"/g)].length,20,'Every chapter is reachable from the contents');
 assert.ok(html.includes('id="space-film-modal"')&&html.includes('aria-controls="space-film-modal"'));
 
@@ -127,8 +127,9 @@ for(const url of referenceLinks){
 assert.ok(html.includes('schedule.html'),'The annual schedule preview must be reachable');
 
 const chapter=id=>JSON.stringify(slides.find(slide=>slide.id===id));
-assert.ok(chapter('opening').includes('나 해외에 호화 별장 가진 사람이야'));
-assert.ok(chapter('opening').includes('이 꿈 같은 로망이 즉시 현실이 되다'));
+assert.ok(sections[0][2].includes('<h1 id="title-1">나! 해외에 호화 별장 가진 사람이야</h1>'),'Keep the requested opening title as a permanent heading');
+assert.ok(chapter('opening').includes('MyLodge Private Mansion · Global Network'));
+assert.ok(chapter('opening').includes('다음엔 내 해외 별장에서 만나'));
 assert.ok(!/AI (?:공간 |편집 )?콘셉트|확정 후 안내/.test(html),'Remove repetitive concept and pending-notice copy');
 const price=chapter('pricing');
 assert.ok(price.includes('3,999')&&price.includes('4,149')&&price.includes('기존'),'Keep existing MyLodge prices scoped to the existing product');
@@ -156,8 +157,8 @@ for(const visual of visuals){
   assert.ok(!photoDigests.has(digest),'Each deck photo placement must be unique: '+visual.image);
   photoDigests.add(digest);
 }
-assert.equal([...html.matchAll(/<img\b/g)].filter(match=>!html.slice(match.index,html.indexOf('>',match.index)).includes('class="brand-logo"')).length,visuals.length+12,'Keep all existing photos, four previews and eight expanding gallery cards');
-assert.equal([...html.matchAll(/class="photo-brand"/g)].length,visuals.length+12,'Every presentation photo has its own MyLodge branding, including gallery previews');
+assert.equal([...html.matchAll(/<img\b/g)].filter(match=>!html.slice(match.index,html.indexOf('>',match.index)).includes('class="brand-logo"')).length,visuals.length+19,'Keep existing photos, twelve previews/cards and seven planner photos');
+assert.equal([...html.matchAll(/class="photo-brand"/g)].length,visuals.length+19,'Every presentation and planner photo has MyLodge branding');
 assert.ok(!/Botanica|Banyan|Laguna|Erawana|Erawan-Grand|Seacon|보타니카|반얀|라구나|에라와나/i.test(html),'Developer names must not appear in public presentation markup');
 const manifestContext={window:{}};
 vm.runInNewContext(await readFile(path.join(root,'assets-manifest.js'),'utf8'),manifestContext);
