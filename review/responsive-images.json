@@ -363,6 +363,32 @@
       }
     ]
   },
+  "assets/feedback-v2/rose-living.png": {
+    "width": 1536,
+    "height": 1024,
+    "sourceBytes": 2648353,
+    "sourceSha256": "863c3718b0df23ab9294c27d48be316b0d5c02dd6df127f60120e35c06e371aa",
+    "variants": [
+      {
+        "src": "assets/responsive/feedback-v2/rose-living-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 32346
+      },
+      {
+        "src": "assets/responsive/feedback-v2/rose-living-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 105910
+      },
+      {
+        "src": "assets/responsive/feedback-v2/rose-living-1440.webp",
+        "width": 1440,
+        "height": 960,
+        "bytes": 270096
+      }
+    ]
+  },
   "assets/reference-originals/57801.png": {
     "width": 1080,
     "height": 1080,
@@ -386,6 +412,32 @@
         "width": 1080,
         "height": 1080,
         "bytes": 142526
+      }
+    ]
+  },
+  "assets/feedback-v2/exterior-evening.png": {
+    "width": 1536,
+    "height": 1024,
+    "sourceBytes": 3051639,
+    "sourceSha256": "5435708551efe81667a127ed00e1e99acc33f98797a4e0ed048bfde5105f404e",
+    "variants": [
+      {
+        "src": "assets/responsive/feedback-v2/exterior-evening-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 52734
+      },
+      {
+        "src": "assets/responsive/feedback-v2/exterior-evening-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 173884
+      },
+      {
+        "src": "assets/responsive/feedback-v2/exterior-evening-1440.webp",
+        "width": 1440,
+        "height": 960,
+        "bytes": 439990
       }
     ]
   },
@@ -568,58 +620,6 @@
         "width": 1440,
         "height": 960,
         "bytes": 342894
-      }
-    ]
-  },
-  "assets/feedback-v2/rose-living.png": {
-    "width": 1536,
-    "height": 1024,
-    "sourceBytes": 2648353,
-    "sourceSha256": "863c3718b0df23ab9294c27d48be316b0d5c02dd6df127f60120e35c06e371aa",
-    "variants": [
-      {
-        "src": "assets/responsive/feedback-v2/rose-living-480.webp",
-        "width": 480,
-        "height": 320,
-        "bytes": 32346
-      },
-      {
-        "src": "assets/responsive/feedback-v2/rose-living-960.webp",
-        "width": 960,
-        "height": 640,
-        "bytes": 105910
-      },
-      {
-        "src": "assets/responsive/feedback-v2/rose-living-1440.webp",
-        "width": 1440,
-        "height": 960,
-        "bytes": 270096
-      }
-    ]
-  },
-  "assets/feedback-v2/exterior-evening.png": {
-    "width": 1536,
-    "height": 1024,
-    "sourceBytes": 3051639,
-    "sourceSha256": "5435708551efe81667a127ed00e1e99acc33f98797a4e0ed048bfde5105f404e",
-    "variants": [
-      {
-        "src": "assets/responsive/feedback-v2/exterior-evening-480.webp",
-        "width": 480,
-        "height": 320,
-        "bytes": 52734
-      },
-      {
-        "src": "assets/responsive/feedback-v2/exterior-evening-960.webp",
-        "width": 960,
-        "height": 640,
-        "bytes": 173884
-      },
-      {
-        "src": "assets/responsive/feedback-v2/exterior-evening-1440.webp",
-        "width": 1440,
-        "height": 960,
-        "bytes": 439990
       }
     ]
   },
@@ -854,6 +854,344 @@
         "width": 1080,
         "height": 1080,
         "bytes": 145808
+      }
+    ]
+  },
+  "assets/feedback-v2/deck-04-pool-view.png": {
+    "width": 1536,
+    "height": 1024,
+    "sourceBytes": 2924905,
+    "sourceSha256": "00fce08b4d2f9aac3b5e78c0e609c85572b02d17e0003471a7398935d3d6269f",
+    "variants": [
+      {
+        "src": "assets/responsive/feedback-v2/deck-04-pool-view-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 47198
+      },
+      {
+        "src": "assets/responsive/feedback-v2/deck-04-pool-view-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 158276
+      },
+      {
+        "src": "assets/responsive/feedback-v2/deck-04-pool-view-1440.webp",
+        "width": 1440,
+        "height": 960,
+        "bytes": 390934
+      }
+    ]
+  },
+  "assets/feedback-v2/deck-06-shared-dinner.png": {
+    "width": 1536,
+    "height": 1024,
+    "sourceBytes": 2439194,
+    "sourceSha256": "fbfc5aa378f3d34778385bf9a8c63c7a1f2e95fc6c1b1286c7f7a797fffae62e",
+    "variants": [
+      {
+        "src": "assets/responsive/feedback-v2/deck-06-shared-dinner-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 34504
+      },
+      {
+        "src": "assets/responsive/feedback-v2/deck-06-shared-dinner-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 104526
+      },
+      {
+        "src": "assets/responsive/feedback-v2/deck-06-shared-dinner-1440.webp",
+        "width": 1440,
+        "height": 960,
+        "bytes": 249442
+      }
+    ]
+  },
+  "assets/feedback-v2/deck-07-ready-to-rest.png": {
+    "width": 1536,
+    "height": 1024,
+    "sourceBytes": 2586615,
+    "sourceSha256": "8e22253ee4a5bea9db2dba04553648a366d5223e8472b77fb31e37a378c697cd",
+    "variants": [
+      {
+        "src": "assets/responsive/feedback-v2/deck-07-ready-to-rest-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 32464
+      },
+      {
+        "src": "assets/responsive/feedback-v2/deck-07-ready-to-rest-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 104966
+      },
+      {
+        "src": "assets/responsive/feedback-v2/deck-07-ready-to-rest-1440.webp",
+        "width": 1440,
+        "height": 960,
+        "bytes": 270700
+      }
+    ]
+  },
+  "assets/feedback-v2/deck-10-rose-dining.png": {
+    "width": 1536,
+    "height": 1024,
+    "sourceBytes": 2474115,
+    "sourceSha256": "5fe44ecf2ce3724a22cd3db3b6aaffea8893c26c8311e87107ebd402201c88ee",
+    "variants": [
+      {
+        "src": "assets/responsive/feedback-v2/deck-10-rose-dining-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 35096
+      },
+      {
+        "src": "assets/responsive/feedback-v2/deck-10-rose-dining-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 102602
+      },
+      {
+        "src": "assets/responsive/feedback-v2/deck-10-rose-dining-1440.webp",
+        "width": 1440,
+        "height": 960,
+        "bytes": 247204
+      }
+    ]
+  },
+  "assets/feedback-v2/deck-10-garden-exterior.png": {
+    "width": 1536,
+    "height": 1024,
+    "sourceBytes": 3180547,
+    "sourceSha256": "4cb17903ef0fd31defc082dd93783d0afd0e78497a3c0907e6b80f1eb78afac3",
+    "variants": [
+      {
+        "src": "assets/responsive/feedback-v2/deck-10-garden-exterior-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 60690
+      },
+      {
+        "src": "assets/responsive/feedback-v2/deck-10-garden-exterior-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 195364
+      },
+      {
+        "src": "assets/responsive/feedback-v2/deck-10-garden-exterior-1440.webp",
+        "width": 1440,
+        "height": 960,
+        "bytes": 459826
+      }
+    ]
+  },
+  "assets/feedback-v2/deck-10-forest-courtyard.png": {
+    "width": 1536,
+    "height": 1024,
+    "sourceBytes": 3330982,
+    "sourceSha256": "e3e092f0343ea45197aa9945a565b43c0ce2985240c51729a344d93af73acdc9",
+    "variants": [
+      {
+        "src": "assets/responsive/feedback-v2/deck-10-forest-courtyard-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 66792
+      },
+      {
+        "src": "assets/responsive/feedback-v2/deck-10-forest-courtyard-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 217336
+      },
+      {
+        "src": "assets/responsive/feedback-v2/deck-10-forest-courtyard-1440.webp",
+        "width": 1440,
+        "height": 960,
+        "bytes": 518526
+      }
+    ]
+  },
+  "assets/feedback-v2/deck-15-pool-morning.png": {
+    "width": 1536,
+    "height": 1024,
+    "sourceBytes": 3353826,
+    "sourceSha256": "aba3ceea167d3aefdfa21e11b8cdcbcd06e0d720e16aabcab56b93a93a261dce",
+    "variants": [
+      {
+        "src": "assets/responsive/feedback-v2/deck-15-pool-morning-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 56064
+      },
+      {
+        "src": "assets/responsive/feedback-v2/deck-15-pool-morning-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 190540
+      },
+      {
+        "src": "assets/responsive/feedback-v2/deck-15-pool-morning-1440.webp",
+        "width": 1440,
+        "height": 960,
+        "bytes": 487264
+      }
+    ]
+  },
+  "assets/feedback-v2/deck-17-phuket-sea.png": {
+    "width": 1536,
+    "height": 1024,
+    "sourceBytes": 2925424,
+    "sourceSha256": "00f55867062a03e0ad14965493a7c49bffafe179e90efa9cfc5c9c73a501d514",
+    "variants": [
+      {
+        "src": "assets/responsive/feedback-v2/deck-17-phuket-sea-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 43088
+      },
+      {
+        "src": "assets/responsive/feedback-v2/deck-17-phuket-sea-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 148686
+      },
+      {
+        "src": "assets/responsive/feedback-v2/deck-17-phuket-sea-1440.webp",
+        "width": 1440,
+        "height": 960,
+        "bytes": 385378
+      }
+    ]
+  },
+  "assets/feedback-v2/deck-17-chiangmai-green.png": {
+    "width": 1536,
+    "height": 1024,
+    "sourceBytes": 2606537,
+    "sourceSha256": "046d5b3cc4f0dba2c86c634e5a05b43e8c130c5ae725d07087f78e24a7b036e9",
+    "variants": [
+      {
+        "src": "assets/responsive/feedback-v2/deck-17-chiangmai-green-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 41050
+      },
+      {
+        "src": "assets/responsive/feedback-v2/deck-17-chiangmai-green-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 127662
+      },
+      {
+        "src": "assets/responsive/feedback-v2/deck-17-chiangmai-green-1440.webp",
+        "width": 1440,
+        "height": 960,
+        "bytes": 312186
+      }
+    ]
+  },
+  "assets/feedback-v2/deck-17-bangkok-city.png": {
+    "width": 1536,
+    "height": 1024,
+    "sourceBytes": 2562030,
+    "sourceSha256": "318f21c53b403936f523f0018a2a188c4b03837dc7cad18f76f78d6251d9eaf2",
+    "variants": [
+      {
+        "src": "assets/responsive/feedback-v2/deck-17-bangkok-city-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 32538
+      },
+      {
+        "src": "assets/responsive/feedback-v2/deck-17-bangkok-city-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 107066
+      },
+      {
+        "src": "assets/responsive/feedback-v2/deck-17-bangkok-city-1440.webp",
+        "width": 1440,
+        "height": 960,
+        "bytes": 269558
+      }
+    ]
+  },
+  "assets/feedback-v2/deck-18-arrival-living.png": {
+    "width": 1536,
+    "height": 1024,
+    "sourceBytes": 2376670,
+    "sourceSha256": "545ad971794e265ac246018c59fb6b48f139023c2e21ff36568d188e704203c2",
+    "variants": [
+      {
+        "src": "assets/responsive/feedback-v2/deck-18-arrival-living-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 24070
+      },
+      {
+        "src": "assets/responsive/feedback-v2/deck-18-arrival-living-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 79534
+      },
+      {
+        "src": "assets/responsive/feedback-v2/deck-18-arrival-living-1440.webp",
+        "width": 1440,
+        "height": 960,
+        "bytes": 221970
+      }
+    ]
+  },
+  "assets/feedback-v2/deck-19-interior-walkthrough.png": {
+    "width": 1536,
+    "height": 1024,
+    "sourceBytes": 2807684,
+    "sourceSha256": "0b1818fa1cdc0465ab1324aba6e53c35d90a94c375b4fd34dc62a85756cb3f89",
+    "variants": [
+      {
+        "src": "assets/responsive/feedback-v2/deck-19-interior-walkthrough-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 34344
+      },
+      {
+        "src": "assets/responsive/feedback-v2/deck-19-interior-walkthrough-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 119468
+      },
+      {
+        "src": "assets/responsive/feedback-v2/deck-19-interior-walkthrough-1440.webp",
+        "width": 1440,
+        "height": 960,
+        "bytes": 321506
+      }
+    ]
+  },
+  "assets/feedback-v2/deck-20-homecoming-night.png": {
+    "width": 1536,
+    "height": 1024,
+    "sourceBytes": 2823317,
+    "sourceSha256": "f1246d0dca7a7573ba5dc341a8feca34ab3924d8417ec1349f54564a5e198901",
+    "variants": [
+      {
+        "src": "assets/responsive/feedback-v2/deck-20-homecoming-night-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 54544
+      },
+      {
+        "src": "assets/responsive/feedback-v2/deck-20-homecoming-night-960.webp",
+        "width": 960,
+        "height": 640,
+        "bytes": 176836
+      },
+      {
+        "src": "assets/responsive/feedback-v2/deck-20-homecoming-night-1440.webp",
+        "width": 1440,
+        "height": 960,
+        "bytes": 426572
       }
     ]
   }

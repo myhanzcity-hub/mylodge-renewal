@@ -2,6 +2,7 @@ import {readFile,access} from 'node:fs/promises';
 import path from 'node:path';
 import vm from 'node:vm';
 import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 import {pageAliases} from './render-presentation.mjs';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
@@ -156,6 +157,12 @@ assert.ok(/가입/.test(chapter('application'))&&/계약/.test(chapter('applicat
 const excluded=['H5b864e2492f446ed9abd142df0bf80a94.jpg','KakaoTalk_20250114_081647842_01.jpg','Narrow-Space-Indoor-Staircase-Wood-Step-Steel-Round-Staircase-Steel-Indoor-Spiral-Stairs.avif','57807.png'];
 for(const file of excluded)assert.ok(!decodeURI(html).includes(file));
 assert.ok(!html.includes('assets/parks/'));
+const photoDigests=new Set();
+for(const visual of visuals){
+  const digest=createHash('sha256').update(await readFile(path.join(root,visual.image))).digest('hex');
+  assert.ok(!photoDigests.has(digest),'Each deck photo placement must be unique: '+visual.image);
+  photoDigests.add(digest);
+}
 assert.equal([...html.matchAll(/<img\b/g)].filter(match=>!html.slice(match.index,html.indexOf('>',match.index)).includes('class="brand-logo"')).length,visuals.length+12,'Keep all existing photos, four previews and eight expanding gallery cards');
 assert.equal([...html.matchAll(/class="photo-brand"/g)].length,visuals.length+12,'Every presentation photo has its own MyLodge branding, including gallery previews');
 assert.ok(!/Botanica|Banyan|Laguna|Erawana|Erawan-Grand|Seacon|보타니카|반얀|라구나|에라와나/i.test(html),'Developer names must not appear in public presentation markup');
