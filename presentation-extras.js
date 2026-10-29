@@ -62,8 +62,12 @@ export function mountQuickPlanner(root=document){
   let plan='deluxe';
   function updateQuote(){
     const region=destinations.find(item=>item.id===regionSelect.value);
+    const isMansion=region.product!=='original';
+    planner.querySelector('[data-quote-mansion]').hidden=!isMansion;
+    planner.querySelector('[data-quote-legacy]').hidden=isMansion;
+    planner.querySelector('[data-quick-estimate]').textContent=isMansion?'이 지역으로 견적 맞추기 →':'MyLodge Free 상품 살펴보기 →';
     const label=plan==='deluxe'?'디럭스 10평':'프레스티지 20평';
-    planner.querySelector('[data-quote-summary]').textContent=`${region.label} · ${label} · ${sharesSelect.value}구좌`;
+    planner.querySelector('[data-quote-summary]').textContent=isMansion?`${region.label} · ${label} · ${sharesSelect.value}구좌`:`${region.label} · MyLodge Free`;
     // Deluxe/Prestige have no configured prices. Never reuse the legacy plan amounts.
     for(const key of ['base','total','payment'])planner.querySelector(`[data-quote-${key}]`).textContent='—';
   }

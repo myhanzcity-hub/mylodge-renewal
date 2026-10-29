@@ -16,7 +16,7 @@
   const quickDialog = document.querySelector('[data-quick-dialog]');
   let quickSource;
   function showQuickView(view) {
-    quickDialog.querySelector('[data-quick-title]').textContent = view === 'places' ? '머물 곳 둘러보기' : '견적 맞추기';
+    quickDialog.querySelector('[data-quick-title]').textContent = {places:'머물 곳 둘러보기',estimate:'견적 맞추기',models:'상품별 공간과 조감도'}[view];
     for (const panel of quickDialog.querySelectorAll('[data-quick-view]')) panel.hidden = panel.dataset.quickView !== view;
     quickDialog.querySelector('[data-quick-body]').scrollTop = 0;
   }
@@ -24,7 +24,7 @@
     source.addEventListener('click', event => {
       event.preventDefault();
       quickSource = source;
-      showQuickView(source.dataset.quickPage === '3' ? 'places' : 'estimate');
+      showQuickView(source.dataset.quickPage === '3' ? 'places' : source.dataset.quickPage === 'models' ? 'models' : 'estimate');
       source.setAttribute('aria-expanded', 'true');
       quickDialog.showModal();
       quickDialog.querySelector('[data-quick-body]').scrollTop = 0;

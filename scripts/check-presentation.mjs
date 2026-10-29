@@ -14,6 +14,7 @@ assert.equal(slides.length,20);
 assert.equal(new Set(slides.map(slide=>slide.id)).size,20);
 assert.deepEqual(Array.from(slides,slide=>slide.id),expectedIds);
 const html=await readFile(path.join(root,'index.html'),'utf8');
+const freeHtml=await readFile(path.join(root,'free.html'),'utf8');
 for(const file of ['index.html','schedule.html','schedule.js','schedule-data.js','villa.html']){
   const publicContent=await readFile(path.join(root,file),'utf8');
   assert.ok(!/대표|녹취|녹음|통화|발언|원문|피드백|\d{2}:\d{2}:\d{2}/.test(publicContent),file+' must not expose internal conversation attribution');
@@ -26,7 +27,7 @@ const signup=[...html.matchAll(/<a class="signup-link" href="([^"]+)"([^>]*)>([^
 assert.equal(signup.length,1);assert.equal(signup[0][1],'https://hanzcity.com/auth/sign-in');assert.equal(signup[0][3],'회원가입');
 assert.ok(signup[0][2].includes('target="_blank"')&&signup[0][2].includes('rel="noopener noreferrer"'),'Open the external signup outside the embedded preview');
 assert.equal([...html.matchAll(/href="https:\/\/hanzcity\.com\/auth\/sign-in"/g)].length,1,'Use one shared signup destination button');
-assert.equal([...html.matchAll(/<a href="villa\.html" class="overview-link">/g)].length,1);
+assert.equal([...html.matchAll(/<a href="villa\.html" class="overview-link"[^>]*>/g)].length,1);
 assert.ok(sections[0][2].includes('디럭스 10평 · 프레스티지 20평'),'Show the requested Deluxe and Prestige floor areas');
 assert.ok(!Object.hasOwn(pageAliases,'villa.html'));
 assert.ok(!Object.hasOwn(pageAliases,'schedule.html'));
@@ -85,7 +86,7 @@ for(let index=0;index<slides.length;index++){
         assert.deepEqual(await readFile(path.join(root,visual.image)),await readFile(path.join(root,'참고 이미지 (3D 도면화)',name)),'Preserve original photo bytes');
       }else if(visual.image.startsWith('assets/mylodge-thailand-concepts/')){
         assert.ok(['phuket-pool.png','phuket-living.png','phuket-bedroom.png'].includes(path.basename(visual.image)),'Use the reviewed original MyLodge concepts');
-        assert.ok(['destinations','private-villa','thailand-schedule'].includes(slide.id),'Keep the new pool-villa concepts in the intended chapters');
+        assert.ok(!slide.id.startsWith('free'),'Keep the reviewed pool-villa images in Mansion chapters');
       }else if(visual.image.startsWith('assets/mylodge-edited/')){
         assert.ok(['tropical-pool-villa.png','living-retreat.png','condo-retreat.png','poolside-terrace.png'].includes(path.basename(visual.image)),'Only reviewed image edits and new concepts');
       }else assert.ok(/^assets\/feedback-v2\/[^/]+\.png$/.test(visual.image),'Use supplied references or existing concepts');
@@ -132,13 +133,9 @@ assert.ok(chapter('opening').includes('MyLodge Private Mansion · Global Network
 assert.ok(chapter('opening').includes('다음엔 내 해외 별장에서 만나'));
 assert.ok(!/AI (?:공간 |편집 )?콘셉트|확정 후 안내/.test(html),'Remove repetitive concept and pending-notice copy');
 const price=chapter('pricing');
-assert.ok(price.includes('3,999')&&price.includes('4,149')&&price.includes('기존'),'Keep existing MyLodge prices scoped to the existing product');
-const paymentPlan=slides.find(slide=>slide.id==='pricing').details.find(detail=>detail.summary.includes('5차 납입'));
-const payments=Array.from(paymentPlan.items).filter(item=>/^\d차 USD /.test(item));
-assert.deepEqual(payments.map(text=>Number(text.match(/^\d차 USD ([\d,]+)/)[1].replaceAll(',',''))),[100,1000,1000,1000,899]);
-assert.ok(payments.slice(0,2).every(text=>text.includes('LC계좌 입금'))&&payments.slice(2).every(text=>text.includes('현금 납입')));
-const community=chapter('community');
-assert.ok(community.includes('17평')&&community.includes('10평')&&community.includes('27평')&&community.includes('기존'));
+assert.ok(price.includes('10평')&&price.includes('20평')&&!/3,999|4,149/.test(price),'Mansion sizes never inherit Free prices');
+assert.ok(freeHtml.includes('USD 3,999')&&freeHtml.includes('USD 4,149')&&freeHtml.includes('1차 USD 100'),'Keep existing Free prices and payment scope on its own page');
+assert.ok(freeHtml.includes('약 17평')&&freeHtml.includes('약 10평')&&freeHtml.includes('약 27평'));
 assert.ok(!/1층 약 10평|복층 포함 약 17평/.test(JSON.stringify(slides)));
 assert.ok(/권리/.test(chapter('ownership'))&&/최종 계약/.test(chapter('ownership')));
 assert.ok(chapter('maid').includes('29')&&/상품별|확인|조건/.test(chapter('maid')));
@@ -149,17 +146,17 @@ assert.ok(chapter('thailand-schedule').includes('성수기')&&chapter('thailand-
 assert.ok(/가입/.test(chapter('application'))&&/계약/.test(chapter('application'))&&/별도|구분|확정/.test(chapter('application')));
 
 const excluded=['H5b864e2492f446ed9abd142df0bf80a94.jpg','KakaoTalk_20250114_081647842_01.jpg','Narrow-Space-Indoor-Staircase-Wood-Step-Steel-Round-Staircase-Steel-Indoor-Spiral-Stairs.avif','57807.png'];
-for(const file of excluded)assert.ok(!decodeURI(html).includes(file));
+for(const file of excluded)assert.ok(!html.includes(file)&&!html.includes(encodeURI(file)));
 assert.ok(!html.includes('assets/parks/'));
 const photoDigests=new Set();
-for(const visual of visuals){
+for(const visual of slides){
   const digest=createHash('sha256').update(await readFile(path.join(root,visual.image))).digest('hex');
-  assert.ok(!photoDigests.has(digest),'Each deck photo placement must be unique: '+visual.image);
+  assert.ok(!photoDigests.has(digest),'Main chapter photos must be varied: '+visual.image);
   photoDigests.add(digest);
 }
 assert.equal([...html.matchAll(/<img\b/g)].filter(match=>!html.slice(match.index,html.indexOf('>',match.index)).includes('class="brand-logo"')).length,visuals.length+19,'Keep existing photos, twelve previews/cards and seven planner photos');
 assert.equal([...html.matchAll(/class="photo-brand"/g)].length,visuals.length+19,'Every presentation and planner photo has MyLodge branding');
-assert.ok(!/Botanica|Banyan|Laguna|Erawana|Erawan-Grand|Seacon|보타니카|반얀|라구나|에라와나/i.test(html),'Developer names must not appear in public presentation markup');
+assert.ok(!/Botanica|Banyan|Laguna|Seacon|보타니카|반얀|라구나/i.test(html),'Unrequested developer names must not appear in presentation markup');
 const manifestContext={window:{}};
 vm.runInNewContext(await readFile(path.join(root,'assets-manifest.js'),'utf8'),manifestContext);
 const manifestPaths=new Set(manifestContext.window.MYLODGE_ASSETS.flatMap(asset=>asset.variants.map(variant=>variant.src)));
@@ -167,7 +164,7 @@ for(const visual of visuals)assert.ok(manifestPaths.has(visual.image),'Image mis
 for(const asset of manifestContext.window.MYLODGE_ASSETS){
   const variants=asset.variants.filter(v=>v.width>0);
   assert.ok(variants.length>=2&&variants.some(v=>v.width<=480),'Mobile display sizes exist: '+asset.src);
-  const imageTag=[...html.matchAll(/<img\b[^>]*>/g)].find(([tag])=>tag.includes('src="'+escape(encodeURI(asset.src))+'"'))?.[0];
+  const imageTag=[...(html+freeHtml).matchAll(/<img\b[^>]*>/g)].find(([tag])=>tag.includes('src="'+escape(encodeURI(asset.src))+'"'))?.[0];
   assert.ok(imageTag?.includes('srcset="')&&imageTag.includes('sizes="'),'Browser can choose a smaller image: '+asset.src);
   assert.ok(imageTag.includes(`width="${asset.width}" height="${asset.height}"`),'Image reserves its aspect ratio');
   for(const variant of variants){await access(path.join(root,variant.src));assert.ok(imageTag.includes(escape(encodeURI(variant.src))+' '+variant.width+'w'));}

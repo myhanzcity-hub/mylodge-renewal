@@ -109,6 +109,8 @@ export function mountMotion(root=document){
     play.setAttribute('aria-expanded','true');
     if(!video.getAttribute('src'))video.src=video.dataset.src;
     else if(video.error)video.load();
+    video.muted=false;
+    video.volume=1;
     video.play().then(()=>{if(!modal.open||document.hidden)video.pause();}).catch(()=>{
       showStatus('영상의 재생 버튼을 눌러 시작해 주세요');
     });

@@ -10,12 +10,26 @@ test('the existing proposal, price picker and selection share the same amounts',
   const context={window:{}};
   vm.runInNewContext(await readFile(new URL('../deck-data.js',import.meta.url),'utf8'),context);
   const price=context.window.MYLODGE_SLIDES.find(slide=>slide.id==='pricing');
-  assert.equal(price.facts[0].value,'USD 3,999');
-  assert.equal(price.facts[1].value,'USD 4,149');
+  assert.equal(price.facts[0].value,'10평');
+  assert.equal(price.facts[1].value,'20평');
   assert.equal(pricePlans.basic.base,3999);
   assert.equal(pricePlans.luxury.option,150);
   assert.equal(pricePlans.basic.first,100);
   assert.equal(pricePlans.luxury.first,100);
+});
+
+test('Mansion prices and model choices are separated from the existing Free product',async()=>{
+  const html=await readFile(new URL('../index.html',import.meta.url),'utf8');
+  const free=await readFile(new URL('../free.html',import.meta.url),'utf8');
+  const viewer=await readFile(new URL('../villa.html',import.meta.url),'utf8');
+  assert.ok(!/USD 3,999|USD 4,149|data-price-picker|data-selection\b/.test(html));
+  assert.ok(free.includes('USD 3,999')&&free.includes('USD 4,149'));
+  assert.ok(free.includes('기존 27평')&&viewer.includes('MYLODGE FREE'));
+  assert.ok(html.includes('data-quick-page="models"')&&html.includes('data-quick-view="models"'));
+  assert.ok(!/57810(?:-|\.)/.test(html+free),'Exclude the image with the embedded supplier logo');
+  assert.ok(html.includes('private-mansion-film.mp4')&&!html.includes('data-src="assets/video/mylodge-hero.mp4"'));
+  assert.ok(free.includes('src="assets/video/mylodge-hero.mp4"'));
+  assert.ok(html.includes('data-quote-legacy')&&html.includes('data-quote-mansion'));
 });
 
 test('all regions, plans and share counts keep Thai prices unconfigured',()=>{
@@ -113,9 +127,10 @@ test('Thai locations keep the requested order and preserve photos without repeti
   assert.ok(group);
   assert.deepEqual([...group.matchAll(/data-choice="([^"]+)"/g)].map(m=>m[1]),['phuket','chiangmai','bangkok']);
   assert.match(group,/data-choice="phuket" aria-pressed="true"/);
-  const options=html.match(/<optgroup label="태국">([\s\S]*?)<\/optgroup>/)?.[1];
-  assert.deepEqual([...options.matchAll(/value="([^"]+)"/g)].map(m=>m[1]),['phuket','chiangmai','bangkok']);
-  assert.ok(!/푸껫|Erawana|Erawan-Grand|Seacon/i.test(html));
+  const quote=html.match(/<select data-quote-region>([\s\S]*?)<\/select>/)?.[1];
+  assert.ok(quote);
+  assert.deepEqual([...quote.matchAll(/<option value="([^"]+)"/g)].slice(0,3).map(m=>m[1]),['phuket','chiangmai','bangkok']);
+  assert.ok(!/푸껫|Erawana|Erawan-Grand|Seacon/i.test(group));
   assert.ok(!html.includes('thailand-reference/'),'Original website photos are no longer used in the presentation');
   const audit=JSON.parse(await readFile(new URL('../review/mylodge-thailand-concepts.json',import.meta.url),'utf8'));
   assert.equal(audit.sourceMode,'new-generation-no-image-input');
@@ -125,7 +140,7 @@ test('Thai locations keep the requested order and preserve photos without repeti
     const bytes=await readFile(new URL('../'+record.path,import.meta.url));
     assert.equal(createHash('sha256').update(bytes).digest('hex'),record.sha256,'Use the inspected generated asset');
     assert.ok(record.prompt.trim());
-    assert.ok(html.includes(record.path),'Each new concept is used in the presentation');
+    assert.ok((html+await readFile(new URL('../free.html',import.meta.url),'utf8')).includes(record.path),'Each new concept is used in the presentation');
   }
 });
 
@@ -152,7 +167,7 @@ test('generated controls resolve to unique panels and local responsive photos wi
   for(const [,id] of html.matchAll(/aria-controls="([^"]+)"/g))assert.ok(ids.includes(id));
   assert.equal([...html.matchAll(/data-choices="/g)].length,4);
   assert.equal([...html.matchAll(/class="choice-preview"/g)].length,4);
-  assert.equal([...html.matchAll(/data-plan="/g)].length,2);
+  assert.equal([...html.matchAll(/data-plan="/g)].length,0);
   assert.ok(html.includes('type="module" src="presentation-extras.js"'));
   assert.ok(!/USD 5,999|USD 199|USD 390|Botanica|Sansiri|대표|녹취/.test(html));
   for(const [,json] of html.matchAll(/data-choice-image="([^"]+)"/g)){

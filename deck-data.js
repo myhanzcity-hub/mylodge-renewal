@@ -20,14 +20,14 @@ window.MYLODGE_SLIDES = [
     "imageCaption": "",
     "gallery": [
       {
-        "image": "assets/reference-originals/57822.png",
-        "imageAlt": "창가 침실에서 아이와 함께 책을 읽는 가족의 휴식 참고 이미지",
-        "label": "가족과 보내는 휴식"
+        "image": "assets/feedback-v2/deck-04-pool-view.png",
+        "imageAlt": "푸켓 빌라 거실에서 바라보는 전용 수영장",
+        "label": "거실 너머 전용 풀"
       },
       {
-        "image": "assets/reference-originals/57821.png",
-        "imageAlt": "원목 주방과 거실에서 함께 저녁 시간을 보내는 생활 장면 참고 이미지",
-        "label": "함께하는 저녁"
+        "image": "assets/mylodge-thailand-concepts/phuket-bedroom.png",
+        "imageAlt": "정원과 수영장으로 이어지는 푸켓 빌라 침실",
+        "label": "프라이빗한 풀사이드 침실"
       }
     ],
     "note": "태국 소개 지역은 푸켓·치앙마이·방콕입니다",
@@ -45,21 +45,14 @@ window.MYLODGE_SLIDES = [
     "body": "독립된 빌라에서 누리는 프라이빗한 시간부터 도시와 가까운 콘도 생활까지, 내가 머물고 싶은 방식으로 선택하세요",
     "layout": "split",
     "theme": "light",
-    "image": "assets/reference-originals/57795.png",
-    "imageAlt": "유리창과 발코니를 갖춘 복층 모듈러 주택 외관",
+    "image": "assets/mylodge-thailand-concepts/phuket-bedroom.png",
+    "imageAlt": "정원과 전용 풀로 이어지는 프라이빗 빌라 침실",
     "imageFit": "contain",
     "imageCaption": "",
     "points": [
       "독립된 빌라에서 누리는 프라이빗한 시간",
       "도시의 일상과 가까운 콘도 생활",
       "머물 사람과 생활 방식에 맞춘 선택"
-    ],
-    "gallery": [
-      {
-        "image": "assets/reference-originals/57805.png",
-        "imageAlt": "햇살 아래 잔디와 큰 창이 있는 별장",
-        "label": "기존 공간 참고"
-      }
     ]
   },
   {
@@ -83,8 +76,8 @@ window.MYLODGE_SLIDES = [
     "subtitle": "휴양 · 자연 · 도시",
     "gallery": [
       {
-        "image": "assets/feedback-v2/forest-courtyard.png",
-        "imageAlt": "자연 속 체류 분위기를 표현한 기존 MyLodge 모델의",
+        "image": "assets/feedback-v2/deck-17-chiangmai-green.png",
+        "imageAlt": "치앙마이의 숲과 산을 바라보는 테라스",
         "label": "치앙마이 · 자연 속 체류"
       },
       {
@@ -144,19 +137,7 @@ window.MYLODGE_SLIDES = [
       "함께 머무는 사람을 위한 독립된 공간",
       "편안한 분위기에서 이어지는 비즈니스 대화"
     ],
-    "note": "전용 시설과 보안·출입 관리 방식은 상품별로 확인해 주세요",
-    "gallery": [
-      {
-        "image": "assets/reference-originals/57796.png",
-        "imageAlt": "숲속에 독립적으로 배치된 복층 별장",
-        "label": "기존 공간 참고"
-      },
-      {
-        "image": "assets/reference-originals/57800.png",
-        "imageAlt": "큰 창과 소파, 테이블을 갖춘 밝은 거실",
-        "label": "기존 공간 참고"
-      }
-    ]
+    "note": "전용 시설과 보안·출입 관리 방식은 상품별로 확인해 주세요"
   },
   {
     "id": "lifestyle",
@@ -237,115 +218,48 @@ window.MYLODGE_SLIDES = [
     "body": "여럿을 초대할 넉넉한 공간이 필요한지, 도시를 가까이에서 즐기고 싶은지 — 함께할 사람과 생활 방식으로 비교하세요",
     "layout": "split",
     "theme": "dark",
-    "image": "assets/feedback-v2/exterior-evening.png",
-    "imageAlt": "저녁 조명과 넓은 유리창, 테라스가 어우러진 독립형 별장 외관",
+    "image": "assets/mylodge-edited/condo-retreat.png",
+    "imageAlt": "도시 체류를 위한 거실과 침실 공간",
     "imageFit": "contain",
     "imageCaption": "",
     "points": [
       "빌라 · 여럿을 초대하는 프라이빗한 휴양",
       "콘도 · 도시와 가까이 이어지는 생활",
       "공간의 크기보다 먼저 생각하는 나의 쓰임"
-    ],
-    "gallery": [
-      {
-        "image": "assets/reference-originals/57802.png",
-        "imageAlt": "정원을 바라보는 큰 창과 휴식용 소파",
-        "label": "기존 공간 참고"
-      }
     ]
   },
   {
     "id": "community",
     "number": "10",
-    "kicker": "THE ORIGINAL MYLODGE",
+    "kicker": "PRIVATE MANSION / CONNECTIONS",
     "title": "공간을 넘어, 만나는 사람도 달라지도록",
     "body": "취미가 맞는 사람과의 만남, 함께 즐기는 활동, 편안하게 이어지는 대화까지 별장 생활의 또 다른 즐거움을 만나보세요",
     "layout": "split",
     "theme": "light",
-    "image": "assets/reference-originals/57798.png",
-    "imageAlt": "넓은 테라스와 녹지가 어우러진 복층 별장",
+    "image": "assets/reference-originals/57821.png",
+    "imageAlt": "넓은 다이닝에서 함께 저녁을 나누는 사람들",
     "imageFit": "contain",
     "imageCaption": "",
-    "gallery": [
-      {
-        "image": "assets/feedback-v2/kitchen.png",
-        "imageAlt": "기존 MyLodge 주방과 식탁 콘셉트",
-        "label": "기존 모델 · 주방"
-      },
-      {
-        "image": "assets/feedback-v2/bathroom.png",
-        "imageAlt": "기존 MyLodge 샤워부스와 세면대 콘셉트",
-        "label": "기존 모델 · 욕실"
-      }
-    ],
-    "facts": [
-      {
-        "label": "1층 모델",
-        "value": "약 17평"
-      },
-      {
-        "label": "2층 모델",
-        "value": "약 10평"
-      },
-      {
-        "label": "합계",
-        "value": "약 27평"
-      }
-    ],
-    "imageCollection": [
-      {
-        "image": "assets/feedback-v2/living.png",
-        "imageAlt": "기존 MyLodge의 소형 복층 별장 거실 인테리어 콘셉트",
-        "label": "거실 인테리어 콘셉트"
-      },
-      {
-        "image": "assets/feedback-v2/exterior.png",
-        "imageAlt": "소형 복층 별장의 흰색 곡선 외관과 작은 테라스 콘셉트",
-        "label": "기존 MyLodge · 외관"
-      },
-      {
-        "image": "assets/feedback-v2/bedroom.png",
-        "imageAlt": "침대와 창가 중심으로 구성한 작은 복층 침실 콘셉트",
-        "label": "기존 MyLodge · 침실"
-      },
-      {
-        "image": "assets/feedback-v2/deck-10-rose-dining.png",
-        "imageAlt": "분홍빛 의자와 주방이 이어지는 별장 다이닝 공간",
-        "label": "다이닝에서 바라본 실내"
-      },
-      {
-        "image": "assets/feedback-v2/deck-10-garden-exterior.png",
-        "imageAlt": "정원 산책로에서 바라본 2층 별장 외관",
-        "label": "정원에서 만나는 별장"
-      },
-      {
-        "image": "assets/feedback-v2/coastal-courtyard.png",
-        "imageAlt": "소형 별장들이 산책길과 정원 주변에 모인 해안 단지 분위기 콘셉트",
-        "label": "기존 MyLodge · 소형 별장들이 산책길과 정원 주변에 모인 해안 단지 분위기 콘셉트"
-      },
-      {
-        "image": "assets/feedback-v2/terrace.png",
-        "imageAlt": "작은 테이블과 의자 두 개가 놓인 테라스 콘셉트",
-        "label": "기존 MyLodge · 테라스"
-      },
-      {
-        "image": "assets/feedback-v2/pool-day.png",
-        "imageAlt": "소형 별장 사이의 공동 풀에서 낮 시간을 보내는 사람들 콘셉트",
-        "label": "기존 MyLodge · 낮 풀사이드"
-      },
-      {
-        "image": "assets/feedback-v2/deck-10-forest-courtyard.png",
-        "imageAlt": "숲속 별장 사이에 놓인 정원 산책로와 휴식 공간",
-        "label": "숲속 중정과 산책로"
-      }
-    ],
-    "imageCollectionNote": "",
     "points": [
       "취향이 맞는 사람과 나누는 새로운 이야기",
       "취미와 활동을 함께 즐기는 교류",
       "나만의 시간과 함께하는 시간의 균형"
     ],
-    "note": "기존 MyLodge 27평 모델 기준의 공간 제안입니다 시설과 커뮤니티 프로그램은 준비 중입니다"
+    "note": "취향과 교류를 중심으로 살펴보는 별장 생활",
+    "facts": [
+      {
+        "label": "초대",
+        "value": "친구와의 만남"
+      },
+      {
+        "label": "교류",
+        "value": "취향을 나누는 시간"
+      },
+      {
+        "label": "기념일",
+        "value": "함께 남기는 기억"
+      }
+    ]
   },
   {
     "id": "ownership",
@@ -355,8 +269,8 @@ window.MYLODGE_SLIDES = [
     "body": "별장을 혼자 마련하는 방식만 생각할 필요는 없습니다 구좌와 이용 범위를 살펴보고 나에게 맞는 참여 계획을 세워보세요",
     "layout": "split",
     "theme": "dark",
-    "image": "assets/reference-originals/57808.png",
-    "imageAlt": "두 층의 독립된 공간과 야외 테이블을 갖춘 별장",
+    "image": "assets/feedback-v2/terrace.png",
+    "imageAlt": "대화와 휴식을 위한 프라이빗 테라스",
     "imageFit": "contain",
     "imageCaption": "",
     "points": [
@@ -374,8 +288,8 @@ window.MYLODGE_SLIDES = [
     "body": "디럭스 10평과 프레스티지 20평, 공간의 크기와 참여 규모를 비교하며 나에게 맞는 구성을 골라보세요",
     "layout": "split",
     "theme": "light",
-    "image": "assets/reference-originals/57810.png",
-    "imageAlt": "테라스가 있는 복층 모듈러 별장 구성",
+    "image": "assets/reference-originals/57800.png",
+    "imageAlt": "정원과 이어지는 밝은 거실 공간",
     "imageFit": "contain",
     "imageCaption": "",
     "points": [
@@ -385,29 +299,20 @@ window.MYLODGE_SLIDES = [
     ],
     "facts": [
       {
-        "label": "기존 기본형",
-        "value": "USD 3,999"
+        "label": "디럭스",
+        "value": "10평"
       },
       {
-        "label": "기존 럭셔리형",
-        "value": "USD 4,149"
+        "label": "프레스티지",
+        "value": "20평"
       }
     ],
-    "note": "아래 기본형·럭셔리형 금액은 기존 MyLodge 상품 기준이며, 디럭스 10평·프레스티지 20평의 가격이 아닙니다",
-    "details": [
+    "note": "지역·공간·구좌를 선택해 나에게 맞는 구성을 살펴보세요",
+    "details": [],
+    "links": [
       {
-        "summary": "기존 MyLodge 5차 납입 일정 보기",
-        "paragraphs": [
-          "기존 기본형 1구좌의 납입 기획안입니다"
-        ],
-        "items": [
-          "1차 USD 100 · 계약 시 · LC계좌 입금",
-          "2차 USD 1,000 · 모집 완료 통지 후 7일 이내 · LC계좌 입금",
-          "3차 USD 1,000 · 소유권 등기 완료 후 은행 영업일 3일 이내 · 현금 납입",
-          "4차 USD 1,000 · 토목 완료 통지 후 7일 이내 · 현금 납입",
-          "5차 USD 899 · 건축물 조성 완료 통지 후 7일 이내 · 현금 납입",
-          "럭셔리형 옵션 USD 150은 기존 기획의 5차에 추가하며 합계는 USD 4,149"
-        ]
+        "href": "free.html",
+        "label": "기존 MyLodge Free 상품 금액 보기"
       }
     ]
   },
@@ -438,8 +343,8 @@ window.MYLODGE_SLIDES = [
     "body": "얼마나 오래 누리고 싶은지, 생활이 달라지면 어떻게 활용할지 — 보유와 양도 조건까지 함께 살펴보세요",
     "layout": "split",
     "theme": "light",
-    "image": "assets/reference-originals/57794.jpg",
-    "imageAlt": "흰색 복층 별장과 넓은 테라스 외관",
+    "image": "assets/feedback-v2/deck-17-chiangmai-green.png",
+    "imageAlt": "숲과 산을 바라보는 테라스",
     "imageFit": "contain",
     "imageCaption": "",
     "points": [
@@ -484,15 +389,15 @@ window.MYLODGE_SLIDES = [
   {
     "id": "domestic-schedule",
     "number": "16",
-    "kicker": "YOUR LOCAL ESCAPE",
+    "kicker": "MYLODGE FREE / DOMESTIC",
     "title": "해외로 떠나지 않는 주말에도, 별장 생활은 계속",
     "body": "주문진과 양양의 바다가 생각나는 날, 가까운 곳에서 짧게 머물며 일상에 별장의 시간을 더해보세요",
     "layout": "split",
     "theme": "light",
     "links": [
       {
-        "label": "국내 일정 미리보기 보기",
-        "href": "schedule.html?product=domestic"
+        "href": "free.html",
+        "label": "MyLodge Free 둘러보기"
       }
     ],
     "image": "assets/reference-originals/57797.png",
@@ -504,7 +409,8 @@ window.MYLODGE_SLIDES = [
       "주문진과 양양에서 즐기는 바다의 시간",
       "나의 생활 일정에 맞춰 더하는 짧은 휴가"
     ],
-    "note": "이용일 수·성수기 날짜·배정 기준은 최종 운영 조건에 따라 안내합니다"
+    "note": "이용일 수·성수기 날짜·배정 기준은 최종 운영 조건에 따라 안내합니다",
+    "subtitle": "MyLodge Free · 국내 별장 서비스"
   },
   {
     "id": "thailand-schedule",
@@ -582,7 +488,7 @@ window.MYLODGE_SLIDES = [
     ],
     "links": [
       {
-        "label": "조감도로 공간 둘러보기",
+        "label": "MyLodge Free 기존 27평 모델 3D 보기",
         "href": "villa.html"
       },
       {
@@ -590,7 +496,7 @@ window.MYLODGE_SLIDES = [
         "href": "schedule.html"
       }
     ],
-    "note": "3D 조감도는 기존 MyLodge 27평 모델이며, 일정 화면은 예약 전 미리보기입니다",
+    "note": "디럭스 10평·프레스티지 20평과 기존 MyLodge Free 27평 모델은 서로 다른 상품입니다",
     "subtitle": "MyLodge에서 HanzCity로"
   },
   {

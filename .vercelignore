@@ -3,6 +3,9 @@
 !/.gitignore
 !/.vercelignore
 !/README.md
+!/free.html
+!/free.css
+!/villa-price-reference.js
 !/account.html
 !/apply.html
 !/assets/
@@ -210,6 +213,7 @@
 !/assets/video/
 /assets/video/*
 !/assets/video/mylodge-hero.mp4
+!/assets/video/private-mansion-film.mp4
 !/booking.html
 !/chiangmai.html
 !/community.html
@@ -254,6 +258,10 @@
 !/schedule.js
 !/scripts/
 /scripts/*
+!/scripts/render-free.mjs
+!/scripts/render-price-reference.mjs
+!/scripts/prepare-mansion-film.py
+!/scripts/villa-price-reference.test.mjs
 !/scripts/build.mjs
 !/scripts/check-presentation.mjs
 !/scripts/check-schedule.mjs

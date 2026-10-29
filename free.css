@@ -1,0 +1,20 @@
+.free-page { display: block; height: auto; min-height: 100svh; overflow: auto; background: var(--cream); color: var(--ink); }
+.free-header { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 12px max(20px,calc((100vw - 1000px)/2)); background: var(--brand-surface); }
+.free-header a { display: inline-flex; align-items: center; min-height: 48px; color: var(--accent); font-size: 15px; }
+.free-header img { width: 64px; height: 52px; object-fit: contain; }
+.free-page main { max-width: 1000px; margin: auto; padding: 40px 20px 64px; }
+.free-page h1 { font-size: clamp(28px,5vw,44px); line-height: 1.4; }
+.free-lead { max-width: 700px; margin-top: 20px; font-size: 16px; line-height: 1.8; color: #5e6c73; }
+.free-page section { margin-top: 40px; }
+.free-page h2 { font-size: 24px; line-height: 1.5; margin-bottom: 16px; }
+.free-page section > p { line-height: 1.8; }
+.free-gallery { display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; overscroll-behavior-x: contain; padding-bottom: 12px; }
+.free-gallery figure { flex: 0 0 min(85%,460px); min-width: 0; scroll-snap-align: start; }
+.free-gallery .branded-photo { height: 300px; border-radius: 20px; background: #e8e5df; }
+.free-gallery img { object-fit: contain; }
+.free-gallery figcaption { padding-top: 10px; font-size: 14px; line-height: 1.7; }
+.free-page video { width: 100%; max-height: 540px; border-radius: 20px; background: var(--deep); }
+.free-page .overview-link { max-width: 440px; }
+.free-page .selection-fields { grid-template-columns: repeat(2,minmax(0,1fr)); }
+.free-page .price-options { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); }
+@media(max-width:600px) { .free-gallery .branded-photo { height: 230px; } .free-page .selection-fields,.free-page .price-options { grid-template-columns: 1fr; } }

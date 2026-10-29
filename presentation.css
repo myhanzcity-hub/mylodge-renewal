@@ -822,6 +822,26 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .quick-quote-summary dl > div { display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; color: #ccd7dd; }
 .quick-quote-summary .quick-quote-total { border-block: 1px solid #ffffff26; color: #fff; font-size: 20px; font-weight: 700; }
 .quick-secondary { width: 100%; margin-top: 16px; }
+.quick-model-sizes { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; margin-top: 20px; }
+.quick-model-sizes > div { display: flex; flex-direction: column; gap: 12px; padding: 20px; border: 1px solid #ffffff26; border-radius: 20px; }
+.quick-model-sizes strong { color: var(--gold); font-size: 28px; }
+a.quick-primary { text-align: center; text-decoration: none; }
+.villa-price-reference { margin-top: 24px; border: 1px solid #85949d55; border-radius: 18px; overflow: hidden; }
+.villa-price-reference > summary { min-height: 56px; padding: 16px; cursor: pointer; font-size: 15px; font-weight: 700; line-height: 1.7; overflow-wrap: anywhere; }
+.villa-price-reference > summary span { display: block; font-size: 13px; font-weight: 400; font-variant-numeric: tabular-nums; }
+.villa-price-reference-content { padding: 0 16px 16px; font-size: 14px; line-height: 1.8; }
+.price-reference-context { margin: 8px 0 12px; font-size: 12px; line-height: 1.8; }
+.price-reference-scroll { max-width: 100%; overflow-x: auto; overscroll-behavior-x: contain; }
+.price-reference-scroll table { width: 100%; min-width: 970px; border-collapse: collapse; font-size: 13px; font-variant-numeric: tabular-nums; }
+.price-reference-scroll caption { padding: 8px 0; text-align: left; font-size: 12px; }
+.price-reference-scroll th,.price-reference-scroll td { padding: 12px; border-bottom: 1px solid #85949d55; text-align: left; white-space: nowrap; }
+.price-reference-scroll thead th { background: var(--navy); color: #fff; }
+.price-reference-scroll tbody td:last-child { font-weight: 700; }
+.price-reference-conditions { margin-top: 20px; }
+.price-reference-conditions > div { display: grid; grid-template-columns: 110px minmax(0,1fr); gap: 12px; padding: 12px 0; border-top: 1px solid #85949d55; }
+.price-reference-conditions dt { font-weight: 600; }
+.price-reference-scroll:focus-visible,.villa-price-reference > summary:focus-visible { outline: 2px solid var(--gold); outline-offset: -2px; }
+@media(max-width:380px) { .price-reference-conditions > div { grid-template-columns: 1fr; gap: 4px; } }
 .quick-region-photos:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
 @media screen and (max-width: 700px) {
   .quick-dialog { width: calc(100vw - 24px); max-height: min(640px,78dvh,calc(100dvh - 48px - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px))); }
